@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62f03b37-ee82-4d22-9176-8b47e1fefd12">
+  <name>ПодразделенияНебольшихОрганизаций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подразделения небольших организаций</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

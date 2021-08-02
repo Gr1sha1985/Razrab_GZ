@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00d6f563-779a-4ac2-a38f-c88bdf5bdd99">
+  <name>СостоянияИзвещенийФСС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния извещений ФСС</value>
+  </synonym>
+</mdclass:CommonPicture>

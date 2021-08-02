@@ -1,0 +1,592 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://zakupki.gov.ru/oos/TPtypes/1" elementFormQualified="true" attributeFormQualified="false">
+	<import namespace="http://zakupki.gov.ru/oos/base/1"/>
+	<import namespace="http://zakupki.gov.ru/oos/common/1"/>
+	<valueType name="nameType" base="xs:string" variety="Atomic" minLength="1" maxLength="50"/>
+	<valueType name="tenderPlan2020AgreementNumberType" base="xs:string" variety="Atomic" minLength="1" maxLength="256"/>
+	<valueType name="tenderPlan2020AgreementTypeCodeEnum" base="xs:string" variety="Atomic">
+		<enumeration>CAPITAL</enumeration>
+		<enumeration>OTHER</enumeration>
+	</valueType>
+	<valueType name="tenderPlan2020NumberType" base="xs:string" variety="Atomic" length="18"/>
+	<valueType name="tenderPlan2020OtherPeriodicityType" base="xs:string" variety="Atomic" minLength="1" maxLength="256"/>
+	<valueType name="tenderPlan2020PositionModificationStatusEnum" base="xs:string" variety="Atomic">
+		<enumeration>N</enumeration>
+		<enumeration>E</enumeration>
+	</valueType>
+	<valueType name="tenderPlan2020PositonExtNumberType" base="xs:string" variety="Atomic" minLength="1" maxLength="100"/>
+	<valueType name="tenderPlan2020PositonNumberType" base="xs:string" variety="Atomic" length="24"/>
+	<valueType name="tenderPlan2020PurchaseNumberType" base="xs:string" variety="Atomic">
+		<pattern>\d{4}</pattern>
+	</valueType>
+	<valueType name="tenderPlan2020PurchaseOrderNumberType" base="xs:string" variety="Atomic">
+		<pattern>\d{3}</pattern>
+	</valueType>
+	<valueType name="tenderPlan2020VersionOwnerRoleType" base="xs:string" variety="Atomic">
+		<enumeration>CU</enumeration>
+		<enumeration>OA</enumeration>
+	</valueType>
+	<objectType name="contactPersonType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="lastName" type="d3p1:nameType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="firstName" type="d3p1:nameType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="middleName" type="d3p1:nameType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="position" type="d3p1:positionType"/>
+	</objectType>
+	<objectType name="control99DocLinkType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="url" type="d3p1:hrefType"/>
+	</objectType>
+	<objectType name="control99DocumentObjectType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type"/>
+		<property name="date" type="xs:dateTime" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="number" type="d3p1:control99ControlDocNumberType" lowerBound="0"/>
+	</objectType>
+	<objectType name="control99OwnerInfoType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="regNum" type="d3p1:spzNumType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="consRegistryNum" type="d3p1:consRegistryNumType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="fullName" type="d3p1:text2000Type" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="INN" type="d3p1:innType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="KPP" type="d3p1:kppType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="ownerRole" type="d3p1:tenderPlan2020VersionOwnerRoleType"/>
+	</objectType>
+	<objectType name="control99TenderPlan2020ExtractType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="schemeVersion" type="d3p1:schemeVersionType" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="planNumber" type="d3p1:tenderPlan2020NumberType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="versionNumber" type="d3p1:versionNumberType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="editionNumber" type="d3p1:versionNumberType" lowerBound="0"/>
+		<property name="id" type="xs:long"/>
+		<property name="documentType" fixed="true" default="tenderPlan2020">
+			<typeDef xmlns:d4p1="http://zakupki.gov.ru/oos/base/1" xsi:type="ValueType" base="d4p1:control99DocumentTypeEnum" variety="Atomic"/>
+		</property>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="externalId" type="d3p1:externalIdType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="refPacketUid" type="d3p1:guidType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="ASFPacketUid" type="d3p1:guidType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/common/1" name="controlAuthorityInfo" type="d3p1:control99ControlAuthorityInfoType"/>
+		<property name="commonInfo">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="planYear" type="d5p1:yearType"/>
+				<property name="planPeriod">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="firstYear" type="d7p1:yearType"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="secondYear" type="d7p1:yearType"/>
+					</typeDef>
+				</property>
+				<property name="confirmDate" type="xs:dateTime"/>
+				<property name="controlDirectionDate" type="xs:dateTime"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="responsibleContactInfo" type="d5p1:contactPersonType"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="confirmContactInfo" type="d5p1:contactPersonType"/>
+			</typeDef>
+		</property>
+		<property name="customerInfo">
+			<typeDef xmlns:d4p1="http://zakupki.gov.ru/oos/common/1" xsi:type="ObjectType" base="d4p1:control99CustomerInfoType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="OKTMOPPO" type="d5p1:OKTMOPPORef" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="ownerInfo" type="d3p1:control99OwnerInfoType"/>
+		<property name="positions" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="position" type="d5p1:control99TenderPlan2020PositionType" upperBound="-1"/>
+			</typeDef>
+		</property>
+		<property name="specialPurchases" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="specialPurchase" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/TPtypes/1" name="positionNumber" type="d7p1:tenderPlan2020PositonNumberType"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="IKZ" type="d7p1:ikzCodeType"/>
+						<property name="financeInfo">
+							<typeDef xmlns:d8p1="http://zakupki.gov.ru/oos/TPtypes/1" xsi:type="ObjectType" base="d8p1:tenderPlan2020FinanceResourcesType">
+								<property name="KBKsInfo" type="d8p1:tenderPlan2020KBKsInfoType" lowerBound="0"/>
+							</typeDef>
+						</property>
+						<property name="targetArticlesInfo" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/TPtypes/1" name="targetArticleInfo" type="d9p1:tenderPlan2020TargetArticleInfoType" upperBound="-1"/>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="KBKsInfo" type="d5p1:tenderPlan2020KBKsInfoType" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property name="outcomeIndicators" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="KBKsTotalsInfo" type="d5p1:tenderPlan2020KBKsTotalsInfoType" lowerBound="0"/>
+				<property name="targetArticlesTotalsInfo" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property name="targetArticleTotalsInfo" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/base/1" name="targetArticle" type="d9p1:targetArticleType"/>
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/TPtypes/1" name="targetArticleTotalsYearsInfo" type="d9p1:tenderPlan2020FinanceResourcesType"/>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+				<property name="agreementsTotalsInfo" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/TPtypes/1" name="agreementTotalsInfo" type="d7p1:tenderPlan2020AgreementTotalsInfoType" upperBound="-1"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="documentLink" type="d3p1:control99DocLinkType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/common/1" name="extPrintForm" type="d3p1:extPrintFormType" lowerBound="0"/>
+	</objectType>
+	<objectType name="control99TenderPlan2020PositionType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="positionNumber" type="d3p1:tenderPlan2020PositonNumberType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="IKZ" type="d3p1:ikzCodeType"/>
+		<property name="financeInfo">
+			<typeDef xmlns:d4p1="http://zakupki.gov.ru/oos/TPtypes/1" xsi:type="ObjectType" base="d4p1:tenderPlan2020FinanceResourcesType">
+				<property name="KBKsInfo" type="d4p1:tenderPlan2020KBKsInfoType" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property name="targetArticlesInfo" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="targetArticleInfo" type="d5p1:tenderPlan2020TargetArticleInfoType" upperBound="-1"/>
+			</typeDef>
+		</property>
+		<property name="purchasesSubsecYearsInfo" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="actInfo" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="docInfo">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/base/1" name="docType" type="d9p1:text100Type"/>
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/base/1" name="docNumber" type="d9p1:text50Type" lowerBound="0"/>
+								<property name="docDate" type="xs:date" lowerBound="0"/>
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/base/1" name="docName" type="d9p1:text1000Type" lowerBound="0"/>
+							</typeDef>
+						</property>
+						<property name="actFinanceInfo" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/base/1" name="KVR" type="d9p1:KVRRef"/>
+								<property name="financeInfo">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://zakupki.gov.ru/oos/base/1" name="total" type="d11p1:moneyMaxLengthToPoint18Type" lowerBound="0"/>
+										<property xmlns:d11p1="http://zakupki.gov.ru/oos/base/1" name="currentYear" type="d11p1:moneyMaxLengthToPoint18Type" lowerBound="0"/>
+										<property xmlns:d11p1="http://zakupki.gov.ru/oos/base/1" name="firstYear" type="d11p1:moneyMaxLengthToPoint18Type" lowerBound="0"/>
+										<property xmlns:d11p1="http://zakupki.gov.ru/oos/base/1" name="secondYear" type="d11p1:moneyMaxLengthToPoint18Type" lowerBound="0"/>
+										<property xmlns:d11p1="http://zakupki.gov.ru/oos/base/1" name="subsecYears" type="d11p1:moneyMaxLengthToPoint18Type"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/common/1" name="attachments" type="d7p1:attachmentListType" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="isEnergyServiceContract" type="xs:boolean"/>
+		<property name="isProvisionLendingServices" type="xs:boolean" lowerBound="0" fixed="true" default="true"/>
+	</objectType>
+	<objectType name="tenderPlan2020AgreementTotalsInfoType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="agreementTypeCode" type="d3p1:tenderPlan2020AgreementTypeCodeEnum"/>
+		<property name="agreementInfo">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="agreementNumber" type="d5p1:tenderPlan2020AgreementNumberType"/>
+				<property name="agreementDate" type="xs:date"/>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="agreementTotalsYearsInfo" type="d3p1:tenderPlan2020FinanceResourcesType"/>
+	</objectType>
+	<objectType name="tenderPlan2020ChangeType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="schemeVersion" type="d3p1:schemeVersionType" lowerBound="1" form="Attribute"/>
+		<property name="id" type="xs:long" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="externalId" type="d3p1:externalIdType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="planNumber" type="d3p1:tenderPlan2020NumberType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="versionNumber" type="d3p1:versionNumberType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="commonInfo" type="d3p1:tenderPlan2020CommonInfoType" lowerBound="0"/>
+		<property name="positions" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="position" type="d5p1:tenderPlan2020PositionType" upperBound="-1"/>
+			</typeDef>
+		</property>
+		<property name="specialPurchases" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="specialPurchase" type="d5p1:tenderPlan2020SpecialPurchaseType" upperBound="-1"/>
+			</typeDef>
+		</property>
+		<property name="specialPurchasePositions" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="specialPurchasePosition" type="d5p1:tenderPlan2020SpecialPurchasePositionType" upperBound="-1"/>
+			</typeDef>
+		</property>
+		<property name="outcomeIndicators" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="totalsInfo" type="d5p1:tenderPlan2020FinanceResourcesType" lowerBound="0"/>
+				<property name="KBKsTotalsInfo" lowerBound="0">
+					<typeDef xmlns:d6p1="http://zakupki.gov.ru/oos/TPtypes/1" xsi:type="ObjectType" base="d6p1:tenderPlan2020KBKsTotalsInfoType">
+						<property name="extraBudgetFundsTotalsInfo" type="d6p1:tenderPlan2020FinanceResourcesType" lowerBound="0"/>
+					</typeDef>
+				</property>
+				<property name="KVRsTotalsInfo" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property name="KVRTotalsInfo" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/base/1" name="KVR" type="d9p1:KVRRef"/>
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/TPtypes/1" name="KVRTotalsYearsInfo" type="d9p1:tenderPlan2020FinanceResourcesType"/>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+				<property name="targetArticlesTotalsInfo" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property name="targetArticleTotalsInfo" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/base/1" name="targetArticle" type="d9p1:targetArticleType"/>
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/TPtypes/1" name="targetArticleTotalsYearsInfo" type="d9p1:tenderPlan2020FinanceResourcesType"/>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+				<property name="agreementsTotalsInfo" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/TPtypes/1" name="agreementTotalsInfo" type="d7p1:tenderPlan2020AgreementTotalsInfoType" upperBound="-1"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/common/1" name="attachments" type="d3p1:attachmentListType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/common/1" name="extPrintForm" type="d3p1:extPrintFormType" lowerBound="0"/>
+	</objectType>
+	<objectType name="tenderPlan2020CommonInfoType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="planYear" type="d3p1:yearType"/>
+		<property name="planPeriod">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="firstYear" type="d5p1:yearType"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="secondYear" type="d5p1:yearType"/>
+			</typeDef>
+		</property>
+		<property name="createDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="confirmDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="directDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="publishDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="customerInfo">
+			<typeDef xmlns:d4p1="http://zakupki.gov.ru/oos/TPtypes/1" xsi:type="ObjectType" base="d4p1:tenderPlan2020OrganizationType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="OKOPF" type="d5p1:OKOPFRef" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="OKFS" type="d5p1:OKFSRef" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="OKTMOPPO" type="d5p1:OKTMOPPORef" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property name="ownerInfo">
+			<typeDef xmlns:d4p1="http://zakupki.gov.ru/oos/TPtypes/1" xsi:type="ObjectType" base="d4p1:tenderPlan2020OrganizationType">
+				<property name="ownerRole" type="d4p1:tenderPlan2020VersionOwnerRoleType"/>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="confirmContactInfo" type="d3p1:contactPersonType" lowerBound="0"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://zakupki.gov.ru/oos/TPtypes/1" name="tenderPlan2020Control99NCType" base="d2p1:tenderPlan2020Type">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/common/1" name="control99NoticeCompliance" type="d3p1:control99NoticeComplianceWithDocType"/>
+	</objectType>
+	<objectType name="tenderPlan2020FinanceResourcesType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="total" type="d3p1:moneyPosNegMaxLengthToPoint18Type" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="currentYear" type="d3p1:moneyPosNegMaxLengthToPoint18Type" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="firstYear" type="d3p1:moneyPosNegMaxLengthToPoint18Type" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="secondYear" type="d3p1:moneyPosNegMaxLengthToPoint18Type" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="subsecYears" type="d3p1:moneyPosNegMaxLengthToPoint18Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="tenderPlan2020KBKsInfoType">
+		<property name="KBKInfo" upperBound="-1">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="KBK" type="d5p1:kbkType"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="KBKYearsInfo" type="d5p1:tenderPlan2020FinanceResourcesType"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="tenderPlan2020KBKsTotalsInfoType">
+		<property name="KBKTotalsInfo" upperBound="-1">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="KBK" type="d5p1:kbkType"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="KBKTotalsYearsInfo" type="d5p1:tenderPlan2020FinanceResourcesType"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="tenderPlan2020KTRURef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:ktruCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+		<property name="versionNumber" type="xs:int" lowerBound="0"/>
+	</objectType>
+	<objectType name="tenderPlan2020KVRInfoType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="KVR" type="d3p1:KVRRef"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="KVRYearsInfo" type="d3p1:tenderPlan2020FinanceResourcesType"/>
+	</objectType>
+	<objectType name="tenderPlan2020KVRRefType" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="KVR" type="d3p1:KVRRef" lowerBound="0"/>
+		<property name="undefined" type="xs:string" lowerBound="0" fixed="false" default="000"/>
+	</objectType>
+	<objectType name="tenderPlan2020OrganizationType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="regNum" type="d3p1:spzNumType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="consRegistryNum" type="d3p1:consRegistryNumType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="fullName" type="d3p1:text2000Type" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="INN" type="d3p1:innType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="KPP" type="d3p1:kppType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="OKTMO" type="d3p1:OKTMORef" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="factAddress" type="d3p1:text2000Type" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="phone" type="d3p1:phoneType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="email" type="d3p1:eMailType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="controlAuthorityInfo" type="d3p1:organizationRef" lowerBound="0"/>
+	</objectType>
+	<objectType name="tenderPlan2020PositionChangeReasonRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:text10Type"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="tenderPlan2020PositionDecisionType" ordered="false" sequenced="true">
+		<property name="notSpecified" type="xs:boolean" lowerBound="0" fixed="true" default="true"/>
+		<property name="purchaseCanceled" type="xs:boolean" lowerBound="0" fixed="true" default="true"/>
+		<property name="purchaseChanged" type="xs:boolean" lowerBound="0" fixed="true" default="true"/>
+	</objectType>
+	<objectType name="tenderPlan2020PositionType">
+		<property name="commonInfo">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="positionNumber" type="d5p1:tenderPlan2020PositonNumberType" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="extNumber" type="d5p1:tenderPlan2020PositonExtNumberType" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="IKZ" type="d5p1:ikzCodeType" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="publishYear" type="d5p1:yearType"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="IKU" type="d5p1:ikuType" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="purchaseNumber" type="d5p1:tenderPlan2020PurchaseNumberType"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="purchaseOrderNumber" type="d5p1:tenderPlan2020PurchaseOrderNumberType" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="OKPD2Info" type="d5p1:OKPD2Ref" lowerBound="0"/>
+				<property name="undefined" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property name="OKPD2s">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/base/1" name="OKPD2Info" type="d9p1:OKPD2Ref" upperBound="-1"/>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="KVRInfo" type="d5p1:tenderPlan2020KVRRefType"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="purchaseObjectInfo" type="d5p1:text2000Type" lowerBound="0"/>
+				<property name="publicDiscussion" type="xs:boolean" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/common/1" name="publicDiscussionInfo" type="d5p1:publicDiscussionInfoType" lowerBound="0"/>
+				<property name="positionCanceled" type="xs:boolean" lowerBound="0"/>
+				<property name="positionModification" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/TPtypes/1" name="changeReason" type="d7p1:tenderPlan2020PositionChangeReasonRef" lowerBound="0"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/TPtypes/1" name="decision" type="d7p1:tenderPlan2020PositionDecisionType"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="description" type="d7p1:text2000Type" lowerBound="0"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="modificationNumber" type="d7p1:versionNumberType" lowerBound="0"/>
+					</typeDef>
+				</property>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="positionModificationStatus" type="d5p1:tenderPlan2020PositionModificationStatusEnum" lowerBound="0"/>
+				<property name="jointBiddingAndCentrPurchInfo" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property name="isJointBidding" type="xs:boolean"/>
+						<property name="isCentralizedPurchase" type="xs:boolean"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/TPtypes/1" name="organizationInfo" type="d7p1:tenderPlan2020OrganizationType"/>
+					</typeDef>
+				</property>
+				<property name="centralizedPurchaseInfo" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/TPtypes/1" name="centralizedPurchaseOrgInfo" type="d7p1:tenderPlan2020OrganizationType"/>
+					</typeDef>
+				</property>
+				<property name="jointBiddingInfo" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/TPtypes/1" name="jointBiddingOrgInfo" type="d7p1:tenderPlan2020OrganizationType"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="financeInfo">
+			<typeDef xmlns:d4p1="http://zakupki.gov.ru/oos/TPtypes/1" xsi:type="ObjectType" base="d4p1:tenderPlan2020FinanceResourcesType">
+				<property name="KBKsInfo" lowerBound="0">
+					<typeDef xsi:type="ObjectType" base="d4p1:tenderPlan2020KBKsInfoType">
+						<property name="extraBudgetFundsTotalsInfo" type="d4p1:tenderPlan2020FinanceResourcesType" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="KVRsInfo" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="KVRInfo" type="d5p1:tenderPlan2020KVRInfoType" upperBound="-1"/>
+			</typeDef>
+		</property>
+		<property name="targetArticlesInfo" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="targetArticleInfo" type="d5p1:tenderPlan2020TargetArticleInfoType" upperBound="-1"/>
+			</typeDef>
+		</property>
+		<property name="purchasesSubsecYearsInfo" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="actInfo" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="docInfo">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/base/1" name="docType" type="d9p1:text100Type"/>
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/base/1" name="docNumber" type="d9p1:text50Type" lowerBound="0"/>
+								<property name="docDate" type="xs:date" lowerBound="0"/>
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/base/1" name="docName" type="d9p1:text1000Type" lowerBound="0"/>
+							</typeDef>
+						</property>
+						<property name="actFinanceInfo" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/base/1" name="KVR" type="d9p1:KVRRef"/>
+								<property name="financeInfo">
+									<typeDef xsi:type="ObjectType">
+										<property xmlns:d11p1="http://zakupki.gov.ru/oos/base/1" name="total" type="d11p1:moneyMaxLengthToPoint18Type" lowerBound="0"/>
+										<property xmlns:d11p1="http://zakupki.gov.ru/oos/base/1" name="currentYear" type="d11p1:moneyMaxLengthToPoint18Type" lowerBound="0"/>
+										<property xmlns:d11p1="http://zakupki.gov.ru/oos/base/1" name="firstYear" type="d11p1:moneyMaxLengthToPoint18Type" lowerBound="0"/>
+										<property xmlns:d11p1="http://zakupki.gov.ru/oos/base/1" name="secondYear" type="d11p1:moneyMaxLengthToPoint18Type" lowerBound="0"/>
+										<property xmlns:d11p1="http://zakupki.gov.ru/oos/base/1" name="subsecYears" type="d11p1:moneyMaxLengthToPoint18Type"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/common/1" name="attachments" type="d7p1:attachmentListType" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="isEnergyServiceContract" type="xs:boolean"/>
+		<property name="isProvisionLendingServices" type="xs:boolean" lowerBound="0" fixed="true" default="true"/>
+		<property name="isConstructionWorks" type="xs:boolean" lowerBound="0" fixed="true" default="true"/>
+	</objectType>
+	<objectType name="tenderPlan2020SpecialPurchasePositionType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="type" type="d3p1:tenderPlan2020SpecialPurchaseRef"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="positionNumber" type="d3p1:tenderPlan2020PositonNumberType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="extNumber" type="d3p1:tenderPlan2020PositonExtNumberType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="IKZ" type="d3p1:ikzCodeType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="publishYear" type="d3p1:yearType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="IKU" type="d3p1:ikuType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="KVRInfo" type="d3p1:tenderPlan2020KVRRefType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="purchaseNumber" type="d3p1:tenderPlan2020PurchaseNumberType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="financeInfo" type="d3p1:tenderPlan2020FinanceResourcesType"/>
+		<property name="KBKsInfo" lowerBound="0">
+			<typeDef xmlns:d4p1="http://zakupki.gov.ru/oos/TPtypes/1" xsi:type="ObjectType" base="d4p1:tenderPlan2020KBKsInfoType">
+				<property name="extraBudgetFundsTotalsInfo" type="d4p1:tenderPlan2020FinanceResourcesType" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property name="KVRsInfo" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="KVRInfo" type="d5p1:tenderPlan2020KVRInfoType" upperBound="-1"/>
+			</typeDef>
+		</property>
+		<property name="targetArticlesInfo" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="targetArticleInfo" type="d5p1:tenderPlan2020TargetArticleInfoType" upperBound="-1"/>
+			</typeDef>
+		</property>
+		<property name="specialPurchasePositionModification" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="changeReason" type="d5p1:tenderPlan2020PositionChangeReasonRef"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="decision" type="d5p1:tenderPlan2020PositionDecisionType"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="description" type="d5p1:text2000Type" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="modificationNumber" type="d5p1:versionNumberType" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="specialPurchasePositionModificationStatus" type="d3p1:tenderPlan2020PositionModificationStatusEnum" lowerBound="0"/>
+		<property name="centralizedPurchaseInfo" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="centralizedPurchaseOrgInfo" type="d5p1:tenderPlan2020OrganizationType"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="tenderPlan2020SpecialPurchaseRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:text10Type"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="tenderPlan2020SpecialPurchaseType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="type" type="d3p1:tenderPlan2020SpecialPurchaseRef"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="yearFinanceInfo" type="d3p1:tenderPlan2020FinanceResourcesType" lowerBound="0"/>
+		<property name="purchases">
+			<typeDef xsi:type="ObjectType">
+				<property name="purchase" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/TPtypes/1" name="positionNumber" type="d7p1:tenderPlan2020PositonNumberType" lowerBound="0"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/TPtypes/1" name="extNumber" type="d7p1:tenderPlan2020PositonExtNumberType" lowerBound="0"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="IKZ" type="d7p1:ikzCodeType" lowerBound="0"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="publishYear" type="d7p1:yearType"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="IKU" type="d7p1:ikuType" lowerBound="0"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/TPtypes/1" name="KVRInfo" type="d7p1:tenderPlan2020KVRRefType"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/TPtypes/1" name="purchaseNumber" type="d7p1:tenderPlan2020PurchaseNumberType"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/TPtypes/1" name="financeInfo" type="d7p1:tenderPlan2020FinanceResourcesType"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/TPtypes/1" name="positionModificationStatus" type="d7p1:tenderPlan2020PositionModificationStatusEnum" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="KBKsInfo" lowerBound="0">
+			<typeDef xmlns:d4p1="http://zakupki.gov.ru/oos/TPtypes/1" xsi:type="ObjectType" base="d4p1:tenderPlan2020KBKsInfoType">
+				<property name="extraBudgetFundsTotalsInfo" type="d4p1:tenderPlan2020FinanceResourcesType" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property name="specialPurchaseModification" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="changeReason" type="d5p1:tenderPlan2020PositionChangeReasonRef"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="decision" type="d5p1:tenderPlan2020PositionDecisionType"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="description" type="d5p1:text2000Type" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="modificationNumber" type="d5p1:versionNumberType" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="specialPurchaseModificationStatus" type="d3p1:tenderPlan2020PositionModificationStatusEnum" lowerBound="0"/>
+		<property name="centralizedPurchaseInfo" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="centralizedPurchaseOrgInfo" type="d5p1:tenderPlan2020OrganizationType"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="tenderPlan2020TargetArticleInfoType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="targetArticle" type="d3p1:targetArticleType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="targetArticleYearsInfo" type="d3p1:tenderPlan2020FinanceResourcesType"/>
+	</objectType>
+	<objectType name="tenderPlan2020Type">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="schemeVersion" type="d3p1:schemeVersionType" lowerBound="1" form="Attribute"/>
+		<property name="id" type="xs:long" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="externalId" type="d3p1:externalIdType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="planNumber" type="d3p1:tenderPlan2020NumberType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="versionNumber" type="d3p1:versionNumberType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/TPtypes/1" name="commonInfo" type="d3p1:tenderPlan2020CommonInfoType"/>
+		<property name="positions" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="position" type="d5p1:tenderPlan2020PositionType" upperBound="-1"/>
+			</typeDef>
+		</property>
+		<property name="specialPurchases" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="specialPurchase" type="d5p1:tenderPlan2020SpecialPurchaseType" upperBound="-1"/>
+			</typeDef>
+		</property>
+		<property name="specialPurchasePositions" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="specialPurchasePosition" type="d5p1:tenderPlan2020SpecialPurchasePositionType" upperBound="-1"/>
+			</typeDef>
+		</property>
+		<property name="outcomeIndicators" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/TPtypes/1" name="totalsInfo" type="d5p1:tenderPlan2020FinanceResourcesType" lowerBound="0"/>
+				<property name="KBKsTotalsInfo" lowerBound="0">
+					<typeDef xmlns:d6p1="http://zakupki.gov.ru/oos/TPtypes/1" xsi:type="ObjectType" base="d6p1:tenderPlan2020KBKsTotalsInfoType">
+						<property name="extraBudgetFundsTotalsInfo" type="d6p1:tenderPlan2020FinanceResourcesType" lowerBound="0"/>
+					</typeDef>
+				</property>
+				<property name="targetArticlesTotalsInfo" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property name="targetArticleTotalsInfo" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/base/1" name="targetArticle" type="d9p1:targetArticleType"/>
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/TPtypes/1" name="targetArticleTotalsYearsInfo" type="d9p1:tenderPlan2020FinanceResourcesType"/>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+				<property name="KVRsTotalsInfo" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property name="KVRTotalsInfo" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/base/1" name="KVR" type="d9p1:KVRRef"/>
+								<property xmlns:d9p1="http://zakupki.gov.ru/oos/TPtypes/1" name="KVRTotalsYearsInfo" type="d9p1:tenderPlan2020FinanceResourcesType"/>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+				<property name="agreementsTotalsInfo" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/TPtypes/1" name="agreementTotalsInfo" type="d7p1:tenderPlan2020AgreementTotalsInfoType" upperBound="-1"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/common/1" name="attachments" type="d3p1:attachmentListType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/common/1" name="printForm" type="d3p1:printFormType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/common/1" name="extPrintForm" type="d3p1:extPrintFormType" lowerBound="0"/>
+	</objectType>
+</package>

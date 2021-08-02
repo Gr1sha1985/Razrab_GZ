@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d2ac6187-672f-49b6-98da-91cb851ec88e">
+  <name>НеЗаключеноСоглашениеСПФР</name>
+  <synonym>
+    <key>ru</key>
+    <value>Не заключено соглашение СПФР</value>
+  </synonym>
+</mdclass:CommonPicture>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2fd3012d-a761-4c4e-a749-c1b7c5b940d9">
+  <name>ЛьготныеКредитыВызовСервера</name>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

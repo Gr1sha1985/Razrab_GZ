@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3458cec-c551-4e02-a865-82b4e7bdb79e">
+  <name>ИнтервальныеРегистрыБЗК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интервальные регистры БЗК</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

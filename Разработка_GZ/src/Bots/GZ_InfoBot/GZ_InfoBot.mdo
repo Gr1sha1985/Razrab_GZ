@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Bot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3327e00e-a1dc-4454-a4c3-0d78a811ee3e">
+  <name>GZ_InfoBot</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уведомления по госзакупкам</value>
+  </synonym>
+  <predefined>true</predefined>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.BotFather</picture>
+  </picture>
+</mdclass:Bot>

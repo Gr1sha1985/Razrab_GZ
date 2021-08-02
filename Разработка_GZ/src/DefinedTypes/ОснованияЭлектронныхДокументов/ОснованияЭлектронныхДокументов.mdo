@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a225a313-bf7a-44df-b66e-8bad32b0ffa6">
+  <producedTypes>
+    <containerType typeId="3baf3859-0676-4e85-93d4-4743c6c2a27b" valueTypeId="03e1b93f-9e78-404f-a099-646baf06db61"/>
+  </producedTypes>
+  <name>ОснованияЭлектронныхДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основания электронных документов</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

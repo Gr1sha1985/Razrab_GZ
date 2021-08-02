@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8977d20-dd17-46f9-9a42-10eea9a2be74">
+  <producedTypes>
+    <managerType typeId="1415cd5e-1786-4462-b812-f1aeeafdb7c7" valueTypeId="21a66310-a395-41d8-a732-fc524e58a2df"/>
+    <valueManagerType typeId="fdb06fb6-a054-40ab-8253-c1cc8bb8f0d2" valueTypeId="1406fe7d-f5b0-4b87-8732-5e8b8b76143c"/>
+    <valueKeyType typeId="d3f80b9c-933c-4236-9da5-2bb9d2517502" valueTypeId="75487815-2ea1-4643-bbdc-cab4bb656467"/>
+  </producedTypes>
+  <name>ИспользоватьРаспознаваниеДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать распознавание документов</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

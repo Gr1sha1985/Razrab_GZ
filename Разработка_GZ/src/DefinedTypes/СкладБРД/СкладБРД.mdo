@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8174310d-6efc-46e0-b841-781574cde58c">
+  <producedTypes>
+    <containerType typeId="2f3df069-5f0c-44ef-b279-84b6b7b6e3ea" valueTypeId="e50741b3-d059-42cc-b263-38ceb9a85725"/>
+  </producedTypes>
+  <name>СкладБРД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Склад БРД</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

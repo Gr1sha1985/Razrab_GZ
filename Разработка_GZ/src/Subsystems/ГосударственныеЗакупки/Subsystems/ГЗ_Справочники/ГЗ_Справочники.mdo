@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="88854fc5-bf8e-41cc-b110-44f9041a8e37">
+  <name>ГЗ_Справочники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справочники</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ГЗ_placingWay_ПодспособОпределенияПоставщика</content>
+  <content>Catalog.ГЗ_ETP_ЭлектроннаяТорговаяПлощадка</content>
+  <content>Catalog.ГЗ_КлассификаторОКДП</content>
+  <content>Catalog.ГЗ_КлассификацияПоКТРУ</content>
+  <content>Catalog.Контрагенты</content>
+  <content>Catalog.КонтактныеЛица</content>
+  <content>Catalog.ГЗ_Регионы</content>
+  <content>Catalog.ГЗ_ОснованиеПризнаниеПроцедурыНесостоявшейся</content>
+  <content>Catalog.ГЗ_ПользователяСистемыВзаимодействия</content>
+  <parentSubsystem>Subsystem.ГосударственныеЗакупки</parentSubsystem>
+</mdclass:Subsystem>

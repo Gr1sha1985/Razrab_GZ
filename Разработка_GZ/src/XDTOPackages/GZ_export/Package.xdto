@@ -1,0 +1,704 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://zakupki.gov.ru/oos/export/1" elementFormQualified="true" attributeFormQualified="false">
+	<import namespace="http://zakupki.gov.ru/oos/types/1"/>
+	<import namespace="http://zakupki.gov.ru/oos/pprf615types/1"/>
+	<import namespace="http://zakupki.gov.ru/oos/EPtypes/1"/>
+	<import namespace="http://zakupki.gov.ru/oos/CPtypes/1"/>
+	<import namespace="http://zakupki.gov.ru/oos/TPtypes/1"/>
+	<import namespace="http://zakupki.gov.ru/oos/SMTypes/1"/>
+	<property name="export">
+		<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="bankGuarantee" type="d4p1:zfcs_bankGuaranteeType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="bankGuaranteeInvalid" type="d4p1:zfcs_bankGuaranteeInvalidType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="bankGuaranteeRefusal" type="d4p1:zfcs_bankGuaranteeRefusalType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="bankGuaranteeRefusalInvalid" type="d4p1:zfcs_bankGuaranteeRefusalInvalidType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="bankGuaranteeTermination" type="d4p1:zfcs_bankGuaranteeTerminationType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="bankGuaranteeTerminationInvalid" type="d4p1:zfcs_bankGuaranteeTerminationInvalidType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="bankGuaranteeReturn" type="d4p1:zfcs_bankGuaranteeReturnType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="bankGuaranteeReturnInvalid" type="d4p1:zfcs_bankGuaranteeReturnInvalidType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="contract" type="d4p1:zfcs_contract2015Type" lowerBound="0" upperBound="-1"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="contractCancel" type="d4p1:zfcs_contractCancel2015Type" lowerBound="0" upperBound="-1"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="contractProcedure" type="d4p1:zfcs_contractProcedure2015Type" lowerBound="0" upperBound="-1"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="contractProcedureCancel" type="d4p1:zfcs_contractProcedureCancel2015Type" lowerBound="0" upperBound="-1"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="contractAvailableForElAct" type="d4p1:zfcs_contractAvailableForElAct" lowerBound="0" upperBound="-1"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsClarification" type="d4p1:zfcs_clarificationType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsContractSign" type="d4p1:zfcs_contractSignType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationEF" type="d4p1:zfcs_notificationEFType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcs_notificationEFDateChange" type="d4p1:zfcs_notificationEFDateChangeType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationEP" type="d4p1:zfcs_notificationEPType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationISM" type="d4p1:zfcs_notificationISMType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationISO" type="d4p1:zfcs_notificationISOType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationOK" type="d4p1:zfcs_notificationOKType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationOKD" type="d4p1:zfcs_notificationOKDType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationOKOU" type="d4p1:zfcs_notificationOKOUType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationPO" type="d4p1:zfcs_notificationPOType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationZakA" type="d4p1:zfcs_notificationZakAType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationZakKD" type="d4p1:zfcs_notificationZakKDType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationZakKOU" type="d4p1:zfcs_notificationZakKOUType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationZakK" type="d4p1:zfcs_notificationZakKType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationZK" type="d4p1:zfcs_notificationZKType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationZP" type="d4p1:zfcs_notificationZPType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotification111" type="d4p1:zfcs_notificationI111Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationLotChange" type="d4p1:zfcs_notificationLotChangeType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationCancel" type="d4p1:zfcs_notificationCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationCancelFailure" type="d4p1:zfcs_notificationCancelFailureType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationLotCancel" type="d4p1:zfcs_notificationLotCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsNotificationOrgChange" type="d4p1:zfcs_notificationOrgChangeType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsPurchaseDocument" type="d4p1:zfcs_purchaseDocumentType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsPlacementResult" type="d4p1:zfcs_placementResultType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsPurchaseDocumentCancel" type="d4p1:zfcs_purchaseDocumentCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsPurchaseProlongationOK" type="d4p1:zfcs_purchaseProlongationOKType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsPurchaseProlongationZK" type="d4p1:zfcs_purchaseProlongationZKType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolOK1" type="d4p1:zfcs_protocolOK1Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolOK2" type="d4p1:zfcs_protocolOK2Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolOKSingleApp" type="d4p1:zfcs_protocolOKSingleAppType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolOKD1" type="d4p1:zfcs_protocolOKD1Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolOKD2" type="d4p1:zfcs_protocolOKD2Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolOKD3" type="d4p1:zfcs_protocolOKD3Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolOKD4" type="d4p1:zfcs_protocolOKD4Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolOKD5" type="d4p1:zfcs_protocolOKD5Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolOKDSingleApp" type="d4p1:zfcs_protocolOKDSingleAppType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolOKOU1" type="d4p1:zfcs_protocolOKOU1Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolOKOU2" type="d4p1:zfcs_protocolOKOU2Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolOKOU3" type="d4p1:zfcs_protocolOKOU3Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolOKOUSingleApp" type="d4p1:zfcs_protocolOKOUSingleAppType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolPO" type="d4p1:zfcs_protocolPOType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolZKAfterProlong" type="d4p1:zfcs_protocolZKAfterProlongType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolZK" type="d4p1:zfcs_protocolZKType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolZKBI" type="d4p1:zfcs_protocolZKBIType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolZPExtract" type="d4p1:zfcs_protocolZPExtractType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolZPFinal" type="d4p1:zfcs_protocolZPFinalType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolZP" type="d4p1:zfcs_protocolZPType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolEvasion" type="d4p1:zfcs_protocolEvasionType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolDeviation" type="d4p1:zfcs_protocolDeviationType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolEF1" type="d4p1:zfcs_protocolEF1Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolEF2" type="d4p1:zfcs_protocolEF2Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolEF3" type="d4p1:zfcs_protocolEF3Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolEFInvalidation" type="d4p1:zfcs_protocolEFInvalidationType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolEFSingleApp" type="d4p1:zfcs_protocolEFSingleAppType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolEFSinglePart" type="d4p1:zfcs_protocolEFSinglePartType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsProtocolCancel" type="d4p1:zfcs_protocolCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsAddInfo" type="d4p1:zfcs_addInfoType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsAddInfoInvalid" type="d4p1:zfcs_addInfoInvalidType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsCustomerReportContractExecution" type="d4p1:zfcs_customerReportContractExecutionType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsCustomerReportContractExecutionInvalid" type="d4p1:zfcs_customerReportContractExecutionInvalidType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsCustomerReportSmallScaleBusiness" type="d4p1:zfcs_customerReportSmallScaleBusinessType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsCustomerReportSmallScaleBusinessInvalid" type="d4p1:zfcs_customerReportSmallScaleBusinessInvalidType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsCustomerReportSingleContractor" type="d4p1:zfcs_customerReportSingleContractorType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsCustomerReportSingleContractorInvalid" type="d4p1:zfcs_customerReportSingleContractorInvalidType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsCustomerReportBigProjectMonitoring" type="d4p1:zfcs_customerReportBigProjectMonitoringType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsCustomerReportBigProjectMonitoringInvalid" type="d4p1:zfcs_customerReportBigProjectMonitoringInvalidType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsStandardContract" type="d4p1:zfcs_standardContractType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsStandardContractInvalid" type="d4p1:zfcs_standardContractInvalidType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsRegulationRules" type="d4p1:zfcs_regulationRulesType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsRegulationRulesInvalid" type="d4p1:zfcs_regulationRulesInvalidType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsRequestForQuotation" type="d4p1:zfcs_requestForQuotationType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsRequestForQuotationCancel" type="d4p1:zfcs_requestForQuotationCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="fcsAuditResult" type="d4p1:zfcs_auditResultType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="publicDiscussionLargePurchasePhase1" type="d4p1:zfcs_publicDiscussionLargePurchasePhase1Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="publicDiscussionLargePurchasePhase2" type="d4p1:zfcs_publicDiscussionLargePurchasePhase2Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="publicDiscussionPhase1Suspension" type="d4p1:zfcs_publicDiscussionPhase1SuspensionType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="publicDiscussionPhase2Suspension" type="d4p1:zfcs_publicDiscussionPhase2SuspensionType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="publicDiscussionLargePurchase2016" type="d4p1:zfcs_publicDiscussionLargePurchase2016Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="publicDiscussionSuspension2016" type="d4p1:zfcs_publicDiscussionSuspension2016Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="publicDiscussionComment" type="d4p1:zfcs_publicDiscussionCommentType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="publicDiscussionForm" type="d4p1:zfcs_publicDiscussionFormType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="publicDiscussionAnswer" type="d4p1:zfcs_publicDiscussionAnswerType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="sketchPlan" type="d4p1:zfcs_sketchPlanType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="sketchPlanExecution" type="d4p1:zfcs_sketchPlanExecutionType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="purchasePlan" type="d4p1:zfcs_purchasePlanType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="purchasePlanExecution" type="d4p1:zfcs_purchasePlanExecutionType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="tenderPlan" type="d4p1:zfcs_tenderPlanType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="tenderPlan2017" type="d4p1:zfcs_tenderPlan2017Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="tenderPlanUnstructured" type="d4p1:zfcs_tenderPlanUnstructuredType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="tenderPlanCancel" type="d4p1:zfcs_tenderPlanCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/TPtypes/1" name="tenderPlan2020" type="d4p1:tenderPlan2020Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="complaint" type="d4p1:zfcs_complaintType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="complaintGroup" type="d4p1:zfcs_complaintGroupType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="complaintCancel" type="d4p1:zfcs_complaintCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="checkPlan" type="d4p1:zfcs_checkPlanType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="checkResult" type="d4p1:zfcs_checkResultType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="checkResultCancel" type="d4p1:zfcs_checkResultCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="unplannedCheck" type="d4p1:zfcs_unplannedCheckType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="unplannedCheckCancel" type="d4p1:zfcs_unplannedCheckCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="unplannedCheckTenderSusp" type="d4p1:zfcs_unplannedCheckTenderSuspType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="unfairSupplier" type="d4p1:zfcs_unfairSupplierType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="tenderSuspension" type="d4p1:zfcs_tenderSuspensionType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="eventPlan" type="d4p1:zfcs_eventPlanType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="eventPlanSuspension" type="d4p1:zfcs_eventPlanSuspensionType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="eventResult" type="d4p1:zfcs_eventResultType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="eventResultCancel" type="d4p1:zfcs_eventResultCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="unplannedEvent" type="d4p1:zfcs_unplannedEventType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="unplannedEventCancel" type="d4p1:zfcs_unplannedEventCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="unplannedEvenSuspension" type="d4p1:zfcs_unplannedEventSuspensionType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="control99PurchasePlanExtract" type="d4p1:zfcs_control99PurchasePlanExtractType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="control99TenderPlan2017Extract" type="d4p1:zfcs_control99TenderPlan2017ExtractType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/TPtypes/1" name="control99TenderPlan2020Extract" type="d4p1:control99TenderPlan2020ExtractType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="control99ContractExtract" type="d4p1:zfcs_control99ContractExtractType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="control99NotificationExtract" type="d4p1:zfcs_control99NotificationExtractType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="control99ContractProjectExtract" type="d4p1:control99ContractProjectExtractType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="control99ProtocolExtract" type="d4p1:zfcs_control99ProtocolExtractType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="control99BeginMessage" type="d4p1:zfcs_control99BeginMessageType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="control99RefusalMessage" type="d4p1:zfcs_control99RefusalMessageType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="control99NoticeCompliance" type="d4p1:zfcs_control99NoticeComplianceType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="control99ProtocolMismatch" type="d4p1:zfcs_control99ProtocolMismatchType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="control99ProtocolMismatchReductFunds" type="d4p1:zfcs_control99ProtocolMismatchReductFundsType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="notificationException" type="d4p1:zfcs_notificationExceptionType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="accreditedEPSupplier" type="d4p1:zfcs_accreditedEPSupplierType" lowerBound="0"/>
+			<property name="nsiBankGuaranteeRefusalReasonList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiBankGuaranteeRefusalReason" type="d6p1:zfcs_nsiBankGuaranteeRefusalReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiBankGuaranteeRefusal615ReasonList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiBankGuaranteeRefusal615Reason" type="d6p1:zfcs_nsiBankGuaranteeRefusal615ReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiBudgetList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiBudget" type="d6p1:zfcs_nsiBudgetType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiCalendarDayList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiCalendarDay" type="d6p1:zfcs_nsiCalendarDaysType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiCommissionList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiCommission" type="d6p1:zfcs_nsiCommissionType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiCommissionRoleList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiCommissionRole" type="d6p1:zfcs_nsiCommissionRoleType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiContractPriceChangeReasonList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiContractPriceChangeReason" type="d6p1:zfcs_nsiContractPriceChangeReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiContractRefusalReasonList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiContractRefusalReason" type="d6p1:zfcs_nsiContractRefusalReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiContractSingleCustomerReasonList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiContractSingleCustomerReason" type="d6p1:zfcs_nsiContractSingleCustomerReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiContractTerminationReason" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiContractTerminationReason" type="d6p1:zfcs_nsiContractTerminationReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiContractModificationReason" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiContractModificationReason" type="d6p1:zfcs_nsiContractModificationReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiContractExecutionDoc" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiContractExecutionDoc" type="d6p1:zfcs_nsiContractExecutionDocType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiContractReparationDoc" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiContractReparationDoc" type="d6p1:zfcs_nsiContractReparationDocType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiContractPenaltyReason" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiContractPenaltyReason" type="d6p1:zfcs_nsiContractPenaltyReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiContractOKOPFExtraBudget" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiContractOKOPFExtraBudget" type="d6p1:zfcs_nsiContractOKOPFExtraBudgetType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiContractCurrencyCBRF" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiContractCurrencyCBRF" type="d6p1:zfcs_nsiContractCurrencyCBRFType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiCurrencyList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiCurrency" type="d6p1:zfcs_nsiCurrencyType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiEvalCriterionList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiEvalCriterion" type="d6p1:zfcs_nsiEvalCriterionType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiKBKBudgetList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiKBKBudget" type="d6p1:zfcs_nsiKBKBudgetType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiKVRList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiKVR" type="d6p1:zfcs_nsiKVRType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiKOSGUList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiKOSGU" type="d6p1:zfcs_nsiKOSGUType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiOffBudgetList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiOffBudget" type="d6p1:zfcs_nsiOffBudgetType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiOKEIList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiOKEI" type="d6p1:zfcs_nsiOKEIType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiOKFSList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiOKFS" type="d6p1:zfcs_nsiOKFSType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiOKOPFList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiOKOPF" type="d6p1:zfcs_nsiOKOPFType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiOKPDList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiOKPD" type="d6p1:zfcs_nsiOKPDType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiOKSMList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiOKSM" type="d6p1:zfcs_nsiOKSMType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiOKVEDList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiOKVED" type="d6p1:zfcs_nsiOKVEDType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiOKTMOList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiOKTMO" type="d6p1:zfcs_nsiOKTMOType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiOKTMOPPOList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiOKTMOPPO" type="d6p1:zfcs_nsiOKTMOPPOType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiOrganizationList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiOrganization" type="d6p1:zfcs_nsiOrganizationType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiOrganizationRightsList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiOrganizationRights" type="d6p1:zfcs_nsiOrganizationRightsType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiOrganizationTypesList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiOrganizationType" type="d6p1:zfcs_nsiOrganizationTypesType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiPlacingWayList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiPlacingWay" type="d6p1:zfcs_nsiPlacingWayType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiPlanPositionChangeReasonList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiPlanPositionChangeReason" type="d6p1:zfcs_nsiPlanPositionChangeReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiPrefRateList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiPrefRate" type="d6p1:zfcs_nsiPrefRateType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiPurchaseDocumentTypesList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiPurchaseDocumentTypes" type="d6p1:zfcs_nsiPurchaseDocumentTypesType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiPurchasePreferenceList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiPurchasePreference" type="d6p1:zfcs_nsiPurchasePreferencesType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiPurchaseRejectReasonList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiPurchaseRejectReason" type="d6p1:zfcs_nsiPurchaseRejectReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiUserList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiUser" type="d6p1:zfcs_nsiUserType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiAbandonedReasonList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiAbandonedReason" type="d6p1:zfcs_nsiAbandonedReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiOKPD2List" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiOKPD2" type="d6p1:zfcs_nsiOKPD2Type" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiOKVED2List" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiOKVED2" type="d6p1:zfcs_nsiOKVED2Type" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiDeviationFactFoundationList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiDeviationFactFoundation" type="d6p1:zfcs_nsiDeviationFactFoundationType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiPublicDiscussionQuestionnaries" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiPublicDiscussionQuestionnarie" type="d6p1:zfcs_nsiPublicDiscussionQuestionnarieType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiPublicDiscussionDecisions" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiPublicDiscussionDecision" type="d6p1:zfcs_nsiPublicDiscussionDecisionsType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiAuditActionSubjects" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiAuditActionSubject" type="d6p1:zfcs_nsiAuditActionSubjectsType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiBusinessControls" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiBusinessControls" type="d6p1:zfcs_nsiBusinessControlType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiPurchasePlanPositionChangeReasons" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiPurchasePlanPositionChangeReason" type="d6p1:zfcs_nsiPurchasePlanPositionChangeReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiTenderPlan2017PositionChangeReasons" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiTenderPlan2017PositionChangeReason" type="d6p1:zfcs_nsiTenderPlan2017PositionChangeReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiTenderPlan2020PositionChangeReasons" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiTenderPlan2020PositionChangeReason" type="d6p1:zfcs_nsiTenderPlan2020PositionChangeReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiTenderPlanPurchaseGroups" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiTenderPlanPurchaseGroup" type="d6p1:zfcs_nsiTenderPlanPurchaseGroupType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiSpecialPurchases" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiSpecialPurchase" type="d6p1:zfcs_nsiSpecialPurchaseType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiSpecialPurchases2020" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiSpecialPurchase2020" type="d6p1:zfcs_nsiSpecialPurchase2020Type" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiSingleCustomerReasonsOZ" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiSingleCustomerReasonOZ" type="d6p1:zfcs_nsiSingleCustomerReasonOZType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiModifyReasonsOZ" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiModifyReasonOZ" type="d6p1:zfcs_nsiModifyReasonOZType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiControl99Subjects" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiControl99Subject" type="d6p1:zfcs_nsiControl99SubjectType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiPPRF1428Subjects" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiPPRF1428Subject" type="d6p1:zfcs_nsiControl99SubjectType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiTenderPlan2017ContractLifeCycleCases" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiTenderPlan2017ContractLifeCycleCase" type="d6p1:zfcs_nsiTenderPlan2017ContractLifeCycleCaseType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiFarmDrugsDictionary" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiFarmDrugDictionary" type="d6p1:zfcs_nsiFarmDrugDictionary" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiFarmDrugInterchangeGroup" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiFarmDrugInterchangeGroup" type="d6p1:zfcs_nsiFarmDrugInterchangeGroup" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiDrugsOKEI" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiDrugOKEI" type="d6p1:zfcs_nsiDrugOKEIType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="nsiKTRUs" type="d4p1:zfcs_nsiKTRUType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="nsiRightSideKTRUs" type="d4p1:zfcs_nsiRightSideKTRUType" lowerBound="0"/>
+			<property name="nsiKTRUNotUsingReasons" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiKTRUNotUsingReason" type="d6p1:zfcs_nsiKTRUNotUsingReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiETPs" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiETP" type="d6p1:zfcs_nsiETPType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiClosedMethodsOfReason" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiClosedMethodOfReason" type="d6p1:zfcs_nsiClosedMethodsOfReason" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiTRUAdmissionNPAs" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiTRUAdmissionNPA" type="d6p1:zfcs_nsiTRUAdmissionNPA" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiEAESCountry" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiEAESCountry" type="d6p1:zfcs_nsiEAESCountry" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiEADocTypes" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiEADocType" type="d6p1:zfcs_nsiEADocType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiNationalProjects" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiNationalProject" type="d6p1:zfcs_nsiNationalProject" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiEPDocTypes" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiEPDocType" type="d6p1:zfcs_nsiEPDocType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiEvasDevFactFoundations" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiEvasDevFactFoundation" type="d6p1:zfcs_nsiEvasDevFactFoundationType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="pprf615NsiFundingSources" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615NsiFundingSource" type="d6p1:nsiFundingSourcesType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="pprf615NsiExclusionReasons" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615NsiExclusionReason" type="d6p1:nsiExclusionReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="pprf615NsiPurchaseSubjects" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615NsiPurchaseSubject" type="d6p1:nsiPurchaseSubjectType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="pprf615NsiTerminationGrounds" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615NsiTerminationGround" type="d6p1:nsiTerminationGroundType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="pprf615NsiTerminationReasons" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615NsiTerminationReason" type="d6p1:nsiTerminationReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiChangePriceFoundations" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiChangePriceFoundation" type="d6p1:zfcs_nsiChangePriceFoundationType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiDrugChangeReasons" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiDrugChangeReason" type="d6p1:zfcs_nsiDrugChangeReason" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="eruzNsiContractorUserRightList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="eruzNsiContractorUserRight" type="d6p1:zfcs_eruzNsiContractorUserRightType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="eruzNsiContractorExcludeReasonList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="eruzNsiContractorExcludeReason" type="d6p1:zfcs_eruzNsiContractorExcludeReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiWorldTimeZoneList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiWorldTimeZone" type="d6p1:zfcs_nsiWorldTimeZoneType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="edoNsiOperatorInfoList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="edoNsiOperatorInfo" type="d6p1:zfcs_edoNsiOperatorInfoType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiCommonUnitsMeasurementList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiCommonUnitsMeasurement" type="d6p1:zfcs_commonUnitsMeasurementsType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiGroupBuildList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiGroupBuild" type="d6p1:zfcs_nsiGroupBuildType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiClosedEPCasesList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiClosedEPCases" type="d6p1:zfcs_nsiClosedEPCasesType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiDocRejectReasonList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiDocRejectReason" type="d6p1:zfcs_nsiDocRejectReasonType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property name="nsiEATaxesList" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property xmlns:d6p1="http://zakupki.gov.ru/oos/types/1" name="nsiEATaxes" type="d6p1:zfcs_nsiEATaxesType" lowerBound="0" upperBound="-1"/>
+				</typeDef>
+			</property>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615NotificationEF" type="d4p1:notificationEFType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615NotificationCancel" type="d4p1:notificationCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615ProtocolEF1" type="d4p1:protocolEF1Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615ProtocolEF2" type="d4p1:protocolEF2Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615ActEvasion" type="d4p1:actEvasionType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615ActDeviation" type="d4p1:actDeviationType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615ActCancel" type="d4p1:actCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615NotificationPO" type="d4p1:notificationPOType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615ProtocolPO" type="d4p1:protocolPOType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615ProtocolCancel" type="d4p1:protocolCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615Clarification" type="d4p1:clarificationType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615QualifiedContractor" type="d4p1:qualifiedContractorType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615QualifiedContractorExclude" type="d4p1:qualifiedContractorExcludeType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615QualifiedContractorExcludeCancel" type="d4p1:qualifiedContractorExcludeCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615Contract" type="d4p1:contractType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615ContractProcedure" type="d4p1:contractProcedureType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615ContractProcedureCancel" type="d4p1:contractProcedureCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/pprf615types/1" name="pprf615UnfairContractor" type="d4p1:unfairContractorType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNoticeApplicationCancel" type="d4p1:noticeApplicationCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNotificationCancel" type="d4p1:notificationCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNotificationCancelFailure" type="d4p1:notificationCancelFailureType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolCancel" type="d4p1:protocolCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epClarificationDoc" type="d4p1:clarificationDocType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epClarificationResult" type="d4p1:clarificationResultType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEvasion" type="d4p1:protocolEvasionType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolDeviation" type="d4p1:protocolDeviationType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEvDevCancel" type="d4p1:protocolEvDevCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNotificationEOK" type="d4p1:notificationEOKType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOK1" type="d4p1:protocolEOK1Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOK2" type="d4p1:protocolEOK2Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOK3" type="d4p1:protocolEOK3Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOKSingleApp" type="d4p1:protocolEOKSingleAppType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOKSinglePart" type="d4p1:protocolEOKSinglePartType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProlongationEOK" type="d4p1:prolongationEOKType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProlongationCancelEOK" type="d4p1:prolongationCancelEOKType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNotificationEOKOU" type="d4p1:notificationEOKOUType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOKOU1" type="d4p1:protocolEOKOU1Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOKOU2" type="d4p1:protocolEOKOU2Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOKOU3" type="d4p1:protocolEOKOU3Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOKOUSingleApp" type="d4p1:protocolEOKOUSingleAppType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOKOUSinglePart" type="d4p1:protocolEOKOUSinglePartType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProlongationEOKOU" type="d4p1:prolongationEOKOUType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProlongationCancelEOKOU" type="d4p1:prolongationCancelEOKOUType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNotificationEOKD" type="d4p1:notificationEOKDType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOKD1" type="d4p1:protocolEOKD1Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOKD2" type="d4p1:protocolEOKD2Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOKD3" type="d4p1:protocolEOKD3Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOKD4" type="d4p1:protocolEOKD4Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOKDSingleApp" type="d4p1:protocolEOKDSingleAppType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOKDSinglePart" type="d4p1:protocolEOKDSinglePartType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProlongationEOKD" type="d4p1:prolongationEOKDType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProlongationCancelEOKD" type="d4p1:prolongationCancelEOKDType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNotificationEZK2020" type="d4p1:notificationEZK2020Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEZK2020Final" type="d4p1:protocolEZK2020FinalType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEZK2020FinalPart" type="d4p1:protocolEZK2020FinalPartType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNotificationEZK" type="d4p1:notificationEZKType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEZK1" type="d4p1:protocolEZK1Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEZK2" type="d4p1:protocolEZK2Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProlongationEZK" type="d4p1:prolongationEZKType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProlongationCancelEZK" type="d4p1:prolongationCancelEZKType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNotificationEZP" type="d4p1:notificationEZPType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEZP1Extract" type="d4p1:protocolEZP1ExtractType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEZP1" type="d4p1:protocolEZP1Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEZP2" type="d4p1:protocolEZP2Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNotificationEZakK" type="d4p1:notificationEZakKType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNotificationEZakKOU" type="d4p1:notificationEZakKOUType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNotificationEZakKD" type="d4p1:notificationEZakKDType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNotificationEZakA" type="d4p1:notificationEZakAType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNotificationEZT2020" type="d4p1:notificationEZT2020Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEZT2020Final" type="d4p1:protocolEZT2020FinalType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEZT2020FinalPart" type="d4p1:protocolEZT2020FinalPartType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNoticeApplicationsAbsence" type="d4p1:noticeApplicationsAbsenceType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNotificationEF2020" type="d4p1:notificationEF2020Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEF2020SubmitOffers" type="d4p1:protocolEF2020SubmitOffersType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEF2020Final" type="d4p1:protocolEF2020FinalType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEF2020FinalPart" type="d4p1:protocolEF2020FinalPartType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epNotificationEOK2020" type="d4p1:notificationEOK2020Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOK2020FirstSections" type="d4p1:protocolEOK2020FirstSectionsType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOK2020SecondSections" type="d4p1:protocolEOK2020SecondSectionsType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOK2020SecondSectionsPart" type="d4p1:protocolEOK2020SecondSectionsPartType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOK2020Final" type="d4p1:protocolEOK2020FinalType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epProtocolEOK2020FinalPart" type="d4p1:protocolEOK2020FinalPartType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epClosedNoticeApplicationCancel" type="d4p1:noticeApplicationCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epClosedNotificationCancel" type="d4p1:notificationCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epClosedNotificationCancelFailure" type="d4p1:notificationCancelFailureType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epClosedProtocolCancel" type="d4p1:protocolCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epClosedProtocolEvasion" type="d4p1:protocolEvasionType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epClosedProtocolDeviation" type="d4p1:protocolDeviationType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epClosedProtocolEvDevCancel" type="d4p1:protocolEvDevCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="epClosedPlacementResult" type="d4p1:zfcs_placementResultType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="epClosedNotificationOrgChange" type="d4p1:zfcs_notificationOrgChangeType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epClosedInvitationEZakA2020" type="d4p1:invitationEZakA2020Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epClosedProtocolEZakA2020DocRequest" type="d4p1:protocolEZakA2020DocRequestType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epClosedProtocolEZakA2020Final" type="d4p1:protocolEZakA2020FinalType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epClosedInvitationEZakK2020" type="d4p1:invitationEZakK2020Type" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epClosedProtocolEZakK2020DocRequest" type="d4p1:protocolEZakK2020DocRequestType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/EPtypes/1" name="epClosedProtocolEZakK2020Final" type="d4p1:protocolEZakK2020FinalType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpContractProject" type="d4p1:contractProjectType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpContractProjectChange" type="d4p1:contractProjectChangeType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpContractSign" type="d4p1:contractSignType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpProcedureCancel" type="d4p1:procedureCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpProcedureCancelFailure" type="d4p1:procedureCancelFailureType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpContractProjectSign" type="d4p1:contractProjectSignType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpProtocolDisagreements" type="d4p1:protocolDisagreementsType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpNoticeDeviation" type="d4p1:noticeDeviationType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpNoticeEvasion" type="d4p1:noticeEvasionType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpClosedContractProject" type="d4p1:contractProjectType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpClosedContractProjectChange" type="d4p1:contractProjectChangeType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpClosedContractSign" type="d4p1:contractSignType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpClosedProcedureCancel" type="d4p1:procedureCancelType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpClosedProcedureCancelFailure" type="d4p1:procedureCancelFailureType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpClosedContractProjectSign" type="d4p1:contractProjectSignType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpCloseProtocolDisagreements" type="d4p1:protocolDisagreementsType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpClosedNoticeDeviation" type="d4p1:noticeDeviationType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/CPtypes/1" name="cpClosedNoticeEvasion" type="d4p1:noticeEvasionType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/SMTypes/1" name="sentPackageList" type="d4p1:packageListType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/SMTypes/1" name="receivedPackageList" type="d4p1:packageListType" lowerBound="0"/>
+			<property xmlns:d4p1="http://zakupki.gov.ru/oos/types/1" name="notificationRemoveDoc" type="d4p1:zfcs_notificationRemoveDocType" lowerBound="0"/>
+		</typeDef>
+	</property>
+</package>

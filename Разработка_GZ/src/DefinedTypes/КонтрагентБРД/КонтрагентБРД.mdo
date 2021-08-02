@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0d34afe0-a4ea-44c6-8fad-a1c2a834e6c3">
+  <producedTypes>
+    <containerType typeId="30d4f440-6da6-4625-b5a9-4bba76d77f6c" valueTypeId="6570799d-92c2-4fb9-8220-ba9cb598fd08"/>
+  </producedTypes>
+  <name>КонтрагентБРД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контрагент БРД</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Контрагенты</types>
+  </type>
+</mdclass:DefinedType>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="033e2938-7278-476e-95f8-dc33470fe7ed">
+  <name>GZ_export</name>
+  <synonym>
+    <key>ru</key>
+    <value>export</value>
+  </synonym>
+  <namespace>http://zakupki.gov.ru/oos/export/1</namespace>
+</mdclass:XDTOPackage>

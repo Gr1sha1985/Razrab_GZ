@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d705206c-8be1-4a82-9d9e-1a002b7e512f">
+  <name>ГЗ_Документы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ГЗ_ИзвещениеОПроведенииЗакупок</content>
+  <content>Document.ГЗ_ИзвещениеОПроведенииЭлектронногоАукциона</content>
+  <content>Document.ГЗ_ИзвещениеОПроведенииЗакупокОК_Д_ДвухЭтапныйКонкурс</content>
+  <content>Document.ГЗ_ИзвещениеОПроведенииЗакупок223ФЗ</content>
+  <content>Document.ГЗ_ПроектКонтрактаПо44ФЗ</content>
+  <content>Document.ГЗ_Протокол44ФЗ</content>
+  <parentSubsystem>Subsystem.ГосударственныеЗакупки</parentSubsystem>
+</mdclass:Subsystem>

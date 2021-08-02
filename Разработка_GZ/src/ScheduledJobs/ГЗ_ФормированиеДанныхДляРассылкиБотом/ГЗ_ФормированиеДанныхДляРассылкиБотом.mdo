@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac5e788e-a762-4553-922f-a8369acb2da3">
+  <name>ГЗ_ФормированиеДанныхДляРассылкиБотом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формирование данных для рассылки ботом</value>
+  </synonym>
+  <methodName>CommonModule.ГЗ_РаботаСБотомиРассылок.ГЗ_ФормированиеДанныхДляРассылкиБотом</methodName>
+  <use>true</use>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

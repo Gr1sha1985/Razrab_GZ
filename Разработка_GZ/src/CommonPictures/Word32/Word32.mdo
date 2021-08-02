@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="edb8d850-1d77-4b75-85bf-7c3d18552c15">
+  <name>Word32</name>
+  <synonym>
+    <key>ru</key>
+    <value>Word32</value>
+  </synonym>
+</mdclass:CommonPicture>

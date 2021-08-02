@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8fd8dc5e-293d-456b-afb0-8fe9a9655e52">
+  <name>ГЗ_ВыполнитьОбработкуПо44ФЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработать файлы по44 ФЗ</value>
+  </synonym>
+  <methodName>CommonModule.ГЗ_РегламентныеЗадания44ФЗ.ГЗ_ВыполнитьОбработкуПо44ФЗ</methodName>
+  <description>Обработать файлы по44 ФЗ</description>
+  <key>ГЗ_ВыполнитьОбработкуПо44ФЗ</key>
+  <use>true</use>
+  <restartCountOnFailure>10</restartCountOnFailure>
+  <restartIntervalOnFailure>15</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26e38653-d5f0-4cbe-9a24-38777b7d17e5">
+  <producedTypes>
+    <managerType typeId="8d052713-14f7-4236-831e-174ee88dae60" valueTypeId="a8c7122a-0b30-42f3-84bd-ebdb579c40e4"/>
+    <valueManagerType typeId="5788257a-ffbf-41ce-8f04-bb38b9190752" valueTypeId="92487e80-674f-4f14-829d-9327d3341862"/>
+    <valueKeyType typeId="da72daae-4776-457e-9a03-f53902755b4f" valueTypeId="cf7e0106-ce3a-4e06-80f3-03e42f1dcab0"/>
+  </producedTypes>
+  <name>РегистрироватьВЖурналеСобытийЗапросы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистрировать в журнале событий запросы</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

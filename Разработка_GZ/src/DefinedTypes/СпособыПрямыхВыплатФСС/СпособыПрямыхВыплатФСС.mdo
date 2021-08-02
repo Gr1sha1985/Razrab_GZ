@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="789f6393-65d1-4774-90cc-7eca5f91fd2e">
+  <producedTypes>
+    <containerType typeId="34e3d471-5373-455f-b769-9622f9ab72ba" valueTypeId="7395ca15-2cd2-4147-847c-56985f8634c3"/>
+  </producedTypes>
+  <name>СпособыПрямыхВыплатФСС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы прямых выплат ФСС</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.БанковскиеСчета</types>
+    <types>CatalogRef.ВидыКонтактнойИнформации</types>
+  </type>
+</mdclass:DefinedType>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dec987a7-4a0e-4f10-bc69-440637a64211">
+  <producedTypes>
+    <managerType typeId="e11d3760-6047-4c17-9d62-b7aa73357253" valueTypeId="1fc92366-60e5-42f6-ab6e-8ec6f648672c"/>
+    <valueManagerType typeId="c71008a4-3269-40ff-9449-2bda957ef787" valueTypeId="019b9c21-9c5d-4afe-bc1f-93bec9d0a143"/>
+    <valueKeyType typeId="b18ba700-7ec9-42b7-8259-ec8af64b7a67" valueTypeId="934b6ee2-4bcb-4bf8-8c83-c938705eada3"/>
+  </producedTypes>
+  <name>GZ_КоличествоДнейЗагрузкиФайловXML</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество дней загрузки файлов XML</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>2</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

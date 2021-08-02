@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b65d4845-515f-4393-999f-bce1ae79d532">
+  <name>ПомеченныеНаУдалениеКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помеченные на удаление клиент</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

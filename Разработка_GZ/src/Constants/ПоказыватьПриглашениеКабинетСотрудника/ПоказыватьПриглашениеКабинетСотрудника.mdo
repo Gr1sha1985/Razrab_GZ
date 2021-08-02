@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc16239b-b0ea-4d73-999d-9f0a92db9e6c">
+  <producedTypes>
+    <managerType typeId="d16c4414-b642-4889-9c35-56ba194bbbb5" valueTypeId="ada68a5a-8e43-435b-8e82-a320893b77d6"/>
+    <valueManagerType typeId="b117050f-1136-4e5a-a3c0-29a2e90c4ffe" valueTypeId="a71c4bfe-4d6f-4eaa-b382-5daac4ab61f2"/>
+    <valueKeyType typeId="ca5f9960-822a-4709-885e-2e91778a88f1" valueTypeId="04a77c50-1b26-47b1-a338-50bd7fdf8cf4"/>
+  </producedTypes>
+  <name>ПоказыватьПриглашениеКабинетСотрудника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показывать приглашение кабинет сотрудника</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

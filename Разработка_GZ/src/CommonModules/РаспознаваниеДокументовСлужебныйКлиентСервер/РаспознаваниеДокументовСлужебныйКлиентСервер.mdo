@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="002576a9-a957-469f-9d00-0bea6f8f9a07">
+  <name>РаспознаваниеДокументовСлужебныйКлиентСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Распознавание документов служебный клиент сервер</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

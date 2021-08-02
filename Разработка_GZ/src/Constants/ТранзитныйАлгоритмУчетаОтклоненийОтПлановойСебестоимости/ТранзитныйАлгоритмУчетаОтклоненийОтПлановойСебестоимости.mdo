@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="80fb0f81-4c7f-42c5-b40e-4da3b328391b">
+  <producedTypes>
+    <managerType typeId="f68a67ca-d2bb-43eb-8a22-48ff08d4c907" valueTypeId="1a1decfd-3b67-485c-bca6-fb42812a02f3"/>
+    <valueManagerType typeId="e31eee8f-c478-467c-a3de-f1f7ba79a636" valueTypeId="7d86e458-acb8-4e5e-8fe7-cfb9ee88e816"/>
+    <valueKeyType typeId="b8007fbf-6c39-4bd4-b10b-806d83e55730" valueTypeId="9e31c80e-ed0e-4332-ad67-7dcb28803b71"/>
+  </producedTypes>
+  <name>ТранзитныйАлгоритмУчетаОтклоненийОтПлановойСебестоимости</name>
+  <synonym>
+    <key>ru</key>
+    <value>Транзитный алгоритм учета отклонений от плановой себестоимости</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

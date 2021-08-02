@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e4daace1-2465-4cc0-8372-15c30814bd4c">
+  <name>ГЗ_РассылкаСообщенийБотомВТелеграмм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рассылка сообщений ботом в телеграмм</value>
+  </synonym>
+  <methodName>CommonModule.ГЗ_РаботаСБотомиРассылок.ГЗ_РассылкаСообщенийБотомВТелеграмм</methodName>
+  <use>true</use>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

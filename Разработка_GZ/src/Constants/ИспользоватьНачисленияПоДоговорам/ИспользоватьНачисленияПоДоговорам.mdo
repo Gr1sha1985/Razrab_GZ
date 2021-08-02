@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="50959f96-b8b1-4b60-96c7-e358d65eec39">
+  <producedTypes>
+    <managerType typeId="c79bc44c-1b4f-4bfe-9b98-6a7e713c5d6a" valueTypeId="45551c65-dc64-4742-a7d6-78a550ada228"/>
+    <valueManagerType typeId="a2c62932-8b73-402e-96b7-217fe6b4d4a5" valueTypeId="511f19d1-5dae-429b-a4d9-986adb0af1b9"/>
+    <valueKeyType typeId="53b08caf-b2dc-4aa5-a6a0-e98fa8dd0b73" valueTypeId="18cc4a85-4e8d-448b-82f9-3840cc339e86"/>
+  </producedTypes>
+  <name>ИспользоватьНачисленияПоДоговорам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать начисления по договорам</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

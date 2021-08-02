@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ba6a087-e320-45d9-9b3e-6916d0f1f3ae">
+  <producedTypes>
+    <managerType typeId="16327d31-2fa7-4662-a7a9-f0ee7c3646a3" valueTypeId="a946ce69-4c93-4c71-9cb6-d51629040762"/>
+    <valueManagerType typeId="3a941536-ea7f-4785-82fe-d985c7b72005" valueTypeId="ccab0f68-7c9e-4fbb-94a6-c4cd7b807469"/>
+    <valueKeyType typeId="a6fb61f7-b988-4706-92b8-f636dd5137db" valueTypeId="a0b3bf3e-faf7-4e24-9c5b-e31ac2bfa890"/>
+  </producedTypes>
+  <name>ИспользуетсяСервисКабинетСотрудника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Используется сервис кабинет сотрудника</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

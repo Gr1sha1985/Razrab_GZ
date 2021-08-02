@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec7b133e-6ca7-430e-9ddf-403fd174213a">
+  <name>РегламентированнаяОтчетностьСравнение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регламентированная отчетность: сравнение РО</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

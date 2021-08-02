@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2237b70b-63ec-456a-b4fd-e3f3a083ca0a">
+  <producedTypes>
+    <containerType typeId="4fa271f1-d60d-4be7-9295-f7817a1b6bf3" valueTypeId="5ae1ee71-b34c-4c2b-a5af-14084b26b7f9"/>
+  </producedTypes>
+  <name>РазрядКатегорияДолжности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разряд категория должности</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>150</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

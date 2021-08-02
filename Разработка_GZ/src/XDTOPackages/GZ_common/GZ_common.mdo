@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e0aef1bd-332f-4493-86f2-128e8b631b76">
+  <name>GZ_common</name>
+  <synonym>
+    <key>ru</key>
+    <value>common</value>
+  </synonym>
+  <namespace>http://zakupki.gov.ru/oos/common/1</namespace>
+</mdclass:XDTOPackage>

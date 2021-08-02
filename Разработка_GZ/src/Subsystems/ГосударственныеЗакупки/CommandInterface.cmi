@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Catalog.КлассификаторОКПД2.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Catalog.Организации.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>ActionsPanelTools</group>
+      <commands>Constant.ГЗ_КаталогХраненияОбработанныхФайловXMLПо44ФЗ.StandardCommand.Open</commands>
+      <commands>Constant.ГЗ_КаталогХраненияФайловXMLПо223ФЗ.StandardCommand.Open</commands>
+      <commands>Constant.ГЗ_КаталогХраненияФайловZIPПо223ФЗ.StandardCommand.Open</commands>
+      <commands>Constant.ГЗ_КаталогХраненияФайловXMLПо44ФЗ.StandardCommand.Open</commands>
+      <commands>Constant.ГЗ_КаталогХраненияФайловZIPПо44ФЗ.StandardCommand.Open</commands>
+      <commands>Constant.ГЗ_КаталогХраненияОбработанныхФайловXMLПо44ФЗ_Договоры.StandardCommand.Open</commands>
+      <commands>Constant.ГЗ_КаталогХраненияОбработанныхФайловXMLПо44ФЗ_Протоколы.StandardCommand.Open</commands>
+      <commands>Constant.ГЗ_КаталогХраненияОбработанныхФайловXMLПо223ФЗ.StandardCommand.Open</commands>
+      <commands>Constant.ГЗ_КаталогХраненияФайловXMLПо44ФЗ_Договоры.StandardCommand.Open</commands>
+      <commands>Constant.ГЗ_КаталогХраненияФайловXMLПо44ФЗ_Протоколы.StandardCommand.Open</commands>
+      <commands>Constant.ГЗ_КаталогХраненияФайловZIPПо44ФЗ_Договоры.StandardCommand.Open</commands>
+      <commands>Constant.ГЗ_КаталогХраненияФайловZIPПо44ФЗ_Протоколы.StandardCommand.Open</commands>
+      <commands>Constant.GZ_КоличествоДнейЗагрузкиФайловXML.StandardCommand.Open</commands>
+      <commands>CommonForm.ФормаКонстантКаталогиХраненияФайлов.StandardCommand.Open</commands>
+    </orderFragments>
+  </commandsOrder>
+  <subsystemsOrder>
+    <subsystems>Subsystem.ГосударственныеЗакупки.Subsystem.ГЗ_Документы</subsystems>
+    <subsystems>Subsystem.ГосударственныеЗакупки.Subsystem.ГЗ_Отчеты</subsystems>
+    <subsystems>Subsystem.ГосударственныеЗакупки.Subsystem.ГЗ_Справочники</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

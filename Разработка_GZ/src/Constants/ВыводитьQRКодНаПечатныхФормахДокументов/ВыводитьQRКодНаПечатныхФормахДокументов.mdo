@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="748a065c-9034-4837-ba58-98b50bbe2a96">
+  <producedTypes>
+    <managerType typeId="361ab5d5-c768-49d2-9990-5b1ffc84ba42" valueTypeId="c7361a24-2782-4f8e-a4cc-e39a2489ef3e"/>
+    <valueManagerType typeId="0d1a43ab-cbe3-4ab0-926b-94b3041bbfa7" valueTypeId="a159bd6c-5a89-492c-9a1d-4da65199f706"/>
+    <valueKeyType typeId="efbc00cb-6d05-4c3f-964b-8a5c85f253ad" valueTypeId="12f759b0-a950-4f76-99ca-e4cdd49f92d6"/>
+  </producedTypes>
+  <name>ВыводитьQRКодНаПечатныхФормахДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выводить QR-код на печатных формах документов</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

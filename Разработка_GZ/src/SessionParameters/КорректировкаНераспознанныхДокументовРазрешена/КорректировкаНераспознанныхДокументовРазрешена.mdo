@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:SessionParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7dacc56-7ff1-4365-975e-225aabe4a406">
+  <name>КорректировкаНераспознанныхДокументовРазрешена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Корректировка нераспознанных документов разрешена</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+</mdclass:SessionParameter>

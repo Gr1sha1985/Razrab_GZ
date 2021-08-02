@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="919df34f-da27-42b0-ac3e-da0f1fe54e51">
+  <producedTypes>
+    <managerType typeId="2ecd8616-6d18-472c-adca-c9cdfc6e0d1c" valueTypeId="7fd00ecf-51c9-4341-b785-6ea2bbc15bfb"/>
+    <valueManagerType typeId="95c54377-15e0-4706-a0db-0849508a60e9" valueTypeId="6086a252-1dc7-4e4f-855b-dd38010d0242"/>
+    <valueKeyType typeId="452c64e1-5f05-46ea-aeab-c3f810bb7b5a" valueTypeId="501ffb0c-ec75-43e6-8101-1f94f00dba76"/>
+  </producedTypes>
+  <name>ИспользоватьКадровыйУчетОсновнойИнтерфейс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать кадровый учет (основной интерфейс)</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

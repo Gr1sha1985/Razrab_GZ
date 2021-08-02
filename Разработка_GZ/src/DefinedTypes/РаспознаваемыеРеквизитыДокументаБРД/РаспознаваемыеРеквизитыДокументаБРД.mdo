@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2505d745-c478-40ac-85ac-9a6bf1c56b94">
+  <producedTypes>
+    <containerType typeId="9c49ba6d-5a5e-4acf-b6a0-bd115dfc7023" valueTypeId="55c8b09d-dc6e-4830-a2a1-8182eb16a5fb"/>
+  </producedTypes>
+  <name>РаспознаваемыеРеквизитыДокументаБРД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Распознаваемые реквизиты документа БРД</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ДоговорыКонтрагентов</types>
+    <types>CatalogRef.СтраныМира</types>
+    <types>Boolean</types>
+    <types>CatalogRef.Валюты</types>
+    <types>CatalogRef.БанковскиеСчета</types>
+    <types>CatalogRef.КонтактныеЛица</types>
+    <types>CatalogRef.Банки</types>
+    <types>CatalogRef.ПодразделенияОрганизаций</types>
+    <types>String</types>
+    <types>CatalogRef.Контрагенты</types>
+    <types>Date</types>
+    <types>Number</types>
+    <types>CatalogRef.Пользователи</types>
+    <types>CatalogRef.Организации</types>
+    <types>CatalogRef.ФизическиеЛица</types>
+    <numberQualifiers>
+      <precision>17</precision>
+      <scale>5</scale>
+    </numberQualifiers>
+    <stringQualifiers>
+      <length>1024</length>
+    </stringQualifiers>
+    <dateQualifiers/>
+  </type>
+</mdclass:DefinedType>

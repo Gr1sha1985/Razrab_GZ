@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b30fef32-c902-4020-b3e3-7242c3acd8ab">
+  <producedTypes>
+    <managerType typeId="5eb021ac-98f0-48d5-b3ba-e89543e5e2d2" valueTypeId="96f04c3a-061f-4d3d-b0a1-c065a398109a"/>
+    <valueManagerType typeId="a59dee2a-eba9-410f-96e5-76b143263d47" valueTypeId="14b1047b-311a-4d2a-973b-312e292ed8ca"/>
+    <valueKeyType typeId="f5238c43-0749-4083-9b7f-bdb43192ff5f" valueTypeId="3520d021-03dd-426c-acf1-0d475577be6a"/>
+  </producedTypes>
+  <name>ПомеченныеНаУдалениеПростойИнтерфейс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помеченные на удаление простой интерфейс</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

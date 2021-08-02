@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a3992d2-add7-4a1b-bcbb-514780444507">
+  <producedTypes>
+    <containerType typeId="8f4fae30-1886-4d64-bc20-0fad6acc4dae" valueTypeId="da58bb2e-d503-49c8-b274-2ca9ead9b46d"/>
+  </producedTypes>
+  <name>ПредметЦиклаОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Предмет цикла обмена</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

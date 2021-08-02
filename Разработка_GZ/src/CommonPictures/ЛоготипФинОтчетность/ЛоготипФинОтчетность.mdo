@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bdfc913c-8a9c-4152-98f4-275f80b702c2">
+  <name>ЛоготипФинОтчетность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Логотип фин отчетность</value>
+  </synonym>
+</mdclass:CommonPicture>

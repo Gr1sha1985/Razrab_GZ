@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ddea8347-a016-427a-8e15-42921ed62f4b">
+  <name>ПлатформаСамозанятыеПодтверждениеЗапросаРазрешений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подтверждение запроса разрешений (платформа Самозанятые)</value>
+  </synonym>
+  <availabilityForChoice>true</availabilityForChoice>
+</mdclass:CommonPicture>

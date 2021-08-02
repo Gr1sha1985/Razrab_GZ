@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1b2e606-3ad3-4559-a159-4271f31a54ee">
+  <name>РегламентированныйОтчетПрибыль</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регламентированный отчет прибыль</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

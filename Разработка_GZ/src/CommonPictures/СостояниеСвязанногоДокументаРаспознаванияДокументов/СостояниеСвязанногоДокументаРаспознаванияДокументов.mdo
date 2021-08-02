@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c92de3f-1493-44e6-bb4a-573acba59bd7">
+  <name>СостояниеСвязанногоДокументаРаспознаванияДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние связанного документа распознавания документов</value>
+  </synonym>
+</mdclass:CommonPicture>

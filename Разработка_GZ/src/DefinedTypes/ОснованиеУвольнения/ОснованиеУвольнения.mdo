@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6fcba6d-7115-452a-9f32-921824a54809">
+  <producedTypes>
+    <containerType typeId="ed55ab83-c7fa-4ede-936d-bb70807eddea" valueTypeId="f75e6793-02c1-4992-9625-49e645e10208"/>
+  </producedTypes>
+  <name>ОснованиеУвольнения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основание увольнения</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

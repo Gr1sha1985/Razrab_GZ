@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39302bb4-6722-4eca-96cd-bd87d2943285">
+  <name>QRКодСканированиеБЭД</name>
+  <synonym>
+    <key>ru</key>
+    <value>QRКод сканирование БЭД</value>
+  </synonym>
+</mdclass:CommonPicture>

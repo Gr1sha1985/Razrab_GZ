@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c827aacb-ee38-40ec-8d8d-3e5cbe09d375">
+  <name>ПомеченныеНаУдалениеВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Помеченные на удаление вызов сервера</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

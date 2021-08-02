@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="acad3114-08dc-403a-92a7-0819549acaf2">
+  <name>ЭлектронныеТрудовыеКнижкиБазовый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Электронные трудовые книжки базовый</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

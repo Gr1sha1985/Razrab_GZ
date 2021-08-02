@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0c982d48-a571-4965-8623-9594272663f7">
+  <name>РаспознаваниеДокументовНечеткийПоискСлужебный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Распознавание документов нечеткий поиск служебный</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

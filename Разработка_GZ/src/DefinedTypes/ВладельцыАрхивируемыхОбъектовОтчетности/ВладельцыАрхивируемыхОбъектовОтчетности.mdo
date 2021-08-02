@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="667b3dc6-91d8-4758-8fbb-3be11869e1cc">
+  <producedTypes>
+    <containerType typeId="23477bbe-6e34-4230-b563-88a3e69f2ae9" valueTypeId="7ef098b0-02b5-4777-8d68-23637fb5a96e"/>
+  </producedTypes>
+  <name>ВладельцыАрхивируемыхОбъектовОтчетности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Владельцы архивируемых объектов отчетности</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

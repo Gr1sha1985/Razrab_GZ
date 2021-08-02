@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cdd1bc0d-c660-47ac-9a40-8860a9b07aa3">
+  <name>ВидыДоходовИсполнительногоПроизводстваКлиентСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды доходов исполнительного производства (клиент, сервер)</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

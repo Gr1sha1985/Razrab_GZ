@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ea11586-5693-48e9-af87-c4b1ab6733db">
+  <producedTypes>
+    <containerType typeId="add3f5e6-6c8f-49a9-9a9a-b4d0b27c4bcb" valueTypeId="9b2cb0af-4db8-4aea-af4d-323fa3e4e3c5"/>
+  </producedTypes>
+  <name>СправочникБанкиФинОтчетность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Справочник банки фин отчетность</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Банки</types>
+  </type>
+</mdclass:DefinedType>

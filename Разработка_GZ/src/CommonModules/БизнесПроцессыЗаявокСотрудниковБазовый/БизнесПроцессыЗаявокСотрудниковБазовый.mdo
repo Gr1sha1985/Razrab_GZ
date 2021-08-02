@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aa58fc82-f455-4189-9b8d-884deb723a61">
+  <name>БизнесПроцессыЗаявокСотрудниковБазовый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Бизнес процессы заявок сотрудников базовый</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

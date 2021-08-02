@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f417c1ef-0172-4db8-84a1-24ec6fe22e4b">
+  <producedTypes>
+    <managerType typeId="4909db44-844a-424b-975e-edefc79132a7" valueTypeId="0bc6cd64-2f82-451f-ab57-2df17eb763e6"/>
+    <valueManagerType typeId="02c820a6-ba6c-41d8-9d06-20edaf27d829" valueTypeId="80892152-3e67-402d-acf6-bee46b766475"/>
+    <valueKeyType typeId="91ec637f-3d05-4908-b45a-1cb48f1caace" valueTypeId="7e333236-4212-4e3a-98c1-3f75181cfefc"/>
+  </producedTypes>
+  <name>ДанныеСервисаОтправкиФинансовойОтчетностиВБанки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные сервиса отправки финансовой отчетности в банки</value>
+  </synonym>
+  <type>
+    <types>ValueStorage</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

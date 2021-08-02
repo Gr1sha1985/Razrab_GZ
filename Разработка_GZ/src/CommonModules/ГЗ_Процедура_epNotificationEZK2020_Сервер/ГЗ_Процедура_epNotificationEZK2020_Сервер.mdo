@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3f9526cc-a083-40c4-b635-056c1957f372">
+  <name>ГЗ_Процедура_epNotificationEZK2020_Сервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процедура epNotificationEZK2020</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

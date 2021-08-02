@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="484eb10d-1598-424e-b6d1-4688539f5ca1">
+  <producedTypes>
+    <containerType typeId="467d6f0e-81bc-4c0a-8b9f-e5ec0ea60108" valueTypeId="562eb3d9-705a-4a8a-a624-7d6e18eb1671"/>
+  </producedTypes>
+  <name>ОснованиеФискальнойОперацииБПО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основание фискальной операции БПО</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

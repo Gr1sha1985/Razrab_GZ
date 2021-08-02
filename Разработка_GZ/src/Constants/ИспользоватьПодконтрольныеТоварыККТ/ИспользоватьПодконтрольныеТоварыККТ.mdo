@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="18011350-f1fa-4cc9-9510-8779665c5ccc">
+  <producedTypes>
+    <managerType typeId="040bd4d5-e4b1-44a5-89bb-2fb1cac38783" valueTypeId="18593af6-7684-474e-ab34-7bf8e19880a7"/>
+    <valueManagerType typeId="cc968167-0503-4698-811b-09565d39dea7" valueTypeId="a39619a8-e671-4b27-86a7-0bbd90fcd168"/>
+    <valueKeyType typeId="eafa7b42-4bd4-4842-a0e8-1bca195b2780" valueTypeId="20d2a3a2-311e-49de-8f53-2dd414574e72"/>
+  </producedTypes>
+  <name>ИспользоватьПодконтрольныеТоварыККТ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать подконтрольные товары ККТ</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

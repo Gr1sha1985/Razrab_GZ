@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e997a828-e950-43e8-805c-04a24cba99ee">
+  <name>QR_ReceiptScanner_iOs</name>
+  <synonym>
+    <key>ru</key>
+    <value>QR Receipt Scanner (iOS)</value>
+  </synonym>
+</mdclass:CommonPicture>

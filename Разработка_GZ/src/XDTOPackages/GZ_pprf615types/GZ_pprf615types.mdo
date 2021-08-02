@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0d8cd711-009f-47e6-bffa-b01548141db8">
+  <name>GZ_pprf615types</name>
+  <synonym>
+    <key>ru</key>
+    <value>pprf615types</value>
+  </synonym>
+  <namespace>http://zakupki.gov.ru/oos/pprf615types/1</namespace>
+</mdclass:XDTOPackage>

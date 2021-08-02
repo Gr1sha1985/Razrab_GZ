@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="037f7867-4fdc-449e-a887-0fb574659eac">
+  <producedTypes>
+    <objectType typeId="7564dd81-0e2d-4803-9810-62ffef6bc7db" valueTypeId="64d041be-6a1a-4850-9831-14ff5e72c89c"/>
+    <refType typeId="a7086c38-0737-40f1-b315-7cf728b1dabe" valueTypeId="f7747d0b-7cb7-4702-9584-c1345e0a6ca2"/>
+    <selectionType typeId="280bcd24-74c5-4db7-aa23-39a08f6f1d24" valueTypeId="b8449728-53b1-4d52-b4cb-5a5850452b8b"/>
+    <listType typeId="4cda9364-c321-40c6-99d4-80d98645fbac" valueTypeId="0f6c1aaa-57e9-4949-a913-293eb436c226"/>
+    <managerType typeId="0a3d642e-a450-4307-8a8b-cb0398feb148" valueTypeId="1f9e67a1-50fd-4a3c-bbce-063bac937a60"/>
+  </producedTypes>
+  <name>ГЗ_ИзвещениеОПроведенииЗакупокОК_Д_ДвухЭтапныйКонкурс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Извещение о проведении закупок ОК-Д двухэтапный конкурс</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ГЗ_ИзвещениеОПроведенииЗакупокОК_Д_ДвухЭтапныйКонкурс.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <explanation>
+    <key>ru</key>
+    <value>3. Извещение о проведении OK-Д (двухэтапный конкурс), внесение</value>
+  </explanation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ГЗ_ИзвещениеОПроведенииЗакупокОК_Д_ДвухЭтапныйКонкурс.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.ГЗ_ЗакупкиПоОрганизациям</registerRecords>
+  <registerRecords>InformationRegister.ГЗ_ЗакупкиПоРегионам</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="b640a8d2-d9d0-4772-99e3-6a168c853c27">
+    <name>schemeVersion</name>
+    <synonym>
+      <key>ru</key>
+      <value>Атрибут. Номер версии схемы элемента</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fa5258f2-f340-46d3-b4ac-d010ce259996">
+    <name>id</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор документа ЕИС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5d0fa1cb-daf0-4840-848a-5b65f4d425bc">
+    <name>externalId</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешний идентификатор документа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3653a84c-8c01-4190-af31-22cb2070f8d6">
+    <name>purchaseNumber</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер закупки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>256</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="485f58ee-2261-4087-b480-f94fae8174df">
+    <name>docNumber</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c5b1b38f-e6a4-4e28-ba05-7e7bdc4ab213">
+    <name>href</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гиперссылка на опубликованный документ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="306cef5c-9665-4a9b-83e3-03a1f2fef884">
+    <name>printForm</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печатная форма документа</value>
+    </synonym>
+    <comment>url - Ссылка для скачивания документа</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="758a0988-a239-418b-bc31-5ef6f13f6977">
+    <name>extPrintForm</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронный документ, полученный из внешней системы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="605cd2af-c174-4bce-8455-76e3acbb08a2">
+    <name>purchaseObjectInfo</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование объекта закупки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2f9cd6b7-acc7-4bb8-9526-08b2cdc76502">
+    <name>purchaseResponsible</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация об организации, осуществляющей закупку</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="526c88c3-332f-429f-97e2-7e4c4bf048eb">
+    <name>isBudgetUnionState</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закупка за счет средств бюджета Союзного государства</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="278ae7e7-75b1-4a09-a156-5212041c31ab">
+    <name>isGOZ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закупка товаров, работ, услуг по государственному оборонному заказу в соответствии с ФЗ № 275-ФЗ от 29 декабря 2012 г.</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3c4bb8c8-d1dc-4773-a8f9-cfb28c429a73">
+    <name>isBBST</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закупка в части заказа на создание, модернизацию, поставку, ремонт, сервисное обслуживание и утилизацию вооружения, военной и специальной техники</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e61f7bac-e2da-4ea6-a873-af0a3ecaf434">
+    <name>placingWay</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подспособ определения поставщика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГЗ_placingWay_ПодспособОпределенияПоставщика</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="430a88f8-a9ef-41fb-9c35-c422bc27cf71">
+    <name>article15FeaturesInfo</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация об особенностях осуществления закупки в соответствии с ч. 4-6 ст. 15 Закона № 44-ФЗ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6e21b104-30ef-49b2-b618-0bf1eb031967">
+    <name>article15Attachments</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файлы с копией договора (соглашения)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b8485d6c-d4fa-44e9-8aac-7ffb19f79153">
+    <name>contractConclusionOnSt83Ch2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заключение контракта по статье 83 ч. 2</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="62fc6b16-c7cd-48b5-86ec-cf5e782bef4d">
+    <name>okpd2okved2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификация по ОКПД2/ОКВЭД2. Элемент не используется в импорт</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4c7bcd0e-623d-40d7-913c-da29c0253fbe">
+    <name>ETP</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронная площадка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГЗ_ETP_ЭлектроннаяТорговаяПлощадка</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ce5bfb89-106c-4b4d-b094-cf6bf69c9b8c">
+    <name>totalSum</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общая сумма позиций/Начальная сумма цен единиц товара, работы, услуги</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>23</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="78a46b77-c205-4331-b67e-8d5b7f447b8f">
+    <name>totalSumCurrency</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общая сумма позиций/Начальная сумма цен единиц товара, работы, услуги в валюте контракта</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>23</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6f117b93-9fb9-4766-907f-9c78116d24ac">
+    <name>collectiing_startDate</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата и время подачи заявок</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5cf843dd-0a89-489f-8449-dd3d4fb9ccdc">
+    <name>collectiing_place</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место подачи заявок</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cb0f3ebc-0d22-4075-931c-e9f55b7d092f">
+    <name>collectiing_order</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок подачи заявок</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a93fde11-9f72-4f04-8d0b-1d8e6d3595a5">
+    <name>collectiing_endDate</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата и время окончания подачи заявок</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3b2d7a53-acfe-41c4-ac41-56719a320a6a">
+    <name>collectiing_addInfo</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительная инфомрация</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1f9c416c-9845-41cc-80f2-5751997f7a1b">
+    <name>scoring_date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата рассмотрения и оценки заявок на участие в конкурсе конвертов, открытие доступа к электронным документам заявок участников</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="400d4a24-84a7-4e43-a845-d0368369c323">
+    <name>bidding_date</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата и время проведения аукциона в электронной форме</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c69593ed-718a-49e8-9b61-7d1dad4c1d82">
+    <name>bidding_addinfo</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительная информация</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="206ba14c-23a2-459a-875a-75048f718015">
+    <name>customerRequirements</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТребованияЗаказчика</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b5e489dd-d106-4a1e-9682-230053318ee1">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="85a9ff22-9583-421f-be8b-30a108b5e240">
+    <name>ИмяФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>256</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3d2d8a4d-6560-43e0-94af-a2388108ab9d">
+    <name>modification</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия модицикации документа</value>
+    </synonym>
+    <comment>заполняется в случае внесения изменений в документы извещения</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="53f89012-b7f1-4a18-a8cd-6f7ad10de8ea">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="9afc1b74-5c6d-4513-bea9-e56123894430">
+    <producedTypes>
+      <objectType typeId="cc2ef52c-3392-4834-862c-5a29bb70f8fb" valueTypeId="80f2d68f-f7c1-4272-8b50-67f4bd3500ff"/>
+      <rowType typeId="f9bcebba-b837-4d9b-b8b9-155c6d3027ec" valueTypeId="e36f24b5-961a-4e93-9149-11b109ebad19"/>
+    </producedTypes>
+    <name>purchaseObjects</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объекты закупки</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="06afc349-1b18-4b66-b62a-33dee32d6b95">
+      <name>purchaseObject</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект закупки</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.КлассификаторОКПД2</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="37489db8-ba69-439a-965b-fa376a0752b2">
+      <name>price</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена за единицу измерения</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>21</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="00721ca0-22dc-4df8-92c7-43a404d46eba">
+      <name>quantity</name>
+      <synonym>
+        <key>ru</key>
+        <value>Общее количество по объекту закупки</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bb3ec69d-7af8-408e-8af9-828fe2a577e1">
+      <name>sum</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стоимость позиции</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>21</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="36544264-475f-4511-a92e-24d26c4de73f">
+      <name>isMedicalProduct</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объектом закупки является медицинское изделие</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="dd852a16-a284-4bef-9252-96edd7e3806f">
+      <name>OKEI</name>
+      <synonym>
+        <key>ru</key>
+        <value>Единица измерения</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.КлассификаторЕдиницИзмерения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2ac70176-1d13-4474-bd50-6320d3b5b362">
+      <name>name</name>
+      <synonym>
+        <key>ru</key>
+        <value>Name</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>500</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="08206876-629a-4ed8-a1b1-29d18562ccf3">
+      <name>purchaseObject_Строкой</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект закупки (Строкой)</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="c26ad65d-55a8-4460-b1c4-75a14b6b3ce7">
+    <producedTypes>
+      <objectType typeId="b4a8d05b-e98c-4a8c-9e0f-1ddc0a26732e" valueTypeId="b26ac5dd-78d7-4931-8816-dd0a489e1ea2"/>
+      <rowType typeId="c7ecbe1d-79bd-4678-b81c-dcc6e64db0f2" valueTypeId="5da7a222-73ad-4d42-8227-6394f93f9d36"/>
+    </producedTypes>
+    <name>customerQuantities</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество по заказчикам</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="2d73d800-9e45-4a18-8805-e3aabf5584b0">
+      <name>purchaseObject</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект закупки</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6da8c694-a1df-441f-ae8e-a0127605feb8">
+      <name>customer</name>
+      <synonym>
+        <key>ru</key>
+        <value>Организация заказчика</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Организации</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8f718283-ca18-451d-b740-239369f94cdf">
+      <name>quantity</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество для заказчика</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>18</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

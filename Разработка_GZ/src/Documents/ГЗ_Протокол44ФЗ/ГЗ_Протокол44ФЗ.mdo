@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="18dc4d5a-676d-41a8-bee0-9cca60f6a715">
+  <producedTypes>
+    <objectType typeId="2bb7fa04-108a-4c01-8fc2-1ddc7c246374" valueTypeId="fe49d962-a991-41cf-9228-08642055daf4"/>
+    <refType typeId="21b0aee3-47c1-483e-9d25-2f7338dc0bf4" valueTypeId="c5d9252e-ec90-426b-8dd4-ebc4f857bbe2"/>
+    <selectionType typeId="8222ccf0-832d-46f6-87be-0d629e3ff96d" valueTypeId="63cf9b5f-466a-4111-8cef-12b0ec531fd1"/>
+    <listType typeId="c9b33303-fe02-410b-b287-f7e2fef4efd1" valueTypeId="7aa7c772-ab2e-4468-9d15-e663000fac59"/>
+    <managerType typeId="78293cb4-7f57-44b7-8f59-d37b658bb72d" valueTypeId="03cc9814-0ee9-4fd2-ae92-f43d1de76278"/>
+  </producedTypes>
+  <name>ГЗ_Протокол44ФЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Протокол 44 ФЗ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ГЗ_Протокол44ФЗ.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ГЗ_Протокол44ФЗ.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="7f35c4ab-98a5-43de-95a6-0aa2826ace0c">
+    <name>purchaseNumber</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер закупки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="681d509d-4b94-4d7d-a30c-8cfcf39f6624">
+    <name>protocolNumber</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер протокола</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5c90e8fe-c5aa-4175-a8be-2244f6446b4e">
+    <name>lotlNumber</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер предыдущего протокола</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6d35a8e5-0d3d-40d7-ad69-f7150b99d8a7">
+    <name>foundationProtocolNumber</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер предыдущего протокола</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9b1a4934-2fbd-4598-b94f-fdea16d67730">
+    <name>procedurelFailed</name>
+    <synonym>
+      <key>ru</key>
+      <value>Признак несостоявшейся процедуры</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e62085cd-5b04-4081-b1d3-11ed1ced1f7e">
+    <name>result</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат определения поставщика</value>
+    </synonym>
+    <comment>Заключение или отказ</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c27fb9fb-38b8-4068-807b-c375f7dbe635">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0ae90332-2cbb-4289-826a-2ec06c32825d">
+    <name>abandonedReason</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основание признание процедуры несостоявшейся</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГЗ_ОснованиеПризнаниеПроцедурыНесостоявшейся</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7f42af16-79b7-4777-b5f0-ece307d267b7">
+    <name>Извещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Извещение</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ГЗ_ИзвещениеОПроведенииЗакупок</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a2ddcf1e-699c-465d-b932-369375492052">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="dbc5bc77-910b-4dc7-82be-905c5b6b91e9">
+    <producedTypes>
+      <objectType typeId="63d4a335-b0f9-4d46-abeb-632a9157da80" valueTypeId="271dd8ea-953a-4c33-9848-82f1626fb3d8"/>
+      <rowType typeId="dfcf3d64-dc1d-4320-acf9-0e4ba0f13b38" valueTypeId="35a59907-c3cc-420a-a62e-aa1539743c1f"/>
+    </producedTypes>
+    <name>application</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявки</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="5c06a367-8b1d-4105-ab51-b768acf1c161">
+      <name>journalNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер заявки в журнале регистрации</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1f9b1031-e3ad-4178-91f7-9a3e074f7c62">
+      <name>appRating</name>
+      <synonym>
+        <key>ru</key>
+        <value>Порядоковый номер</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8867fb02-7f05-4831-8671-511e1fce05a0">
+      <name>result</name>
+      <synonym>
+        <key>ru</key>
+        <value>Результат определения поставщика (Заключение контракта)</value>
+      </synonym>
+      <comment>Заключение или отказ</comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b4b41263-cbf2-4444-8f7c-21d9f624ed3b">
+      <name>price</name>
+      <synonym>
+        <key>ru</key>
+        <value>Предложение цены </value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>20</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

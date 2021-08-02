@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42de9079-59ef-4788-8344-50eaf5cacc47">
+  <name>GZ_SMTypes</name>
+  <synonym>
+    <key>ru</key>
+    <value>SMTypes</value>
+  </synonym>
+  <namespace>http://zakupki.gov.ru/oos/SMTypes/1</namespace>
+</mdclass:XDTOPackage>

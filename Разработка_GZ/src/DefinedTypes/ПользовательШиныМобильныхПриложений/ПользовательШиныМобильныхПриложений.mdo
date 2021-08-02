@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b93a7e0-481f-48e4-a605-0758e2d08e94">
+  <producedTypes>
+    <containerType typeId="34a36eab-40c3-4f85-9d3c-922969ada814" valueTypeId="2c414e58-6605-48f3-b3e1-39ec026f3b86"/>
+  </producedTypes>
+  <name>ПользовательШиныМобильныхПриложений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пользователь шины мобильных приложений</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Пользователи</types>
+    <types>CatalogRef.ФизическиеЛица</types>
+  </type>
+</mdclass:DefinedType>

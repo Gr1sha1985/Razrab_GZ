@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="075787e9-e097-4e72-b950-62da9d6f810e">
+  <name>ЗарплатаКадрыДляНебольшихОрганизацийПереопределяемый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зарплата кадры для небольших организаций переопределяемый</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

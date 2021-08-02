@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="490f930d-8b36-419e-8166-9ff62b9bf304">
+  <name>Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Администрирование, настройка, сервисные функции</value>
+  </explanation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Администрирование</picture>
+  </picture>
+  <content>CommonCommand.НастройкаСистемнойУчетнойЗаписиЭлектроннойПочты</content>
+  <content>Catalog.Пользователи</content>
+  <content>DataProcessor.ЖурналРегистрации</content>
+  <content>6a1ca52b-8122-4821-924e-7c7d8477ee55</content>
+  <content>Catalog.ПрофилиГруппДоступа</content>
+  <content>DataProcessor.РегламентныеИФоновыеЗадания</content>
+  <content>Catalog.ВидыКонтактнойИнформации</content>
+  <content>Catalog.ГруппыПользователей</content>
+  <content>Catalog.ВнешниеПользователи</content>
+  <content>Catalog.ТомаХраненияФайлов</content>
+  <content>CommonCommand.УстановитьРасширениеДляРаботыС1СПредприятием</content>
+  <content>CommonForm.Расширения</content>
+  <content>Catalog.УчетныеЗаписиЭлектроннойПочты</content>
+  <content>CommonPicture.РазделАдминистрирование48</content>
+  <content>Catalog.Валюты</content>
+  <content>CommonForm.НастройкиВходаПользователей</content>
+  <content>InformationRegister.НастройкиВерсионированияОбъектов</content>
+  <content>CommonCommand.ВремяТекущегоСеанса</content>
+  <content>CommonForm.ПерсональныеНастройки</content>
+  <content>Constant.ОтображатьДополнительныеКолонкиВСписках</content>
+  <subsystems>Пользователи</subsystems>
+</mdclass:Subsystem>

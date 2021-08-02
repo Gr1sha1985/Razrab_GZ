@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f51ae7fb-d206-4a49-90af-e7757a1a828c">
+  <name>ЗагружаемыеДанные_Прочитано</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загружаемые данные (прочитано)</value>
+  </synonym>
+</mdclass:CommonPicture>

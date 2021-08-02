@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="051a1bd3-edfd-4916-9c5f-777f545643ac">
+  <producedTypes>
+    <refType typeId="aab541f4-18d9-46cf-9bc0-78b5680f7d2b" valueTypeId="6fd277be-f0e2-488c-9ca1-245aa65377fd"/>
+    <listType typeId="3cc20df1-0c67-4ea0-8688-f8f8c75c9fe6" valueTypeId="fb776b80-48d0-4343-96f1-dbad2f8fae33"/>
+    <managerType typeId="a01ee2f3-b6db-4621-9887-44eaf1573d8c" valueTypeId="870a4bb9-96c9-4955-a066-b4ccfc3a69f5"/>
+  </producedTypes>
+  <name>ГЗ_ТипОснования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип основания</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="71f13fc4-dc5b-475e-acda-5217f90f3b61">
+    <name>OR</name>
+    <synonym>
+      <key>ru</key>
+      <value>По окончании срока подачи заявок подана только одна заявка. Такая заявка признана соответствующей требованиям 44-ФЗ и требованиям, указанным в извещении</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="405a0b09-4c28-40cf-bef9-50893294c5fc">
+    <name>NR</name>
+    <synonym>
+      <key>ru</key>
+      <value>По окончании срока подачи заявок не подано ни одной заявки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0247552d-3324-4748-b47a-c8d49ed77004">
+    <name>OV</name>
+    <synonym>
+      <key>ru</key>
+      <value>По результатам рассмотрения заявок только одна заявка признана соответствующей требованиям ФЗ и требованиям, указанным в извещении</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="861593f6-fdcd-4099-96e5-05c39dde29aa">
+    <name>NV</name>
+    <synonym>
+      <key>ru</key>
+      <value>Все поданные заявки отклонены</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5d6e3ec2-3ddd-4711-bea1-37c43634dd04">
+    <name>OV2</name>
+    <synonym>
+      <key>ru</key>
+      <value>По результатам рассмотрения вторых частей заявок только одна заявка признана соответствующей требованиям 44-ФЗ и требованиям, указанным в извещении или ни одной заявки не признано соответствующим данным требованиям</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="70ecd068-1f23-4d66-a838-6db1c813e8b2">
+    <name>O</name>
+    <synonym>
+      <key>ru</key>
+      <value>По окончании срока подачи заявок подана только одна заявка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="abc66a1a-6dc5-4ca1-abef-497079fbc8f2">
+    <name>NS</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не подано ни одного ценового предложения</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

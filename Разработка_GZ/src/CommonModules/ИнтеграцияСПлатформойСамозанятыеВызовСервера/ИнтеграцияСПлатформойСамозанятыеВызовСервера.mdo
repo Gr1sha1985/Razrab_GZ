@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb03ee91-6f3f-4b7f-9fda-3f118ccfded1">
+  <name>ИнтеграцияСПлатформойСамозанятыеВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция с платформой самозанятые вызов сервера</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

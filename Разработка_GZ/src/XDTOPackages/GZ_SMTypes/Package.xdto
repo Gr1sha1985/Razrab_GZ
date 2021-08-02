@@ -1,0 +1,163 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://zakupki.gov.ru/oos/SMTypes/1" elementFormQualified="true" attributeFormQualified="false">
+	<import namespace="http://zakupki.gov.ru/oos/base/1"/>
+	<import namespace="http://zakupki.gov.ru/oos/common/1"/>
+	<objectType name="control99DocsInfoRequestType" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="schemeVersion" type="d3p1:schemeVersionType" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="refPacketUid" type="d3p1:guidType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="refDocumentUid" type="d3p1:guidType" lowerBound="0"/>
+	</objectType>
+	<objectType name="control99DocsInfoType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="schemeVersion" type="d3p1:schemeVersionType" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="refPacketUid" type="d3p1:guidType"/>
+		<property name="refDocInfo">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="documentUid" type="d5p1:guidType"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="versionNumber" type="d5p1:versionNumberType"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="regNumber" type="d5p1:regNumberBaseType" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="docNumber" type="d5p1:regNumberBaseType" lowerBound="0"/>
+				<property name="publishDate" type="xs:dateTime" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property name="control99DocsInfo" lowerBound="0">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="editionNumber" type="d5p1:versionNumberType" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="control99BeginMessageUid" type="d5p1:guidType" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="control99RefusalMessageUid" type="d5p1:guidType" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="control99NoticeComplianceUid" type="d5p1:guidType" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="control99ProtocolMismatchUid" type="d5p1:guidType" lowerBound="0"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="control99ProtocolMismatchReductFundsUid" type="d5p1:guidType" lowerBound="0"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="docProjectStatusRequestType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="schemeVersion" type="d3p1:schemeVersionType" lowerBound="1" form="Attribute"/>
+		<property name="docProjectsIds">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="id" type="d5p1:guidType" upperBound="-1"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="docProjectStatusResponseType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="schemeVersion" type="d3p1:schemeVersionType" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="requestId" type="d3p1:guidType"/>
+		<property name="docProjectsStatusInfo" upperBound="-1">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="docProjectId" type="d5p1:guidType"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="docProjectConfirmId" type="d5p1:guidType" lowerBound="0"/>
+				<property name="notPublished" type="xs:boolean" lowerBound="0" fixed="true" default="true"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="publishedDocId" type="d5p1:guidType" lowerBound="0"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="inFileStorageType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="schemeVersion" type="d3p1:schemeVersionType" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="subsystem" type="d3p1:subsystemType"/>
+		<property name="commonInfo">
+			<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+				<property name="startFileInfo" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d7p1:fileNameType"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="size" type="d7p1:fileSizeType"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="digest" type="d7p1:hexHashSha256Type"/>
+					</typeDef>
+				</property>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="fileContentId" type="d5p1:guidType" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property name="range">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="start" type="d5p1:fileSizeType"/>
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="size" type="d5p1:fileSizeType"/>
+			</typeDef>
+		</property>
+		<property name="content">
+			<typeDef xsi:type="ValueType" base="xs:base64Binary" variety="Atomic" minLength="1"/>
+		</property>
+	</objectType>
+	<objectType name="nrgEventInfoType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="schemeVersion" type="d3p1:schemeVersionType" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="id" type="d3p1:guidType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:text100Type"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="type" type="d3p1:text100Type"/>
+		<property name="DT" type="xs:dateTime"/>
+		<property name="content" type="xs:base64Binary"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="purchaseNumber" type="d3p1:purchaseNumberType"/>
+	</objectType>
+	<objectType name="packageListRequestType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="schemeVersion" type="d3p1:schemeVersionType" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="Id" type="d3p1:guidType"/>
+		<property name="periodInfo">
+			<typeDef xsi:type="ObjectType">
+				<property name="fromDT" type="xs:dateTime"/>
+				<property name="toDT" type="xs:dateTime"/>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="documentKind" type="d3p1:documentKindType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="objectType" type="d3p1:objectTypeEnum" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="objectId" type="d3p1:guidType" lowerBound="0"/>
+	</objectType>
+	<objectType name="packageListType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="schemeVersion" type="d3p1:schemeVersionType" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="requestId" type="d3p1:guidType" lowerBound="0"/>
+		<property name="packagesInfo" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="packageInfo" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="id" type="d7p1:guidType"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="status" type="d7p1:messageStatusEnum"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="sender" type="d7p1:text200Type"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="receiver" type="d7p1:text200Type"/>
+						<property name="createDT" type="xs:dateTime"/>
+						<property name="operationDT" type="xs:dateTime"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="documentKind" type="d7p1:documentKindType"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="description" type="d7p1:text200Type" lowerBound="0"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="objectType" type="d7p1:objectTypeEnum"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="objectId" type="d7p1:guidType" lowerBound="0"/>
+						<property name="indexNum" type="xs:int" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="reSendPackageType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="schemeVersion" type="d3p1:schemeVersionType" lowerBound="1" form="Attribute"/>
+		<property name="reSendingPackagesIds">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/base/1" name="id" type="d5p1:guidType" upperBound="-1"/>
+			</typeDef>
+		</property>
+	</objectType>
+	<objectType name="wsProcessingResultRequestType">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="schemeVersion" type="d3p1:schemeVersionType" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="refPacketUid" type="d3p1:guidType"/>
+	</objectType>
+	<objectType name="wsProcessingResultType" ordered="false" sequenced="true">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="schemeVersion" type="d3p1:schemeVersionType" lowerBound="1" form="Attribute"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="refPacketUid" type="d3p1:guidType"/>
+		<property name="success" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="registrationInfo">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="loadId" type="d7p1:guidType"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="documentUid" type="d7p1:guidType" lowerBound="0"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="regNumber" type="d7p1:regNumberBaseType" lowerBound="0"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="docNumber" type="d7p1:regNumberBaseType" lowerBound="0"/>
+						<property name="publishDate" type="xs:dateTime" lowerBound="0"/>
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/base/1" name="versionNumber" type="d7p1:versionNumberType" lowerBound="0"/>
+					</typeDef>
+				</property>
+				<property name="warnings" lowerBound="0">
+					<typeDef xsi:type="ObjectType">
+						<property xmlns:d7p1="http://zakupki.gov.ru/oos/common/1" name="warning" type="d7p1:violationType" upperBound="-1"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="violations" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://zakupki.gov.ru/oos/common/1" name="violation" type="d5p1:violationType" upperBound="-1"/>
+			</typeDef>
+		</property>
+		<property name="processing" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+	</objectType>
+</package>

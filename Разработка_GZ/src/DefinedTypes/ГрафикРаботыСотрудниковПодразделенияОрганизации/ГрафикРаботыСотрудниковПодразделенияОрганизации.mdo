@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0fcabae6-4675-4104-b5b6-6a6e0b68a8d2">
+  <producedTypes>
+    <containerType typeId="48321580-fe87-448e-80cc-84e1608737ac" valueTypeId="1b5b14ce-ea7c-46af-ba6c-d5616002bf4f"/>
+  </producedTypes>
+  <name>ГрафикРаботыСотрудниковПодразделенияОрганизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>График работы сотрудников подразделения организации</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

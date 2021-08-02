@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82887c44-0a62-44fb-b6fb-1cad1fa72a86">
+  <name>УчетКассовымМетодом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет кассовым методом</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c07ad3e-61f5-48ed-b893-562729921a8e">
+  <name>РасчетИмущественныхНалоговПереопределяемый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет имущественных налогов переопределяемый</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

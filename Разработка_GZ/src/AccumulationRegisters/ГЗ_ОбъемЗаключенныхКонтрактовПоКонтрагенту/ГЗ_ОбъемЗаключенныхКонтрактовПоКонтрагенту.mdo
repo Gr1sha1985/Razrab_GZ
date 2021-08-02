@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f3e5ecd0-ea37-4ab1-b87a-d6e8d24ff51c">
+  <producedTypes>
+    <selectionType typeId="77aefd80-77e0-4804-acb3-f4673f0b102d" valueTypeId="2198fdcc-061f-4e68-8fa4-ed82491cf0b1"/>
+    <listType typeId="9215210b-9913-4b85-9d11-aec125ffe1f3" valueTypeId="15aa1b25-04bb-4c6f-b4ed-e1ee4a16817c"/>
+    <managerType typeId="b6fa5ee2-632d-47e5-8f2c-e4cbf8868cf9" valueTypeId="8e281606-bad2-468b-8fe7-e02af47b8b75"/>
+    <recordSetType typeId="13d050fb-ccb7-4256-adf7-46cdb1bb38e2" valueTypeId="d61cde11-f07a-40a0-9be0-e9fab6054573"/>
+    <recordKeyType typeId="e28f602e-2d8d-4d29-90e8-377a4fa65e27" valueTypeId="7c335b4f-53b5-4411-8b7c-095475eeefe1"/>
+    <recordType typeId="bad7039e-4463-49f8-a68e-f466bd472943" valueTypeId="d78e925f-bb27-4543-b95a-e2b6b6d23504"/>
+  </producedTypes>
+  <name>ГЗ_ОбъемЗаключенныхКонтрактовПоКонтрагенту</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объем заключенных контрактов по контрагенту</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="1ed6f195-3906-49f5-a1ab-be89c683f132">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>20</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="23b7b266-002a-4bf4-a3ba-6ce54d7eff00">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="434590d8-8c75-4a91-8df2-38056af012ee">
+    <name>Заказчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

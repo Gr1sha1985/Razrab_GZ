@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f585cb0-e2b0-4397-8e48-c0c4e88eb99f">
+  <producedTypes>
+    <containerType typeId="d1889b18-62f4-4c36-ac85-5efa7b398140" valueTypeId="28a04efc-5ae5-4c3e-a83c-229bf2a43554"/>
+  </producedTypes>
+  <name>СтрокаНеограниченнойДлины</name>
+  <synonym>
+    <key>ru</key>
+    <value>Строка неограниченной длины</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+</mdclass:DefinedType>

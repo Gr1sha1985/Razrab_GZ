@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f56c671-4c1a-44d9-9c42-d07c43f3609f">
+  <name>ЛоготипПереходиНаНКО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Логотип переходи на НКО</value>
+  </synonym>
+</mdclass:CommonPicture>

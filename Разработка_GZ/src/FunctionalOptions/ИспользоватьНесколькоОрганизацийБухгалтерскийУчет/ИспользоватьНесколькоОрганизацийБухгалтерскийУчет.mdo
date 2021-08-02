@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17a3fa03-d604-4423-9de0-f9a02572f215">
+  <name>ИспользоватьНесколькоОрганизацийБухгалтерскийУчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать несколько организаций (бухгалтерский учет)</value>
+  </synonym>
+  <location>Constant.ИспользоватьНесколькоОрганизаций</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.ДоговорыКонтрагентов.Attribute.Организация</content>
+  <content>Constant.УдалитьПрименяютсяРазныеСтавкиНалогаНаПрибыль</content>
+</mdclass:FunctionalOption>

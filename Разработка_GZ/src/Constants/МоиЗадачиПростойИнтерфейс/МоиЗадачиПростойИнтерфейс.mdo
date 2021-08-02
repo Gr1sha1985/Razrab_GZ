@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c39b6e6-d89c-4dfd-80ce-0272c511f7c6">
+  <producedTypes>
+    <managerType typeId="c4b02ea3-4edb-4a8a-bb21-c02a643bd919" valueTypeId="c35e481d-8d96-4cea-aa18-10e5619bd3de"/>
+    <valueManagerType typeId="25cc170f-b26c-4d9c-8c4e-ed321d0a97b7" valueTypeId="41d4e630-7306-487b-ad6e-068a2e6e07a2"/>
+    <valueKeyType typeId="28388eb1-2f3d-4e79-8afc-d865eddf2cad" valueTypeId="67e16f7c-2a28-497e-a749-1dacd60c8cb0"/>
+  </producedTypes>
+  <name>МоиЗадачиПростойИнтерфейс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мои задачи (простой интерфейс)</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1ff7f3bf-55de-4f95-9ca8-b1e85aeb3ea5">
+  <producedTypes>
+    <managerType typeId="db7ac299-12d5-4a05-bc4a-dc601c0e14ba" valueTypeId="abafe71d-1e9d-481b-a273-4965f6b67e35"/>
+    <valueManagerType typeId="aa94931f-54d1-448c-8088-6cebd047b113" valueTypeId="91bd1a71-4fbb-4915-aa7c-1da26965730a"/>
+    <valueKeyType typeId="a9d3ef0f-fb5d-422f-af3b-6323178b9c72" valueTypeId="19f41417-5add-4f0e-abbd-0e4c6dc8125f"/>
+  </producedTypes>
+  <name>ИнтерфейсЭлектронныхТрудовыхКнижек</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интерфейс электронных трудовых книжек</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06b4ee7a-3c0e-4b14-84fa-aae5bd943860">
+  <name>ОтправкаРегОтчетовВСПАРКВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отправка рег отчетов в СПАРКВызов сервера</value>
+  </synonym>
+  <comment>Вызов серверных процедур и функций общего назначения</comment>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

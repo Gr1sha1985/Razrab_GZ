@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17e8219e-0c0b-469b-a595-2b652fef5746">
+  <producedTypes>
+    <managerType typeId="5888e990-8ed7-4f72-bedb-1040b899f942" valueTypeId="e3a87d32-173f-43b9-bde3-0a346c0e9dd3"/>
+    <valueManagerType typeId="6c757a52-a13e-4fb7-bf40-6358cc7bcfea" valueTypeId="f976d349-50ec-48a6-ba90-dc540cca06d2"/>
+    <valueKeyType typeId="5151012b-ec28-494e-9c1f-fb0d5dae235c" valueTypeId="977b5aab-c8af-4dcd-a504-1bff51f3885d"/>
+  </producedTypes>
+  <name>ГЗ_КаталогХраненияОбработанныхФайловXMLПо44ФЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каталог хранения обработанных файлов XML по 44 ФЗ</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>255</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

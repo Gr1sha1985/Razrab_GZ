@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4bfb068d-228e-46ae-80a1-2b1e7b9b2b61">
+  <name>РегиональныеСтавкиНалоговВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Региональные ставки налогов (вызов сервера)</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

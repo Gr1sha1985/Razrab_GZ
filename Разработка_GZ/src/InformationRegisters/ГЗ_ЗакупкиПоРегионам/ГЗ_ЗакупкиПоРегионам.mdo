@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da89bf1f-9199-418f-a015-55cf743dd6e4">
+  <producedTypes>
+    <selectionType typeId="a8390077-75c6-4e62-a7d0-7c118cdd17ff" valueTypeId="ae9e56ae-3fd0-4f6e-8502-46accbf0891c"/>
+    <listType typeId="deab4a2a-f5df-4128-ac27-e20bd7171ba5" valueTypeId="5ebedc1b-8827-4579-b2fa-346f833e28cb"/>
+    <managerType typeId="3c284793-96ec-4d71-92d3-d9fa3df9888d" valueTypeId="852b1aeb-0a79-413f-8120-760802db08d1"/>
+    <recordSetType typeId="cced8a34-bb56-4aeb-98e3-30536f7bd1ce" valueTypeId="09cf9333-e02a-4913-b8ad-654f19cc1f5c"/>
+    <recordKeyType typeId="ef6a021d-9128-46a4-8a2f-987f0f403ddf" valueTypeId="b44362ef-567c-4f6d-a99d-54930f50ddd0"/>
+    <recordType typeId="9a67ce1f-0420-4803-89c8-dbc7275e1047" valueTypeId="3d07c5f8-d0e6-4749-89dd-f07248510765"/>
+    <recordManagerType typeId="b39d3eca-3003-44ad-882e-819cb8bfdec6" valueTypeId="00ea5f42-e773-4f8a-be1b-85555c41607c"/>
+  </producedTypes>
+  <name>ГЗ_ЗакупкиПоРегионам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Закупки по регионам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="bd6fc910-5502-41de-82fa-b5f6dbd36746">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="dc105dc5-2eae-44a2-8904-6422036ad241">
+    <name>КодСубъектаРФ</name>
+    <synonym>
+      <key>ru</key>
+      <value>КодСубъектаРФ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="275d6400-2095-4f74-bf9d-14d5ac717fc5">
+    <name>ОКПД2_Полный</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОКПД2 полный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлассификаторОКПД2</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f45c5329-99e9-49b2-ba23-e6d3e155800a">
+    <name>ОКПД2_3Уровень</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОКПД2 3 уровень</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлассификаторОКПД2</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="29609f35-04c3-4668-8e5c-47a3aa93936f">
+    <name>ОКПД2_2Уровень</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОКПД2 2 уровень</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлассификаторОКПД2</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8efd7b44-b414-4c89-b8d3-23e2d2b95655">
+    <name>ОКПД2_1Уровень</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОКПД2 1 уровень</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КлассификаторОКПД2</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="24c2667a-51ac-4ae7-a20c-57e0ad7b7153">
+    <name>ДатаОкончанияПодачиЗаявок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания подачи заявок</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

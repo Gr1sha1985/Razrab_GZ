@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7b3884f-6fa4-4bf7-9a9b-f6ffc41f3b57">
+  <name>GZ_TPtypes</name>
+  <synonym>
+    <key>ru</key>
+    <value>TPtypes</value>
+  </synonym>
+  <namespace>http://zakupki.gov.ru/oos/TPtypes/1</namespace>
+</mdclass:XDTOPackage>

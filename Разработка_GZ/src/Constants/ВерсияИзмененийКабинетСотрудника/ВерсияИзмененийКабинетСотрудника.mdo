@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83bfcbd2-0d15-4304-91be-b89c017f05d2">
+  <producedTypes>
+    <managerType typeId="6b6e214b-2283-4c9c-822f-f74373993360" valueTypeId="2f6cc343-97e4-4702-b1f1-8fce848ce7e3"/>
+    <valueManagerType typeId="251fb2b7-19be-4b3d-ae5c-ccf73804b077" valueTypeId="601ca77a-7cfe-4daf-9e97-655a9b5df1a3"/>
+    <valueKeyType typeId="6baabbcb-d0d7-4b90-9780-0a45e3e97653" valueTypeId="d2a277e8-238d-4872-9634-f0d005d65dcc"/>
+  </producedTypes>
+  <name>ВерсияИзмененийКабинетСотрудника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Версия изменений кабинет сотрудника</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

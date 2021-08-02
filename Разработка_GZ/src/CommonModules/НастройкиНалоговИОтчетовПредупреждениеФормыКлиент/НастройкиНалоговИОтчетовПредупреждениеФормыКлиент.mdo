@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="17998043-3666-4b0f-bde0-4b30b2cef5b3">
+  <name>НастройкиНалоговИОтчетовПредупреждениеФормыКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки налогов и отчетов предупреждение формы клиент</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

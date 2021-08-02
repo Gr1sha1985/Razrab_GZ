@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="53a999cf-d870-48f7-9917-bbfd6ed687cf">
+  <name>НаправлениеРаспознанногоДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Направление распознанного документа</value>
+  </synonym>
+</mdclass:CommonPicture>

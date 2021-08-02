@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1acc3ed8-d0dd-4735-b730-ee13463bf5d8">
+  <name>ДлительнаяОперацияКабинетСотрудника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Длительная операция</value>
+  </synonym>
+</mdclass:CommonPicture>

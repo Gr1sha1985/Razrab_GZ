@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="46fc89a0-3b15-4b4a-9c52-3b141ec95e7a">
+  <producedTypes>
+    <containerType typeId="36a12ca9-c3b8-4dbd-8242-74c3836a2680" valueTypeId="de321b6a-6376-4435-a5db-aaffc3934d5e"/>
+  </producedTypes>
+  <name>ОрганизацияБРД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Организация БРД</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Организации</types>
+  </type>
+</mdclass:DefinedType>

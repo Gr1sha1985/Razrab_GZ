@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac3a6f7a-4729-46d2-947a-a4628247b53d">
+  <name>УчетКассовыхЧековПодотчетныхЛиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет кассовых чеков подотчетных лиц</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

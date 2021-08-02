@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e7b1108a-826b-48bd-99c0-bdd54b8a689f">
+  <name>ОповещенияПлатформыСамозанятыеПереопределяемый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оповещения платформы Самозанятые (переопределяемый)</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

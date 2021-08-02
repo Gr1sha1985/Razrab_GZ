@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="48cd18c6-b231-451d-aafc-acfcbb23cc5f">
+  <producedTypes>
+    <managerType typeId="d0c8f895-0443-438f-9a5c-ac2c93098b00" valueTypeId="83df2e29-8faf-4e94-a3dd-97c45ae92203"/>
+    <valueManagerType typeId="245342dd-4da4-4ad9-af38-a282abb981a3" valueTypeId="a51baa07-dd00-41e0-92a1-9003a5025af8"/>
+    <valueKeyType typeId="ce827c3e-86c0-46da-99b1-5e3860a712e6" valueTypeId="fa5bf9be-b940-4241-80c7-89eaa7eb2afd"/>
+  </producedTypes>
+  <name>ГЗ_КаталогХраненияФайловZIPПо223ФЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каталог хранения файлов ZIP по 223 ФЗ</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>255</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

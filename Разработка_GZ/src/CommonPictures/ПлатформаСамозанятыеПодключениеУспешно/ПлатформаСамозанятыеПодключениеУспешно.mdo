@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4f45a1b1-f522-45e8-8489-4a21086a4759">
+  <name>ПлатформаСамозанятыеПодключениеУспешно</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подключение успешно (платформа Самозанятые)</value>
+  </synonym>
+</mdclass:CommonPicture>

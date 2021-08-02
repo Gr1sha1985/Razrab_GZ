@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f921a883-62db-4de6-8a82-3b9d06eff98e">
+  <name>УчетНДФЛДокументыВнутренний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет НДФЛ Документы внутренний</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

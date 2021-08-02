@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ece6359d-5034-4414-b169-2dee4951ae60">
+  <producedTypes>
+    <containerType typeId="84e95230-2089-4e97-a48e-d5606e42855b" valueTypeId="fc6298d4-012b-4def-889e-67a8b176cb37"/>
+  </producedTypes>
+  <name>ВедомостьНаВыплатуЗарплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ведомость на выплату зарплаты</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

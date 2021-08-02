@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9b5729c1-e7c5-4db6-81fb-0447acb841dc">
+  <producedTypes>
+    <managerType typeId="03a70f88-7e1b-40a0-a1f9-814028bee46b" valueTypeId="0df42353-4adb-47d9-b737-d3399878d8d4"/>
+    <valueManagerType typeId="3e13a05e-648e-4d6f-ac0f-4894e579fb80" valueTypeId="068ffb34-9daa-4316-9096-60281288e45a"/>
+    <valueKeyType typeId="7c70b68a-e5c3-442c-a77b-491d23ba690c" valueTypeId="f55c7731-52a6-4dc3-8111-a819f80fcb75"/>
+  </producedTypes>
+  <name>СервисКабинетСотрудникаВЛокальнойСети</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сервис 1С:Кабинет сотрудника в локальной сети</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

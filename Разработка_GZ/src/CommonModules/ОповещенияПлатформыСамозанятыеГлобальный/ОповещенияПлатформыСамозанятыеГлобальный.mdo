@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5db846c8-5dcc-4f6d-a6be-4d208d099e06">
+  <name>ОповещенияПлатформыСамозанятыеГлобальный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оповещения платформы Самозанятые (клиент, глобальный)</value>
+  </synonym>
+  <global>true</global>
+  <clientManagedApplication>true</clientManagedApplication>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

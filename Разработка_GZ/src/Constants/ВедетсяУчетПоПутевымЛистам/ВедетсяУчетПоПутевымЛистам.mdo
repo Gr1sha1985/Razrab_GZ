@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ea4fe1d-3bef-403b-94dc-113812d43071">
+  <producedTypes>
+    <managerType typeId="4af086b9-14bd-4353-8eb5-ad3605f70459" valueTypeId="5006e7cf-dc31-4b60-9eb4-ff143794c338"/>
+    <valueManagerType typeId="55353ddb-537f-4bf8-8b18-de377ec01b09" valueTypeId="15afb921-f384-4532-bb78-3e5e90f84374"/>
+    <valueKeyType typeId="3db4cfed-2613-4c0a-a763-f9da83f6f8a2" valueTypeId="98649815-09f7-4ded-ad5f-cff20b00b01d"/>
+  </producedTypes>
+  <name>ВедетсяУчетПоПутевымЛистам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ведется учет по путевым листам</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

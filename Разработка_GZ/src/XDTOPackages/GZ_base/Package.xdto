@@ -1,0 +1,1098 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://zakupki.gov.ru/oos/base/1" elementFormQualified="true" attributeFormQualified="false">
+	<valueType name="EATaxesCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="10"/>
+	<valueType name="KTRUNotUsingReasonCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="10"/>
+	<valueType name="KVRCodeType" base="xs:string" variety="Atomic" length="3"/>
+	<valueType name="NPASt14CodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="20"/>
+	<valueType name="SNILSType" base="xs:string" variety="Atomic">
+		<pattern>\d{10}|\d{11}</pattern>
+	</valueType>
+	<valueType name="VATRateEnum" base="xs:string" variety="Atomic">
+		<enumeration>0</enumeration>
+		<enumeration>10</enumeration>
+		<enumeration>18</enumeration>
+		<enumeration>20</enumeration>
+		<enumeration>n</enumeration>
+	</valueType>
+	<valueType name="abandonedReasonCode" base="xs:string" variety="Atomic" minLength="1" maxLength="20"/>
+	<valueType name="abandonedReasonName" base="xs:string" variety="Atomic" minLength="1" maxLength="1000"/>
+	<valueType name="abandonedReasonObjectName" base="xs:string" variety="Atomic" minLength="1" maxLength="350"/>
+	<valueType name="admissionResultsEnum" base="xs:string" variety="Atomic">
+		<enumeration>WIN_OFFER</enumeration>
+		<enumeration>LIKE_WIN_OFFER</enumeration>
+		<enumeration>SECOND_OFFER</enumeration>
+		<enumeration>PASS_OFFER</enumeration>
+	</valueType>
+	<valueType name="anotherKTRUNotUsingReasonType" base="xs:string" variety="Atomic" minLength="1" maxLength="256"/>
+	<valueType name="article15PartsType" base="xs:string" variety="Atomic">
+		<enumeration>P4</enumeration>
+		<enumeration>P5</enumeration>
+		<enumeration>P6</enumeration>
+		<enumeration>P41</enumeration>
+	</valueType>
+	<valueType name="attachedDocumentKindCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="10"/>
+	<valueType name="authorityType" base="xs:string" variety="Atomic">
+		<enumeration>FA</enumeration>
+		<enumeration>FO</enumeration>
+		<enumeration>S</enumeration>
+		<enumeration>M</enumeration>
+	</valueType>
+	<valueType name="bankGuaranteeDocNumberType" base="xs:string" variety="Atomic" minLength="1" maxLength="23"/>
+	<valueType name="bankGuaranteeRegNumberType" base="xs:string" variety="Atomic" minLength="1" maxLength="20"/>
+	<valueType name="bikType" base="xs:string" variety="Atomic">
+		<pattern>\d{9}</pattern>
+	</valueType>
+	<valueType name="boNumberType" base="xs:string" variety="Atomic" minLength="1" maxLength="19"/>
+	<valueType name="budgetCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="8"/>
+	<valueType name="changePriceFoundationNumType" base="xs:string" variety="Atomic" minLength="1" maxLength="10"/>
+	<valueType name="checkResultNumberType" base="xs:string" variety="Atomic" minLength="1" maxLength="256"/>
+	<valueType name="combinationEnumType" base="xs:int" variety="Atomic">
+		<enumeration>0</enumeration>
+		<enumeration>1</enumeration>
+	</valueType>
+	<valueType name="commissionRoleCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="10"/>
+	<valueType name="confirmationResultType" base="xs:string" variety="Atomic">
+		<enumeration>success</enumeration>
+		<enumeration>failure</enumeration>
+		<enumeration>processing</enumeration>
+	</valueType>
+	<valueType name="consRegistryNumType" base="xs:string" variety="Atomic" length="8"/>
+	<valueType name="contractDocRegNum615Type" base="xs:string" variety="Atomic">
+		<pattern>\d{22}</pattern>
+	</valueType>
+	<valueType name="contractGuaranteeConfirmationsEnum" base="xs:string" variety="Atomic">
+		<enumeration>GN</enumeration>
+		<enumeration>GA</enumeration>
+		<enumeration>G1.5N</enumeration>
+		<enumeration>GNC</enumeration>
+		<enumeration>GPCh6St96</enumeration>
+		<enumeration>GACh6St96</enumeration>
+		<enumeration>G1.5NCh6St96</enumeration>
+		<enumeration>GPCh6St96I</enumeration>
+		<enumeration>PI3Y3C</enumeration>
+		<enumeration>GP3Ch23St68</enumeration>
+	</valueType>
+	<valueType name="contractKSNumType" base="xs:string" variety="Atomic" minLength="1" maxLength="20"/>
+	<valueType xmlns:d2p1="http://zakupki.gov.ru/oos/base/1" name="contractLifeCycleCaseCodeType" base="d2p1:text10Type" variety="Atomic"/>
+	<valueType name="contractNumber615Type" base="xs:string" variety="Atomic" minLength="1" maxLength="100"/>
+	<valueType name="contractPartyTypeEnum" base="xs:string" variety="Atomic">
+		<enumeration>C</enumeration>
+		<enumeration>S</enumeration>
+	</valueType>
+	<valueType name="contractPenaltyTypeEnum" base="xs:string" variety="Atomic">
+		<enumeration>F</enumeration>
+		<enumeration>I</enumeration>
+	</valueType>
+	<valueType name="contractPeriodEnum" base="xs:string" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+		<enumeration>3</enumeration>
+	</valueType>
+	<valueType name="contractProjDocNumType" base="xs:string" variety="Atomic">
+		<pattern>\d{25}</pattern>
+	</valueType>
+	<valueType name="contractProjNumType" base="xs:string" variety="Atomic">
+		<pattern>\d{23}</pattern>
+	</valueType>
+	<valueType xmlns:d2p1="http://zakupki.gov.ru/oos/base/1" name="contractRefusalReasonCodeType" base="d2p1:text10Type" variety="Atomic"/>
+	<valueType name="contractRegNum615Type" base="xs:string" variety="Atomic">
+		<pattern>\d{18}</pattern>
+	</valueType>
+	<valueType name="contractRegNumType" base="xs:string" variety="Atomic">
+		<pattern>\d{19}</pattern>
+	</valueType>
+	<valueType name="control99ControlDocNumberType" base="xs:string" variety="Atomic" minLength="1" maxLength="256"/>
+	<valueType name="control99DocNumberType" base="xs:string" variety="Atomic" minLength="1" maxLength="32"/>
+	<valueType name="control99DocumentTypeEnum" base="xs:string" variety="Atomic">
+		<enumeration>contract</enumeration>
+		<enumeration>contractProcedure</enumeration>
+		<enumeration>purchasePlan</enumeration>
+		<enumeration>tenderPlan2017</enumeration>
+		<enumeration>notification</enumeration>
+		<enumeration>protocol</enumeration>
+		<enumeration>contractProject</enumeration>
+		<enumeration>contractProjectChange</enumeration>
+		<enumeration>tenderPlan2020</enumeration>
+	</valueType>
+	<valueType name="control99HeadNameType" base="xs:string" variety="Atomic" minLength="1" maxLength="180"/>
+	<valueType name="costCriterionCodeEnum" base="xs:string" variety="Atomic">
+		<enumeration>CP</enumeration>
+		<enumeration>MC</enumeration>
+		<enumeration>TC</enumeration>
+		<enumeration>EN</enumeration>
+	</valueType>
+	<valueType name="costCriterionProtocolEOK2020FirstSectionsCodeEnum" base="xs:string" variety="Atomic">
+		<enumeration>MC</enumeration>
+	</valueType>
+	<valueType name="countryCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="3"/>
+	<valueType name="currencyCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="3"/>
+	<valueType xmlns:d2p1="http://zakupki.gov.ru/oos/base/1" name="deviationFactFoundationCodeType" base="d2p1:text10Type" variety="Atomic"/>
+	<valueType xmlns:d2p1="http://zakupki.gov.ru/oos/base/1" name="disagreementCodeType" base="d2p1:text10Type" variety="Atomic">
+		<enumeration>DI</enumeration>
+		<enumeration>RCC</enumeration>
+		<enumeration>RCP</enumeration>
+	</valueType>
+	<valueType name="docNameType" base="xs:string" variety="Atomic" minLength="1" maxLength="1000"/>
+	<valueType name="docNumberType" base="xs:string" variety="Atomic" minLength="1" maxLength="350"/>
+	<valueType name="documentKindType" base="xs:string" variety="Atomic">
+		<enumeration>bankGuarantee</enumeration>
+		<enumeration>bankGuaranteeInvalid</enumeration>
+		<enumeration>bankGuaranteeRefusal</enumeration>
+		<enumeration>bankGuaranteeRefusalInvalid</enumeration>
+		<enumeration>bankGuaranteeTermination</enumeration>
+		<enumeration>bankGuaranteeTerminationInvalid</enumeration>
+		<enumeration>bankGuaranteeReturn</enumeration>
+		<enumeration>bankGuaranteeReturnInvalid</enumeration>
+		<enumeration>checkPlan</enumeration>
+		<enumeration>checkResult</enumeration>
+		<enumeration>checkResultCancel</enumeration>
+		<enumeration>clarification</enumeration>
+		<enumeration>clarificationRequest</enumeration>
+		<enumeration>complaint</enumeration>
+		<enumeration>complaintCancel</enumeration>
+		<enumeration>complaintGroup</enumeration>
+		<enumeration>electronicComplaint</enumeration>
+		<enumeration>eventPlan</enumeration>
+		<enumeration>eventResult</enumeration>
+		<enumeration>eventResultCancel</enumeration>
+		<enumeration>unplannedEvent</enumeration>
+		<enumeration>unplannedEventCancel</enumeration>
+		<enumeration>confirmation</enumeration>
+		<enumeration>contract</enumeration>
+		<enumeration>contractCancel</enumeration>
+		<enumeration>contractProcedure</enumeration>
+		<enumeration>contractProcedureCancel</enumeration>
+		<enumeration>contractSign</enumeration>
+		<enumeration>fcsClarification</enumeration>
+		<enumeration>fcsClarificationRequest</enumeration>
+		<enumeration>fcsNotificationCancel</enumeration>
+		<enumeration>fcsNotificationCancelFailure</enumeration>
+		<enumeration>fcsNotificationEF</enumeration>
+		<enumeration>fcsNotificationEFDateChange</enumeration>
+		<enumeration>fcsNotificationEP</enumeration>
+		<enumeration>fcsNotification111</enumeration>
+		<enumeration>fcsNotificationISM</enumeration>
+		<enumeration>fcsNotificationISO</enumeration>
+		<enumeration>fcsNotificationLotCancel</enumeration>
+		<enumeration>fcsNotificationOK</enumeration>
+		<enumeration>fcsNotificationOKD</enumeration>
+		<enumeration>fcsNotificationOKOU</enumeration>
+		<enumeration>fcsNotificationPO</enumeration>
+		<enumeration>fcsNotificationZakA</enumeration>
+		<enumeration>fcsNotificationZakK</enumeration>
+		<enumeration>fcsNotificationZakKD</enumeration>
+		<enumeration>fcsNotificationZakKOU</enumeration>
+		<enumeration>fcsNotificationZK</enumeration>
+		<enumeration>fcsNotificationZP</enumeration>
+		<enumeration>fcsNotificationLotChange</enumeration>
+		<enumeration>fcsNotificationOrgChange</enumeration>
+		<enumeration>fcsPurchaseDocument</enumeration>
+		<enumeration>fcsPurchaseDocumentCancel</enumeration>
+		<enumeration>fcsTimeEF</enumeration>
+		<enumeration>fcsSecondPartAppOpening</enumeration>
+		<enumeration>fcsPurchaseProlongationZK</enumeration>
+		<enumeration>fcsPurchaseProlongationOK</enumeration>
+		<enumeration>fcsContractSign</enumeration>
+		<enumeration>fcsPlacementResult</enumeration>
+		<enumeration>fcsProtocolCancel</enumeration>
+		<enumeration>fcsProtocolEF1</enumeration>
+		<enumeration>fcsProtocolEF2</enumeration>
+		<enumeration>fcsProtocolEF3</enumeration>
+		<enumeration>fcsProtocolEFInvalidation</enumeration>
+		<enumeration>fcsProtocolEFSingleApp</enumeration>
+		<enumeration>fcsProtocolEFSinglePart</enumeration>
+		<enumeration>fcsProtocolEvasion</enumeration>
+		<enumeration>fcsProtocolDeviation</enumeration>
+		<enumeration>fcsProtocolPO</enumeration>
+		<enumeration>fcsProtocolOK1</enumeration>
+		<enumeration>fcsProtocolOK2</enumeration>
+		<enumeration>fcsProtocolOKSingleApp</enumeration>
+		<enumeration>fcsProtocolOKOU1</enumeration>
+		<enumeration>fcsProtocolOKOU2</enumeration>
+		<enumeration>fcsProtocolOKOU3</enumeration>
+		<enumeration>fcsProtocolOKOUSingleApp</enumeration>
+		<enumeration>fcsProtocolOKD1</enumeration>
+		<enumeration>fcsProtocolOKD2</enumeration>
+		<enumeration>fcsProtocolOKD3</enumeration>
+		<enumeration>fcsProtocolOKD4</enumeration>
+		<enumeration>fcsProtocolOKD5</enumeration>
+		<enumeration>fcsProtocolOKDSingleApp</enumeration>
+		<enumeration>fcsProtocolZK</enumeration>
+		<enumeration>fcsProtocolZKAfterProlong</enumeration>
+		<enumeration>fcsProtocolZKBI</enumeration>
+		<enumeration>fcsProtocolZPExtract</enumeration>
+		<enumeration>fcsProtocolZPFinal</enumeration>
+		<enumeration>fcsProtocolZP</enumeration>
+		<enumeration>fcsRequestForQuotation</enumeration>
+		<enumeration>fcsRequestForQuotationCancel</enumeration>
+		<enumeration>fcsCustomerReportContractExecution</enumeration>
+		<enumeration>fcsCustomerReportContractExecutionInvalid</enumeration>
+		<enumeration>fcsCustomerReportSmallScaleBusiness</enumeration>
+		<enumeration>fcsCustomerReportSmallScaleBusinessInvalid</enumeration>
+		<enumeration>fcsCustomerReportSingleContractor</enumeration>
+		<enumeration>fcsCustomerReportSingleContractorInvalid</enumeration>
+		<enumeration>fcsCustomerReportBigProjectMonitoring</enumeration>
+		<enumeration>fcsCustomerReportBigProjectMonitoringInvalid</enumeration>
+		<enumeration>masterData</enumeration>
+		<enumeration>notificationCancel</enumeration>
+		<enumeration>notificationEF</enumeration>
+		<enumeration>notificationOK</enumeration>
+		<enumeration>notificationPlacerChange</enumeration>
+		<enumeration>notificationPO</enumeration>
+		<enumeration>notificationSZ</enumeration>
+		<enumeration>notificationZK</enumeration>
+		<enumeration>placementResult</enumeration>
+		<enumeration>protocolCancel</enumeration>
+		<enumeration>protocolEF1</enumeration>
+		<enumeration>protocolEF2</enumeration>
+		<enumeration>protocolEF3</enumeration>
+		<enumeration>protocolEvasion</enumeration>
+		<enumeration>protocolOK1</enumeration>
+		<enumeration>protocolOK2</enumeration>
+		<enumeration>protocolOK3</enumeration>
+		<enumeration>protocolPO1</enumeration>
+		<enumeration>protocolZK1</enumeration>
+		<enumeration>protocolZK5</enumeration>
+		<enumeration>purchasePlan</enumeration>
+		<enumeration>purchasePlanExecution</enumeration>
+		<enumeration>purchasePlanChange</enumeration>
+		<enumeration>tenderPlan</enumeration>
+		<enumeration>tenderPlan2017</enumeration>
+		<enumeration>tenderPlan2020</enumeration>
+		<enumeration>tenderPlanChange</enumeration>
+		<enumeration>tenderPlanChange2017</enumeration>
+		<enumeration>tenderPlanChange2020</enumeration>
+		<enumeration>tenderPlanUnstructured</enumeration>
+		<enumeration>tenderPlanCancel</enumeration>
+		<enumeration>tenderSuspension</enumeration>
+		<enumeration>timeEF</enumeration>
+		<enumeration>unplannedCheck</enumeration>
+		<enumeration>unplannedCheckCancel</enumeration>
+		<enumeration>unplannedCheckTenderSusp</enumeration>
+		<enumeration>sketchPlan</enumeration>
+		<enumeration>sketchPlanExecution</enumeration>
+		<enumeration>control99BeginMessage</enumeration>
+		<enumeration>control99RefusalMessage</enumeration>
+		<enumeration>control99NoticeCompliance</enumeration>
+		<enumeration>control99ProtocolMismatch</enumeration>
+		<enumeration>control99ProtocolMismatchReductFunds</enumeration>
+		<enumeration>pprf615NotificationEF</enumeration>
+		<enumeration>pprf615TimeEF</enumeration>
+		<enumeration>pprf615ProtocolEF1</enumeration>
+		<enumeration>pprf615ProtocolEF2</enumeration>
+		<enumeration>pprf615ActEvasion</enumeration>
+		<enumeration>pprf615ActDeviation</enumeration>
+		<enumeration>pprf615NotificationPO</enumeration>
+		<enumeration>pprf615ProtocolPO</enumeration>
+		<enumeration>pprf615NotificationCancel</enumeration>
+		<enumeration>pprf615ProtocolCancel</enumeration>
+		<enumeration>pprf615ActCancel</enumeration>
+		<enumeration>pprf615Clarification</enumeration>
+		<enumeration>pprf615ClarificationRequest</enumeration>
+		<enumeration>pprf615QualifiedContractor</enumeration>
+		<enumeration>pprf615QualifiedContractorExclude</enumeration>
+		<enumeration>pprf615QualifiedContractorExcludeCancel</enumeration>
+		<enumeration>pprf615Contract</enumeration>
+		<enumeration>pprf615ContractProcedur</enumeration>
+		<enumeration>pprf615ContractProcedureCancel</enumeration>
+		<enumeration>pprf615ContractSign</enumeration>
+		<enumeration>pprf615MasterData</enumeration>
+		<enumeration>epNotificationCancel</enumeration>
+		<enumeration>epNotificationCancelFailure</enumeration>
+		<enumeration>epProtocolCancel</enumeration>
+		<enumeration>epClarificationDocRequest</enumeration>
+		<enumeration>epClarificationDoc</enumeration>
+		<enumeration>epClarificationResultRequest</enumeration>
+		<enumeration>epClarificationResult</enumeration>
+		<enumeration>epNotificationEOK</enumeration>
+		<enumeration>epProtocolEOK1</enumeration>
+		<enumeration>epProtocolEOK2</enumeration>
+		<enumeration>epProtocolEOK3</enumeration>
+		<enumeration>epProtocolEOKSingleApp</enumeration>
+		<enumeration>epProtocolEOKSinglePart</enumeration>
+		<enumeration>epProlongationEOK</enumeration>
+		<enumeration>epNotificationEOKOU</enumeration>
+		<enumeration>epProtocolEOKOU1</enumeration>
+		<enumeration>epProtocolEOKOU2</enumeration>
+		<enumeration>epProtocolEOKOU3</enumeration>
+		<enumeration>epProtocolEOKOUSingleApp</enumeration>
+		<enumeration>epProtocolEOKOUSinglePart</enumeration>
+		<enumeration>epProlongationEOKOU</enumeration>
+		<enumeration>epNotificationEOKD</enumeration>
+		<enumeration>epProtocolEOKD1</enumeration>
+		<enumeration>epProtocolEOKD2</enumeration>
+		<enumeration>epProtocolEOKD3</enumeration>
+		<enumeration>epProtocolEOKD4</enumeration>
+		<enumeration>epProtocolEOKDSingleApp</enumeration>
+		<enumeration>epProtocolEOKDSinglePart</enumeration>
+		<enumeration>epProlongationEOKD</enumeration>
+		<enumeration>epNotificationEZK</enumeration>
+		<enumeration>epProtocolEZK1</enumeration>
+		<enumeration>epProtocolEZK2</enumeration>
+		<enumeration>epProlongationEZK</enumeration>
+		<enumeration>epNotificationEZP</enumeration>
+		<enumeration>epProtocolEZP1Extract</enumeration>
+		<enumeration>epProtocolEZP1</enumeration>
+		<enumeration>epProtocolEZP2</enumeration>
+		<enumeration>epNotificationEZakK</enumeration>
+		<enumeration>epNotificationEZakKOU</enumeration>
+		<enumeration>epNotificationEZakKD</enumeration>
+		<enumeration>epNotificationEZakA</enumeration>
+		<enumeration>cpContractProject</enumeration>
+		<enumeration>cpContractProjectChange</enumeration>
+		<enumeration>cpContractProjectSign</enumeration>
+		<enumeration>cpContractSign</enumeration>
+		<enumeration>cpProtocolDisagreements</enumeration>
+		<enumeration>cpNoticeDeviation</enumeration>
+		<enumeration>cpNoticeEvasion</enumeration>
+		<enumeration>cpProcedureCancel</enumeration>
+		<enumeration>cpProcedureCancelFailure</enumeration>
+		<enumeration>fcsSentPackageListRequest</enumeration>
+		<enumeration>fcsSentPackageList</enumeration>
+		<enumeration>fcsReSendPackage</enumeration>
+		<enumeration>fcsReceivedPackageListRequest</enumeration>
+		<enumeration>fcsReceivedPackageList</enumeration>
+		<enumeration>notificationRemoveDoc</enumeration>
+		<enumeration>notEnumeratedPackage</enumeration>
+		<enumeration>fcsDocProjectStatusRequest</enumeration>
+		<enumeration>fcsDocProjectStatusResponse</enumeration>
+		<enumeration>epNotificationEZK2020</enumeration>
+		<enumeration>epProtocolEZK2020FinalPart</enumeration>
+		<enumeration>epNotificationEZT2020</enumeration>
+		<enumeration>epProtocolEZT2020FinalPart</enumeration>
+		<enumeration>epNoticeApplicationsAbsence</enumeration>
+		<enumeration>epNotificationEF2020</enumeration>
+		<enumeration>epProtocolEF2020SubmitOffers</enumeration>
+		<enumeration>epProtocolEF2020FinalPart</enumeration>
+		<enumeration>epNotificationEOK2020</enumeration>
+		<enumeration>epProtocolEOK2020FirstSections</enumeration>
+		<enumeration>epProtocolEOK2020SecondSectionsPart</enumeration>
+		<enumeration>epProtocolEOK2020FinalPart</enumeration>
+		<enumeration>epProtocolEvasion</enumeration>
+		<enumeration>epProtocolDeviation</enumeration>
+		<enumeration>epClosedNoticeApplicationCancel</enumeration>
+		<enumeration>epClosedNotificationCancel</enumeration>
+		<enumeration>epClosedNotificationCancelFailure</enumeration>
+		<enumeration>epClosedProtocolCancel</enumeration>
+		<enumeration>epClosedProtocolEvasion</enumeration>
+		<enumeration>epClosedProtocolDeviation</enumeration>
+		<enumeration>epClosedPlacementResult</enumeration>
+		<enumeration>epClosedNotificationOrgChange</enumeration>
+		<enumeration>epClosedInvitationEZakA2020</enumeration>
+		<enumeration>epClosedProtocolEZakA2020DocRequest</enumeration>
+		<enumeration>epClosedProtocolEZakA2020Final</enumeration>
+		<enumeration>epClosedInvitationEZakK2020</enumeration>
+		<enumeration>epClosedProtocolEZakK2020DocRequest</enumeration>
+		<enumeration>epClosedProtocolEZakK2020Final</enumeration>
+	</valueType>
+	<valueType name="documentNumber615Type" base="xs:string" variety="Atomic">
+		<pattern>\d{22}</pattern>
+	</valueType>
+	<valueType name="documentNumberRegistryType" base="xs:string" variety="Atomic">
+		<pattern>\d{24}</pattern>
+	</valueType>
+	<valueType name="documentNumberType" base="xs:string" variety="Atomic" minLength="1" maxLength="100"/>
+	<valueType name="documentType70ArticleType" base="xs:string" variety="Atomic">
+		<enumeration>CPWOS</enumeration>
+		<enumeration>PDWWS</enumeration>
+		<enumeration>RRWCS</enumeration>
+		<enumeration>CPWWS</enumeration>
+		<enumeration>ECWWS</enumeration>
+		<enumeration>CPWWCS</enumeration>
+	</valueType>
+	<valueType name="drugDecimalCodeType" base="xs:decimal" variety="Atomic" totalDigits="20" fractionDigits="10"/>
+	<valueType name="drugExternalCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="50"/>
+	<valueType name="drugName2000Type" base="xs:string" variety="Atomic" minLength="1" maxLength="2000"/>
+	<valueType name="drugNameType" base="xs:string" variety="Atomic" minLength="1" maxLength="500"/>
+	<valueType name="drugPackaging1QuantityType" base="xs:decimal" variety="Atomic" totalDigits="11" fractionDigits="10"/>
+	<valueType name="drugPackaging2QuantityType" base="xs:int" variety="Atomic" totalDigits="11"/>
+	<valueType name="drugQuantityType" base="xs:decimal" variety="Atomic" totalDigits="20">
+		<pattern>\d+(\.\d{1,2})?</pattern>
+	</valueType>
+	<valueType name="drugSumaryPackagingQuantityType" base="xs:decimal" variety="Atomic" totalDigits="22" fractionDigits="11"/>
+	<valueType name="eMailType" base="xs:string" variety="Atomic" minLength="1" maxLength="256"/>
+	<valueType name="errorCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="10"/>
+	<valueType name="eruzRegistryNumType" base="xs:string" variety="Atomic">
+		<pattern>\d{8}</pattern>
+	</valueType>
+	<valueType name="etpCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="20"/>
+	<valueType name="evasDevFactFoundationCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="10"/>
+	<valueType name="evasDevFactFoundationNameType" base="xs:string" variety="Atomic" minLength="1" maxLength="1000"/>
+	<valueType name="exclusionReason615CodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="20"/>
+	<valueType name="externalIdType" base="xs:string" variety="Atomic" minLength="1" maxLength="40"/>
+	<valueType name="fileHashType" base="xs:base64Binary" variety="Atomic"/>
+	<valueType name="fileNameType" base="xs:string" variety="Atomic" minLength="1" maxLength="1024"/>
+	<valueType name="fileSizeType" base="xs:nonNegativeInteger" variety="Atomic" totalDigits="20"/>
+	<valueType name="fundingSources615CodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="5"/>
+	<valueType name="groupBuildCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="5"/>
+	<valueType name="guidType" base="xs:string" variety="Atomic" minLength="1" maxLength="36"/>
+	<valueType name="hash32" base="xs:string" variety="Atomic" minLength="1" maxLength="32"/>
+	<valueType name="hexHashSha256Type" base="xs:string" variety="Atomic" length="64"/>
+	<valueType name="hrefType" base="xs:string" variety="Atomic" minLength="1" maxLength="1024"/>
+	<valueType name="ikuType" base="xs:string" variety="Atomic">
+		<pattern>\d{20}</pattern>
+	</valueType>
+	<valueType name="ikzCodeType" base="xs:string" variety="Atomic">
+		<pattern>\d{36}</pattern>
+	</valueType>
+	<valueType name="indexModeType" base="xs:string" variety="Atomic">
+		<enumeration>PROD</enumeration>
+		<enumeration>TEST</enumeration>
+	</valueType>
+	<valueType name="indicatorValueType" base="xs:decimal" variety="Atomic" totalDigits="20" fractionDigits="4"/>
+	<valueType name="innEntityType" base="xs:string" variety="Atomic">
+		<pattern>\d{10}</pattern>
+	</valueType>
+	<valueType name="innIndividualType" base="xs:string" variety="Atomic">
+		<pattern>\d{12}</pattern>
+	</valueType>
+	<valueType name="innOrganizationType" base="xs:string" variety="Atomic">
+		<pattern>\d{10}</pattern>
+	</valueType>
+	<valueType name="innType" base="xs:string" variety="Atomic">
+		<pattern>\d{10}|\d{12}</pattern>
+	</valueType>
+	<valueType name="journalNumberType" base="xs:string" variety="Atomic" minLength="1" maxLength="100"/>
+	<valueType name="kbkType" base="xs:string" variety="Atomic" length="20"/>
+	<valueType name="kladrCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="20"/>
+	<valueType name="kladrTextType" base="xs:string" variety="Atomic" minLength="1" maxLength="200"/>
+	<valueType name="kppType" base="xs:string" variety="Atomic" length="9"/>
+	<valueType name="ktruCharacteristicKindType" base="xs:string" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+		<enumeration>3</enumeration>
+	</valueType>
+	<valueType name="ktruCharacteristicTypeType" base="xs:string" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+	</valueType>
+	<valueType name="ktruCharacteristicValueFormatType" base="xs:string" variety="Atomic">
+		<enumeration>N</enumeration>
+		<enumeration>A</enumeration>
+	</valueType>
+	<valueType name="ktruClassifierCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="30"/>
+	<valueType name="ktruCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="25"/>
+	<valueType name="ktruDictCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="10"/>
+	<valueType name="ktruDictNameType" base="xs:string" variety="Atomic" minLength="1" maxLength="500"/>
+	<valueType name="ktruMaxMathNotationType" base="xs:string" variety="Atomic">
+		<enumeration>less</enumeration>
+		<enumeration>lessOrEqual</enumeration>
+	</valueType>
+	<valueType name="ktruMinMathNotationType" base="xs:string" variety="Atomic">
+		<enumeration>greater</enumeration>
+		<enumeration>greaterOrEqual</enumeration>
+	</valueType>
+	<valueType name="measurementOrderEnum" base="xs:string" variety="Atomic">
+		<enumeration>F</enumeration>
+		<enumeration>L</enumeration>
+		<enumeration>O</enumeration>
+	</valueType>
+	<valueType name="messageStatusEnum" base="xs:string" variety="Atomic">
+		<enumeration>processing</enumeration>
+		<enumeration>error</enumeration>
+		<enumeration>completed</enumeration>
+		<enumeration>wait_confirmation</enumeration>
+		<enumeration>confirmation_processing</enumeration>
+		<enumeration>confirmation_ok</enumeration>
+		<enumeration>confirmation_fail</enumeration>
+		<enumeration>resend</enumeration>
+		<enumeration>resend_fail</enumeration>
+	</valueType>
+	<valueType name="moneyLongType" base="xs:string" variety="Atomic" minLength="1" maxLength="30">
+		<pattern>(-)?\d+(\.\d{1,11})?</pattern>
+	</valueType>
+	<valueType name="moneyMaxLengthToPoint18Type" base="xs:string" variety="Atomic" minLength="1" maxLength="21">
+		<pattern>\d{1,18}(\.\d{1,2})?</pattern>
+	</valueType>
+	<valueType name="moneyMaxLengthToPoint29Type" base="xs:string" variety="Atomic" minLength="1" maxLength="30">
+		<pattern>\d{1,29}(\.\d{1,11})?</pattern>
+	</valueType>
+	<valueType name="moneyPosNegMaxLengthToPoint18Type" base="xs:string" variety="Atomic" minLength="1" maxLength="21">
+		<pattern>(-)?\d{1,18}(\.\d{1,2})?</pattern>
+	</valueType>
+	<valueType name="moneyPositiveType" base="xs:string" variety="Atomic" minLength="1" maxLength="21">
+		<pattern>\d+(\.\d{1,2})?</pattern>
+	</valueType>
+	<valueType name="moneyType" base="xs:string" variety="Atomic" minLength="1" maxLength="21">
+		<pattern>(-)?\d+(\.\d{1,2})?</pattern>
+	</valueType>
+	<valueType name="monthType" base="xs:byte" variety="Atomic" minInclusive="1" maxInclusive="12"/>
+	<valueType name="nameType" base="xs:string" variety="Atomic" minLength="1" maxLength="60"/>
+	<valueType name="nationalProjectCode" base="xs:string" variety="Atomic" minLength="1" maxLength="2"/>
+	<valueType name="nationalProjectLevel" base="xs:string" variety="Atomic" minLength="1" maxLength="1"/>
+	<valueType name="objectTypeEnum" base="xs:string" variety="Atomic">
+		<enumeration>94_OK</enumeration>
+		<enumeration>94_EF</enumeration>
+		<enumeration>94_ZK</enumeration>
+		<enumeration>94_PO</enumeration>
+		<enumeration>94_SZ</enumeration>
+		<enumeration>94_DD</enumeration>
+		<enumeration>EF</enumeration>
+		<enumeration>EP</enumeration>
+		<enumeration>ISM</enumeration>
+		<enumeration>ISO</enumeration>
+		<enumeration>OKD</enumeration>
+		<enumeration>OKOU</enumeration>
+		<enumeration>OK</enumeration>
+		<enumeration>PO</enumeration>
+		<enumeration>ZAKA</enumeration>
+		<enumeration>ZAKKD</enumeration>
+		<enumeration>ZAKKOU</enumeration>
+		<enumeration>ZAKK</enumeration>
+		<enumeration>ZKBI</enumeration>
+		<enumeration>ZK</enumeration>
+		<enumeration>ZP</enumeration>
+		<enumeration>ST111</enumeration>
+		<enumeration>CT</enumeration>
+		<enumeration>MD</enumeration>
+		<enumeration>TP</enumeration>
+		<enumeration>SP</enumeration>
+		<enumeration>PP</enumeration>
+		<enumeration>BG</enumeration>
+		<enumeration>ZC</enumeration>
+		<enumeration>OZ</enumeration>
+		<enumeration>DD</enumeration>
+		<enumeration>PPM</enumeration>
+		<enumeration>PRK</enumeration>
+		<enumeration>PVKM</enumeration>
+		<enumeration>CM</enumeration>
+		<enumeration>CR</enumeration>
+		<enumeration>UC</enumeration>
+		<enumeration>PC</enumeration>
+		<enumeration>99DOC</enumeration>
+		<enumeration>ST</enumeration>
+		<enumeration>615_PO</enumeration>
+		<enumeration>615_KPO</enumeration>
+		<enumeration>615_EF</enumeration>
+		<enumeration>615_CT</enumeration>
+		<enumeration>615_DD</enumeration>
+		<enumeration>EOK</enumeration>
+		<enumeration>EOKOU</enumeration>
+		<enumeration>EOKD</enumeration>
+		<enumeration>EZK</enumeration>
+		<enumeration>EZP</enumeration>
+		<enumeration>EZT</enumeration>
+		<enumeration>EZAKA</enumeration>
+		<enumeration>EZAKKD</enumeration>
+		<enumeration>EZAKKOU</enumeration>
+		<enumeration>EZAKK</enumeration>
+		<enumeration>EP_DD</enumeration>
+		<enumeration>CP</enumeration>
+		<enumeration>TP2020</enumeration>
+		<enumeration>SM</enumeration>
+	</valueType>
+	<valueType name="ogrnCodeType" base="xs:string" variety="Atomic">
+		<pattern>\d{13}|\d{15}</pattern>
+	</valueType>
+	<valueType name="okeiCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="4"/>
+	<valueType name="okfsCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="2"/>
+	<valueType name="okopfCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="5"/>
+	<valueType name="okpdCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="12"/>
+	<valueType name="okpdNameType" base="xs:string" variety="Atomic" minLength="1" maxLength="2000"/>
+	<valueType name="okpoCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="10"/>
+	<valueType name="oktmoCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="11"/>
+	<valueType name="participantStatusType" base="xs:string" variety="Atomic">
+		<enumeration>1</enumeration>
+		<enumeration>2</enumeration>
+		<enumeration>3</enumeration>
+		<enumeration>4</enumeration>
+	</valueType>
+	<valueType name="participantTypeEnum" base="xs:string" variety="Atomic">
+		<enumeration>U</enumeration>
+		<enumeration>UF</enumeration>
+		<enumeration>B</enumeration>
+	</valueType>
+	<valueType name="percentD2Type" base="xs:double" variety="Atomic">
+		<pattern>\d+(\.\d{1,2})?</pattern>
+	</valueType>
+	<valueType name="percentRestr0100D11Type" base="xs:double" variety="Atomic" minInclusive="0" maxInclusive="100">
+		<pattern>\d+(\.\d{1,11})?</pattern>
+	</valueType>
+	<valueType name="percentRestr0100D2Type" base="xs:double" variety="Atomic" minInclusive="0" maxInclusive="100">
+		<pattern>\d+(\.\d{1,2})?</pattern>
+	</valueType>
+	<valueType name="percentRestr0100Type" base="xs:double" variety="Atomic" minInclusive="0" maxInclusive="100"/>
+	<valueType name="personalAccountType" base="xs:string" variety="Atomic" minLength="1" maxLength="30"/>
+	<valueType name="phoneType" base="xs:string" variety="Atomic" minLength="1" maxLength="30"/>
+	<valueType name="placerRoleContractProjectEnum" base="xs:string" variety="Atomic">
+		<enumeration>CU</enumeration>
+		<enumeration>RA</enumeration>
+		<enumeration>AI</enumeration>
+		<enumeration>OA</enumeration>
+		<enumeration>CS</enumeration>
+		<enumeration>RO</enumeration>
+		<enumeration>TKO</enumeration>
+		<enumeration>AU</enumeration>
+		<enumeration>CC</enumeration>
+		<enumeration>CN</enumeration>
+	</valueType>
+	<valueType name="placingWayCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="7"/>
+	<valueType name="positionType" base="xs:string" variety="Atomic" minLength="1" maxLength="256"/>
+	<valueType name="prefsReqsShortNameType" base="xs:string" variety="Atomic" minLength="1" maxLength="20"/>
+	<valueType name="prescriptionNumberType" base="xs:string" variety="Atomic" minLength="1" maxLength="20"/>
+	<valueType name="printFormFileType" base="xs:string" variety="Atomic">
+		<enumeration>pdf</enumeration>
+		<enumeration>docx</enumeration>
+		<enumeration>doc</enumeration>
+		<enumeration>rtf</enumeration>
+		<enumeration>xls</enumeration>
+		<enumeration>xlsx</enumeration>
+		<enumeration>jpeg</enumeration>
+		<enumeration>jpg</enumeration>
+		<enumeration>bmp</enumeration>
+		<enumeration>tif</enumeration>
+		<enumeration>tiff</enumeration>
+		<enumeration>txt</enumeration>
+		<enumeration>zip</enumeration>
+		<enumeration>rar</enumeration>
+		<enumeration>gif</enumeration>
+		<enumeration>csv</enumeration>
+		<enumeration>odp</enumeration>
+		<enumeration>odf</enumeration>
+		<enumeration>ods</enumeration>
+		<enumeration>odt</enumeration>
+		<enumeration>sxc</enumeration>
+		<enumeration>sxw</enumeration>
+		<enumeration>xml</enumeration>
+		<enumeration>html</enumeration>
+		<enumeration>htm</enumeration>
+		<enumeration>7z</enumeration>
+	</valueType>
+	<valueType name="productHierarchyTypeEnumType" base="xs:string" variety="Atomic">
+		<enumeration>ND</enumeration>
+		<enumeration>CH</enumeration>
+		<enumeration>P</enumeration>
+	</valueType>
+	<valueType name="productTypeEnumType" base="xs:string" variety="Atomic">
+		<enumeration>PRODUCT</enumeration>
+		<enumeration>WORK</enumeration>
+		<enumeration>SERVICE</enumeration>
+	</valueType>
+	<valueType name="protocolEvDevTypeEnum" base="xs:string" variety="Atomic">
+		<enumeration>epProtocolEvasion</enumeration>
+		<enumeration>epProtocolDeviation</enumeration>
+		<enumeration>epClosedProtocolEvasion</enumeration>
+		<enumeration>epClosedProtocolDeviation</enumeration>
+	</valueType>
+	<valueType name="protocolTypeEnum" base="xs:string" variety="Atomic">
+		<enumeration>epProtocolEOK1</enumeration>
+		<enumeration>epProtocolEOK2</enumeration>
+		<enumeration>epProtocolEOK3</enumeration>
+		<enumeration>epProtocolEOKSingleApp</enumeration>
+		<enumeration>epProtocolEOKSinglePart</enumeration>
+		<enumeration>epProtocolEOKOU1</enumeration>
+		<enumeration>epProtocolEOKOU2</enumeration>
+		<enumeration>epProtocolEOKOU3</enumeration>
+		<enumeration>epProtocolEOKOUSingleApp</enumeration>
+		<enumeration>epProtocolEOKOUSinglePart</enumeration>
+		<enumeration>epProtocolEOKD1</enumeration>
+		<enumeration>epProtocolEOKD2</enumeration>
+		<enumeration>epProtocolEOKD3</enumeration>
+		<enumeration>epProtocolEOKD4</enumeration>
+		<enumeration>epProtocolEOKDSingleApp</enumeration>
+		<enumeration>epProtocolEOKDSinglePart</enumeration>
+		<enumeration>epProtocolEZK1</enumeration>
+		<enumeration>epProtocolEZK2</enumeration>
+		<enumeration>epProtocolEZP1Extract</enumeration>
+		<enumeration>epProtocolEZP1</enumeration>
+		<enumeration>epProtocolEZP2</enumeration>
+		<enumeration>epProtocolEZK2020FinalPart</enumeration>
+		<enumeration>epProtocolEZT2020FinalPart</enumeration>
+		<enumeration>epNoticeApplicationsAbsence</enumeration>
+		<enumeration>epProtocolEF2020SubmitOffers</enumeration>
+		<enumeration>epProtocolEF2020FinalPart</enumeration>
+		<enumeration>epProtocolEOK2020FirstSections</enumeration>
+		<enumeration>epProtocolEOK2020SecondSectionsPart</enumeration>
+		<enumeration>epProtocolEOK2020FinalPart</enumeration>
+		<enumeration>epClosedProtocolEZakA2020DocRequest</enumeration>
+		<enumeration>epClosedProtocolEZakA2020Final</enumeration>
+		<enumeration>epClosedProtocolEZakK2020DocRequest</enumeration>
+		<enumeration>epClosedProtocolEZakK2020Final</enumeration>
+	</valueType>
+	<valueType name="publicDiscussionNumType" base="xs:string" variety="Atomic">
+		<pattern>\d{8}|\d{12}</pattern>
+	</valueType>
+	<valueType name="publicDiscussionPlaceEnum" base="xs:string" variety="Atomic">
+		<enumeration>E</enumeration>
+		<enumeration>F</enumeration>
+	</valueType>
+	<valueType name="purchaseNumber615Type" base="xs:string" variety="Atomic">
+		<pattern>\d{18}</pattern>
+	</valueType>
+	<valueType name="purchaseNumberType" base="xs:string" variety="Atomic">
+		<pattern>\d{19}</pattern>
+	</valueType>
+	<valueType name="purchaseSubjectCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="5"/>
+	<valueType name="qualifiedContractorCodeType" base="xs:string" variety="Atomic">
+		<pattern>\d{20}</pattern>
+	</valueType>
+	<valueType name="qualitativeCriterionCodeEnum" base="xs:string" variety="Atomic">
+		<enumeration>QF</enumeration>
+		<enumeration>QO</enumeration>
+	</valueType>
+	<valueType name="quantity18p11Type" base="xs:decimal" variety="Atomic" totalDigits="29">
+		<pattern>\d{1,18}(\.\d{1,11})?</pattern>
+	</valueType>
+	<valueType name="quantityContractSubjectNumType" base="xs:string" variety="Atomic" minLength="1" maxLength="13">
+		<pattern>(\d{1,6})+(\.\d{1,6})?</pattern>
+	</valueType>
+	<valueType name="quantityMultiplierType" base="xs:decimal" variety="Atomic" totalDigits="21">
+		<pattern>\d+(\.\d{1,5})?</pattern>
+	</valueType>
+	<valueType name="quantityType" base="xs:decimal" variety="Atomic">
+		<pattern>\d+(\.\d{1,2})?</pattern>
+	</valueType>
+	<valueType name="regNumberBaseType" base="xs:string" variety="Atomic" minLength="1" maxLength="36"/>
+	<valueType name="rejectReasonCode" base="xs:string" variety="Atomic" minLength="1" maxLength="20"/>
+	<valueType name="rejectReasonName" base="xs:string" variety="Atomic" minLength="1" maxLength="500"/>
+	<valueType name="responsibleRoleEFType" base="xs:string" variety="Atomic">
+		<enumeration>RO</enumeration>
+		<enumeration>TC</enumeration>
+	</valueType>
+	<valueType name="responsibleRoleEPType" base="xs:string" variety="Atomic">
+		<enumeration>CU</enumeration>
+		<enumeration>OCU</enumeration>
+		<enumeration>RA</enumeration>
+		<enumeration>ORA</enumeration>
+		<enumeration>AI</enumeration>
+		<enumeration>OAI</enumeration>
+		<enumeration>OA</enumeration>
+		<enumeration>OOA</enumeration>
+		<enumeration>CS</enumeration>
+		<enumeration>OCS</enumeration>
+		<enumeration>CC</enumeration>
+		<enumeration>OCC</enumeration>
+		<enumeration>AU</enumeration>
+		<enumeration>OAU</enumeration>
+		<enumeration>RO</enumeration>
+		<enumeration>TKO</enumeration>
+		<enumeration>CN</enumeration>
+		<enumeration>OCN</enumeration>
+		<enumeration>CU5CH26</enumeration>
+	</valueType>
+	<valueType name="responsibleRolePOType" base="xs:string" variety="Atomic">
+		<enumeration>RPO</enumeration>
+	</valueType>
+	<valueType name="responsibleRoleRKPOType" base="xs:string" variety="Atomic">
+		<enumeration>RPO</enumeration>
+		<enumeration>RO</enumeration>
+		<enumeration>TC</enumeration>
+	</valueType>
+	<valueType name="rightSideKTRUCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="18"/>
+	<valueType name="sIdType" base="xs:long" variety="Atomic"/>
+	<valueType name="schemeVersionType" base="xs:string" variety="Atomic">
+		<enumeration>1.0</enumeration>
+		<enumeration>4.1</enumeration>
+		<enumeration>4.2</enumeration>
+		<enumeration>4.3</enumeration>
+		<enumeration>4.3.100</enumeration>
+		<enumeration>4.4</enumeration>
+		<enumeration>4.4.2</enumeration>
+		<enumeration>4.5</enumeration>
+		<enumeration>4.6</enumeration>
+		<enumeration>5.0</enumeration>
+		<enumeration>5.1</enumeration>
+		<enumeration>5.2</enumeration>
+		<enumeration>6.0</enumeration>
+		<enumeration>6.1</enumeration>
+		<enumeration>6.2</enumeration>
+		<enumeration>6.2.100</enumeration>
+		<enumeration>6.3</enumeration>
+		<enumeration>6.4</enumeration>
+		<enumeration>7.0</enumeration>
+		<enumeration>7.1</enumeration>
+		<enumeration>7.2</enumeration>
+		<enumeration>7.3</enumeration>
+		<enumeration>7.5</enumeration>
+		<enumeration>8.0</enumeration>
+		<enumeration>8.1</enumeration>
+		<enumeration>8.2</enumeration>
+		<enumeration>8.2.100</enumeration>
+		<enumeration>8.3</enumeration>
+		<enumeration>9.0</enumeration>
+		<enumeration>9.1</enumeration>
+		<enumeration>9.2</enumeration>
+		<enumeration>9.3</enumeration>
+		<enumeration>10.0</enumeration>
+		<enumeration>10.1</enumeration>
+		<enumeration>10.2</enumeration>
+		<enumeration>10.2.310</enumeration>
+		<enumeration>10.3</enumeration>
+		<enumeration>11.0</enumeration>
+		<enumeration>11.1</enumeration>
+	</valueType>
+	<valueType name="serviceWorkCodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="5"/>
+	<valueType name="settlementAccountType" base="xs:string" variety="Atomic">
+		<pattern>\d{20}</pattern>
+	</valueType>
+	<valueType name="signatureType" base="xs:string" variety="Atomic">
+		<enumeration>CAdES-BES</enumeration>
+		<enumeration>CAdES-A</enumeration>
+	</valueType>
+	<valueType name="spzNumType" base="xs:string" variety="Atomic">
+		<pattern>\d{11}</pattern>
+	</valueType>
+	<valueType name="standardContractNumberType" base="xs:string" variety="Atomic">
+		<pattern>\d{16}</pattern>
+	</valueType>
+	<valueType name="subsystemType" base="xs:string" variety="Atomic">
+		<enumeration>PRIZ</enumeration>
+		<enumeration>RGK</enumeration>
+		<enumeration>RPG</enumeration>
+		<enumeration>RPZ</enumeration>
+		<enumeration>RBG</enumeration>
+		<enumeration>OZ</enumeration>
+		<enumeration>RDI</enumeration>
+		<enumeration>OOKZ</enumeration>
+		<enumeration>RPNZ</enumeration>
+		<enumeration>ZC</enumeration>
+		<enumeration>RRA</enumeration>
+		<enumeration>RPGZ</enumeration>
+	</valueType>
+	<valueType name="targetArticleType" base="xs:string" variety="Atomic" length="10"/>
+	<valueType name="taxPayerCode" base="xs:string" variety="Atomic" minLength="1" maxLength="100"/>
+	<valueType name="tenderPlan2017PositionNumberType" base="xs:string" variety="Atomic" length="28"/>
+	<valueType name="tenderPlan2017RegNumberType" base="xs:string" variety="Atomic" length="22"/>
+	<valueType name="tenderPlan2020PositionNumberType" base="xs:string" variety="Atomic" length="24"/>
+	<valueType name="tenderPlan2020PurchaseNumberType" base="xs:string" variety="Atomic">
+		<pattern>\d{4}</pattern>
+	</valueType>
+	<valueType name="tenderPlan2020PurchaseOrderNumberType" base="xs:string" variety="Atomic">
+		<pattern>\d{3}</pattern>
+	</valueType>
+	<valueType name="tenderPlan2020RegNumberType" base="xs:string" variety="Atomic" length="18"/>
+	<valueType name="tenderStageType" base="xs:string" variety="Atomic">
+		<enumeration>NP</enumeration>
+		<enumeration>AP</enumeration>
+		<enumeration>CW</enumeration>
+		<enumeration>FO</enumeration>
+		<enumeration>CO</enumeration>
+	</valueType>
+	<valueType name="terminationGround615CodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="5"/>
+	<valueType name="terminationReason615CodeType" base="xs:string" variety="Atomic" minLength="1" maxLength="5"/>
+	<valueType name="text1000Type" base="xs:string" variety="Atomic" minLength="1" maxLength="1000"/>
+	<valueType name="text100Type" base="xs:string" variety="Atomic" minLength="1" maxLength="100"/>
+	<valueType name="text10Type" base="xs:string" variety="Atomic" minLength="1" maxLength="10"/>
+	<valueType name="text2000Type" base="xs:string" variety="Atomic" minLength="1" maxLength="2000"/>
+	<valueType name="text200Type" base="xs:string" variety="Atomic" minLength="1" maxLength="200"/>
+	<valueType name="text255Type" base="xs:string" variety="Atomic" minLength="1" maxLength="255"/>
+	<valueType name="text350Type" base="xs:string" variety="Atomic" minLength="1" maxLength="350"/>
+	<valueType name="text4000Type" base="xs:string" variety="Atomic" minLength="1" maxLength="4000"/>
+	<valueType name="text500Type" base="xs:string" variety="Atomic" minLength="1" maxLength="500"/>
+	<valueType name="text50Type" base="xs:string" variety="Atomic" minLength="1" maxLength="50"/>
+	<valueType name="timeZoneDifferenceType" base="xs:string" variety="Atomic">
+		<pattern>[+\-]?\d{1,3}</pattern>
+	</valueType>
+	<valueType name="timeZoneNameType" base="xs:string" variety="Atomic" minLength="1" maxLength="25"/>
+	<valueType name="treasurySupportContractEnum" base="xs:string" variety="Atomic">
+		<enumeration>ALL</enumeration>
+		<enumeration>ADV</enumeration>
+	</valueType>
+	<valueType name="unfairSupplierOrderNumberType" base="xs:string" variety="Atomic" minLength="1" maxLength="60"/>
+	<valueType name="valueType" base="xs:decimal" variety="Atomic" totalDigits="5" fractionDigits="2"/>
+	<valueType name="versionNumberType" base="xs:int" variety="Atomic" minInclusive="0"/>
+	<valueType name="violationLevelType" base="xs:string" variety="Atomic">
+		<enumeration>error</enumeration>
+		<enumeration>warning</enumeration>
+	</valueType>
+	<valueType name="wfOperatorIDType" base="xs:string" variety="Atomic" length="3"/>
+	<valueType name="wfParticipantIDType" base="xs:string" variety="Atomic" minLength="4" maxLength="46"/>
+	<valueType name="wsObjectTypeEnum" base="xs:string" variety="Atomic">
+		<enumeration>TP</enumeration>
+		<enumeration>SM</enumeration>
+	</valueType>
+	<valueType name="wsPartnerType" base="xs:string" variety="Atomic">
+		<enumeration>OOS</enumeration>
+		<enumeration>GIIS_EB</enumeration>
+		<enumeration>RMIS</enumeration>
+		<enumeration>OVK</enumeration>
+		<enumeration>OA</enumeration>
+		<enumeration>KO</enumeration>
+		<enumeration>FAS</enumeration>
+		<enumeration>SMEV3</enumeration>
+		<enumeration>VSRZ</enumeration>
+	</valueType>
+	<valueType name="yearNewType" base="xs:gYear" variety="Atomic" minInclusive="2000"/>
+	<valueType name="yearType" base="xs:int" variety="Atomic">
+		<pattern>\d{4}</pattern>
+	</valueType>
+	<objectType name="ETPRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:etpCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text200Type" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="url" type="d3p1:hrefType" lowerBound="0"/>
+	</objectType>
+	<objectType name="KTRURef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:ktruCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+		<property name="versionId" type="xs:long" lowerBound="0"/>
+		<property name="versionNumber" type="xs:int" lowerBound="0"/>
+	</objectType>
+	<objectType name="KVRRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:KVRCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="NPASt14Ref">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:NPASt14CodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="shortName" type="d3p1:text100Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="OKEIRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:okeiCodeType"/>
+		<property name="nationalCode" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="50"/>
+		</property>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text1000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="OKFSRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:okfsCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="OKOPFRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:okopfCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="singularName" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="OKPD2Ref">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="OKPDCode" type="d3p1:okpdCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="OKPDName" type="d3p1:okpdNameType" lowerBound="0"/>
+	</objectType>
+	<objectType name="OKPORef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:okpoCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="OKSMRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="countryCode" type="d3p1:countryCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="countryFullName" type="d3p1:text200Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="OKTMOPPORef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:oktmoCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="OKTMORef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:oktmoCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text1000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="abandonedReasonRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:abandonedReasonCode"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:abandonedReasonName" lowerBound="0"/>
+	</objectType>
+	<objectType name="budgetFundsContractRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:budgetCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="changePriceFoundationRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:changePriceFoundationNumType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="closedEPCasesRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:text10Type"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="commonUnitsMeasurementsRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:okeiCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text1000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="contractLifeCycleCaseRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:contractLifeCycleCaseCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="contractOKEIExtendedRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:okeiCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="nationalCode" type="d3p1:text50Type" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="trueNationalCode" type="d3p1:text50Type" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="fullName" type="d3p1:text1000Type" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="nationalName" type="d3p1:text50Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="contractOKEIRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:okeiCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="nationalCode" type="d3p1:text50Type" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="fullName" type="d3p1:text1000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="contractRefusalReasonRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:contractRefusalReasonCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text500Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="currencyCBRFRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:currencyCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text50Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="currencyRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:currencyCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text50Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="deviationFactFoundationRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:deviationFactFoundationCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text1000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="docRejectReasonRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:rejectReasonCode"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:rejectReasonName" lowerBound="0"/>
+	</objectType>
+	<objectType name="documentKindRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:text10Type"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="drugChangeReasonRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:text10Type"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="evasDevFactFoundationRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:evasDevFactFoundationCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:evasDevFactFoundationNameType" lowerBound="0"/>
+	</objectType>
+	<objectType name="exclusionReason615Ref">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:exclusionReason615CodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="fundingSources615Ref">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:fundingSources615CodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text200Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="organizationRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="regNum" type="d3p1:spzNumType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="consRegistryNum" type="d3p1:consRegistryNumType" lowerBound="0"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="fullName" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="placingWayRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:placingWayCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text500Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="prefRateRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:text10Type"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="prefValue" type="d3p1:percentRestr0100Type"/>
+	</objectType>
+	<objectType name="prefsReqsRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="shortName" type="d3p1:prefsReqsShortNameType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="purchaseSubjectRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:purchaseSubjectCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="qualifiedContractorRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="registryNum" type="d3p1:qualifiedContractorCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="rejectReasonRef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:rejectReasonCode"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:rejectReasonName" lowerBound="0"/>
+	</objectType>
+	<objectType name="righSideKTRURef">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:rightSideKTRUCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+		<property name="versionNumber" type="xs:int" lowerBound="0"/>
+	</objectType>
+	<objectType name="schemeVersion">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="current" type="d3p1:schemeVersionType" lowerBound="0" fixed="true" default="11.1" form="Attribute"/>
+	</objectType>
+	<objectType name="serviceWorkSt166Ref">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:serviceWorkCodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="terminationGround615Ref">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:terminationGround615CodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+	<objectType name="terminationReason615Ref">
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="code" type="d3p1:terminationReason615CodeType"/>
+		<property xmlns:d3p1="http://zakupki.gov.ru/oos/base/1" name="name" type="d3p1:text2000Type" lowerBound="0"/>
+	</objectType>
+</package>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a16b2bc2-4b25-421a-8d7f-a1d58f2fe1e2">
+  <producedTypes>
+    <containerType typeId="f40a57a3-aaaa-4e14-8861-a6c7ee4eebda" valueTypeId="46953013-c134-473b-b10c-1c7c446a7881"/>
+  </producedTypes>
+  <name>ПубликуемыеЗаявкиКабинетСотрудника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Публикуемые заявки кабинет сотрудника</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

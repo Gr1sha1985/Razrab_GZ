@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9045f1ad-1761-4acb-a963-c0e620589dbc">
+  <name>ГЗ_Процедура_fcsnotificationOKD_Сервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процедура fcsnotificationOKD</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="11c0fdb9-e710-45e6-9208-e0168e63aca0">
+  <producedTypes>
+    <managerType typeId="fb184166-b111-4887-b811-0c1b5b31d4fe" valueTypeId="d93d3427-c1e6-407f-bb3f-06695694a287"/>
+    <valueManagerType typeId="aaab5284-7408-452e-a3f4-80bae4d77fa7" valueTypeId="2d1d60b4-2471-4051-acb7-a31b04789d64"/>
+    <valueKeyType typeId="fc46b213-c107-451b-b4f6-43ed71f22a04" valueTypeId="8b44b085-cb84-465e-b8e1-5b3e8e6de1d2"/>
+  </producedTypes>
+  <name>СпособФормированияИнтервальныхРегистров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способ формирования интервальных регистров</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c335092-3da9-44b9-b706-ea5aebdbb336">
+  <name>НастройкиБЭДСобытия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки БЭД (события)</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ae8ef12e-7d84-4ffd-9b20-32e162b81a79">
+  <name>ПродажиУменьшениеПоказателя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажи: уменьшение показателя</value>
+  </synonym>
+</mdclass:CommonPicture>

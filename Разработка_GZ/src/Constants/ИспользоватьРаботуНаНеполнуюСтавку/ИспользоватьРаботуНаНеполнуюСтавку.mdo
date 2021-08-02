@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="431c0466-9305-4a93-a6fe-a5b1d7841ff6">
+  <producedTypes>
+    <managerType typeId="9a862ccd-8096-4a05-8c70-80de3ccb95cc" valueTypeId="51ab2ef2-8c84-416e-aa10-ddb7601443f8"/>
+    <valueManagerType typeId="6eb3598c-b291-4553-9066-494fb642b428" valueTypeId="56061677-2d96-4437-9e30-9f0828adef70"/>
+    <valueKeyType typeId="50477d81-bbea-4f5f-896a-e9107003399d" valueTypeId="00c40e71-8fa7-4ba6-8d04-03d624a7096a"/>
+  </producedTypes>
+  <name>ИспользоватьРаботуНаНеполнуюСтавку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать работу на неполную ставку</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

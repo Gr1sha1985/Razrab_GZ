@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cebf343b-55d4-480d-895b-359caaa05542">
+  <name>ДлительныеОперацииОбменаСБанкамиВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Длительные операции 1С:БанкКоннект вызов сервера</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

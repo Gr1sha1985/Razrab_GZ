@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c20f8b8b-c7d4-4733-aeb6-1049916c48ae">
+  <name>СпособыПрямыхВыплатФСС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы прямых выплат ФСС</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

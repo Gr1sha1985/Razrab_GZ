@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FilterCriterion xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="915a58eb-e5a0-44c4-9a12-4e3c97232c25">
+  <producedTypes>
+    <listType typeId="dac070c6-8525-4f7b-85e8-782c7aed2e51" valueTypeId="798930d8-8398-402b-ba60-654e4099ca1d"/>
+    <managerType typeId="0ea18c1d-8702-4be5-b81f-27b6483be124" valueTypeId="994512ac-669e-41b2-9316-b7921d1c4c10"/>
+  </producedTypes>
+  <name>ДокументыПоОрганизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по организации</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Организации</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <content>Document.ГЗ_ИзвещениеОПроведенииЗакупок.Attribute.Организация</content>
+  <content>Document.ГЗ_ИзвещениеОПроведенииЗакупокОК_Д_ДвухЭтапныйКонкурс.Attribute.Организация</content>
+  <content>Document.ГЗ_ИзвещениеОПроведенииЗакупок223ФЗ.Attribute.Организация</content>
+  <content>Document.ГЗ_ПроектКонтрактаПо44ФЗ.Attribute.Организация</content>
+</mdclass:FilterCriterion>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ea60169-ba7d-480d-b48d-832430af4efa">
+  <producedTypes>
+    <containerType typeId="660641ab-3a80-4085-8b33-6b5cd1ac560a" valueTypeId="b26d2ea5-45d9-4ae6-817e-5dfb29163ce2"/>
+  </producedTypes>
+  <name>ВладелецПрисоединенныхФайловБЗК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Владелец присоединенных файлов БЗК</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ФизическиеЛица</types>
+  </type>
+</mdclass:DefinedType>

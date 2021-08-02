@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="492eb04f-0814-4ed8-9c60-a73bda7d7084">
+  <producedTypes>
+    <objectType typeId="bee453a4-1abe-47aa-8743-22035a9facfb" valueTypeId="840cc5e2-5328-40a5-a21c-3b4d0456ea7c"/>
+    <managerType typeId="fbcc79fc-bc5e-4d92-b681-50718fcd555b" valueTypeId="a4d6fd47-3245-4855-8a4f-62ca177d505d"/>
+  </producedTypes>
+  <name>ГЗ_ДанныеПоРегионам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные по регионам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ГЗ_ДанныеПоРегионам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="e8434ce0-170f-408c-b5e0-40ba5463e0c8">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

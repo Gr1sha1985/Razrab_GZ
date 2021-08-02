@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ca5d2cb-76f5-4431-bf7a-051a2a403bf6">
+  <name>ВопросПриПометкеНаУдаление</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вопрос при пометке на удаление</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

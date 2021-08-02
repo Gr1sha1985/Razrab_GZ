@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a9c660ee-2bda-43c5-a49f-e429b608e7f8">
+  <producedTypes>
+    <managerType typeId="29f9237b-53fb-45a7-99ed-53350836c84f" valueTypeId="c6864c78-4e53-49d8-914e-efe83f127317"/>
+    <valueManagerType typeId="ee2fa327-12ec-439a-8663-248293d46a31" valueTypeId="9ccd2cb9-82de-4978-b7fe-cbe2fb9234f8"/>
+    <valueKeyType typeId="2aa8b715-248c-4011-9e7b-12d66d07dd15" valueTypeId="f2658e6a-75f5-4fbf-8841-8dad5177ace0"/>
+  </producedTypes>
+  <name>УстановкаМобильногоПриложенияСканированиеЧековПростойИнтерфейс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установка мобильного приложения &quot;1С:БизнесСтарт. Сканер чеков&quot; (простой интерфейс)</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

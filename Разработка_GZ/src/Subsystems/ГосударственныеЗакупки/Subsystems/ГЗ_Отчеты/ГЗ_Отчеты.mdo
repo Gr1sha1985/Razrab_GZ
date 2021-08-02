@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ec21eae-dfe6-430a-806b-99f7d2ff3472">
+  <name>ГЗ_Отчеты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчеты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.ГЗ_ОбработкаФайловXML</content>
+  <content>Report.ГЗ_ДанныеПоРегионам</content>
+  <content>Report.ГЗ_ДанныеПоКонтрактам</content>
+  <content>DataProcessor.ЗагрузкаДанныхИзТабличногоДокумента_УФ</content>
+  <parentSubsystem>Subsystem.ГосударственныеЗакупки</parentSubsystem>
+</mdclass:Subsystem>

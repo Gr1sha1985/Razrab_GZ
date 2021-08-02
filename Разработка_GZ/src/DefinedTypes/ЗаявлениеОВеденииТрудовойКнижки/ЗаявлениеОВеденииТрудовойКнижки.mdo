@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd26f405-974a-401a-be3c-087b2f82c9f8">
+  <producedTypes>
+    <containerType typeId="97e67ab5-41ec-414e-a0fd-217a6bab1eda" valueTypeId="ecd9548f-32c8-4afc-af56-1e5ec6835547"/>
+  </producedTypes>
+  <name>ЗаявлениеОВеденииТрудовойКнижки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявление о ведении трудовой книжки</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

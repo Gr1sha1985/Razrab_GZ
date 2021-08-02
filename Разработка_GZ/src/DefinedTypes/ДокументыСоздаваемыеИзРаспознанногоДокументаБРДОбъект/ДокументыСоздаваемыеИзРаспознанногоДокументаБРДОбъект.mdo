@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2e7d59fc-2fa9-41f1-a012-a738cc43cdb4">
+  <producedTypes>
+    <containerType typeId="cf4c40aa-7d78-47f4-9aa5-866f9b981904" valueTypeId="966f9469-f914-4e54-8b44-7d3f4d002a56"/>
+  </producedTypes>
+  <name>ДокументыСоздаваемыеИзРаспознанногоДокументаБРДОбъект</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы создаваемые из распознанного документа БРД объект</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

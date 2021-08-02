@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5c2e4f05-b1b7-4ce4-a101-70a9167654e5">
+  <name>ЭлектронныйДокументооборотСФССПереопределяемый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Электронный документооборот с ФСС (клиент)</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

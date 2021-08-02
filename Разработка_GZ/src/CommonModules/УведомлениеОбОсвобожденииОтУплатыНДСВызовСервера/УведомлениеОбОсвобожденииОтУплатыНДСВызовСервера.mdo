@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e23f93cd-9731-4313-ad43-79d49b493f6e">
+  <name>УведомлениеОбОсвобожденииОтУплатыНДСВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уведомления об освобождении от уплаты НДС вызов сервера</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

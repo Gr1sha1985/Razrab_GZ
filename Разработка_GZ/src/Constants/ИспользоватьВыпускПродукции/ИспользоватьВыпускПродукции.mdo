@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f4a50c09-7fdb-4a6b-bae7-97e55a413f4a">
+  <producedTypes>
+    <managerType typeId="2d8ee609-edfe-4926-bd11-5a8449de3049" valueTypeId="723b5315-236a-434c-8a54-761763a9d08c"/>
+    <valueManagerType typeId="618c0c9b-8d97-4a4c-a536-eda831051d67" valueTypeId="40a8dd2d-c140-44fb-aebd-d07f18b770fe"/>
+    <valueKeyType typeId="93a8f49e-c542-465f-9d16-55e84e67f72b" valueTypeId="8c38960d-c242-4d03-a193-08ac95cfb54e"/>
+  </producedTypes>
+  <name>ИспользоватьВыпускПродукции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать выпуск продукции</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

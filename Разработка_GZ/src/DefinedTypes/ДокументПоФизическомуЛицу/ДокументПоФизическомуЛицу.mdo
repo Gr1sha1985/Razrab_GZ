@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ffe116e3-61e1-4eca-b5f5-3be1b5e169a7">
+  <producedTypes>
+    <containerType typeId="dba23be9-89fd-4d7c-871a-a71088c41a58" valueTypeId="261c381a-37f7-4122-bbc6-2bd3c9ce7d60"/>
+  </producedTypes>
+  <name>ДокументПоФизическомуЛицу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документ по физическому лицу</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

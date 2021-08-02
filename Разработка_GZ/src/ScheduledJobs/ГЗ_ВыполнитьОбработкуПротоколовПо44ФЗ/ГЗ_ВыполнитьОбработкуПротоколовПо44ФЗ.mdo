@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e932e864-28cd-45c2-b377-22893e6fb217">
+  <name>ГЗ_ВыполнитьОбработкуПротоколовПо44ФЗ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполнить обработку протоколов по44 ФЗ</value>
+  </synonym>
+  <methodName>CommonModule.ГЗ_РегламентныеЗадания44ФЗ.ГЗ_ВыполнитьОбработкуПротоколовПо44ФЗ</methodName>
+  <use>true</use>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

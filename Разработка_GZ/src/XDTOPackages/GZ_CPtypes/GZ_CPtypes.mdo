@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:XDTOPackage xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95c40052-43b3-4ba4-93d3-6b65bf855815">
+  <name>GZ_CPtypes</name>
+  <synonym>
+    <key>ru</key>
+    <value>CPtypes</value>
+  </synonym>
+  <namespace>http://zakupki.gov.ru/oos/CPtypes/1</namespace>
+</mdclass:XDTOPackage>

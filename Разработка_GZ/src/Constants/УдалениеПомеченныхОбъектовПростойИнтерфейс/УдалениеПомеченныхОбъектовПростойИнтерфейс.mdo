@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8635ebe3-a932-4169-b13a-3c0c532d67de">
+  <producedTypes>
+    <managerType typeId="476a42c0-d04c-4967-9664-2516faa967b5" valueTypeId="8ddc8caa-d5de-425e-8c3b-4f4f1a9c5f84"/>
+    <valueManagerType typeId="6928c1ce-eacd-49b5-a9f1-afbf197bca9f" valueTypeId="c4253dd8-4706-469c-9476-ac3c1f6eba52"/>
+    <valueKeyType typeId="ed5cd032-61e1-4a31-b64b-ae6f82d2f57f" valueTypeId="fdabda10-9c3b-4c35-97c2-5ba73ac9fd1b"/>
+  </producedTypes>
+  <name>УдалениеПомеченныхОбъектовПростойИнтерфейс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удаление помеченных объектов простой интерфейс</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

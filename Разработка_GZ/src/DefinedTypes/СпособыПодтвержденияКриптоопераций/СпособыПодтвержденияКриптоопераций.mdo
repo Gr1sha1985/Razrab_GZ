@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2aa07f88-794b-4c75-90ef-fab26e205f13">
+  <producedTypes>
+    <containerType typeId="504d3f51-0335-45d6-9b97-fc036880c779" valueTypeId="e51e6ffb-f8f2-40ed-933e-54408ce5f300"/>
+  </producedTypes>
+  <name>СпособыПодтвержденияКриптоопераций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы подтверждения криптоопераций</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>

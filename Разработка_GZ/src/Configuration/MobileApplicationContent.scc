@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scc:StandaloneContent xmlns:scc="http://g5.1c.ru/v8/dt/scc">
+  <unusedItem metadata="Subsystem.ГосударственныеЗакупки.Subsystem.ГЗ_Документы"/>
+  <unusedItem metadata="Subsystem.ГосударственныеЗакупки.Subsystem.ГЗ_Справочники"/>
+  <unusedItem metadata="Subsystem.СтандартныеПодсистемы.Subsystem.РаботаСПочтовымиСообщениями"/>
+  <unusedItem metadata="Subsystem.ГосударственныеЗакупки.Subsystem.ГЗ_Отчеты"/>
+  <unusedItem metadata="Subsystem.СтандартныеПодсистемы.Subsystem.БазоваяФункциональность"/>
+  <unusedItem metadata="Subsystem.СтандартныеПодсистемы.Subsystem.ВерсионированиеОбъектов"/>
+  <unusedItem metadata="Subsystem.Администрирование.Subsystem.Пользователи"/>
+</scc:StandaloneContent>

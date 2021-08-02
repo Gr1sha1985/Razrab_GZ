@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:StyleItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c945c5d4-64b7-4fe6-985c-9b6ac1b0d143">
+  <name>ПродажиПлохаяОценкаЦвет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажи: плохая оценка - цвет</value>
+  </synonym>
+  <value xsi:type="core:ColorValue">
+    <value xsi:type="core:ColorDef">
+      <red>225</red>
+      <green>40</green>
+      <blue>40</blue>
+    </value>
+  </value>
+</mdclass:StyleItem>

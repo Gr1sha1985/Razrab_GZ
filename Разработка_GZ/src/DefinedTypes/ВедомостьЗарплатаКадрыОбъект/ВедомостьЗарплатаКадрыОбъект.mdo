@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3874a387-b09a-4d56-9e89-382efa12cdc7">
+  <producedTypes>
+    <containerType typeId="cbca8154-cbe3-4cc7-accb-d4d33bdae380" valueTypeId="a83afbbf-f570-4d1c-9f37-a1950347f603"/>
+  </producedTypes>
+  <name>ВедомостьЗарплатаКадрыОбъект</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ведомость зарплата кадры объект</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+</mdclass:DefinedType>
