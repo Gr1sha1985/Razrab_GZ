@@ -1669,9 +1669,6 @@
   <commonModules>CommonModule.ВнешниеПользователиКлиент</commonModules>
   <commonModules>CommonModule.ВнешниеРегламентированныеОтчетыВМоделиСервиса</commonModules>
   <commonModules>CommonModule.ВнешнийПрограммныйИнтерфейс</commonModules>
-  <commonModules>CommonModule.ВозвратНДФЛБазовый</commonModules>
-  <commonModules>CommonModule.ВозвратНДФЛВнутренний</commonModules>
-  <commonModules>CommonModule.ВозвратНДФЛФормыВнутренний</commonModules>
   <commonModules>CommonModule.ВыборПериодаКлиент</commonModules>
   <commonModules>CommonModule.ВыборПериодаКлиентСервер</commonModules>
   <commonModules>CommonModule.ВыводСообщенийОбОшибках</commonModules>
