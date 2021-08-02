@@ -1475,7 +1475,6 @@
   <sessionParameters>SessionParameter.ДанныеКлючаСессииСУЗ</sessionParameters>
   <sessionParameters>SessionParameter.ДатаОбновленияПовторноИспользуемыхЗначенийМРО</sessionParameters>
   <sessionParameters>SessionParameter.ДействующиеДатыЗапретаИзменения</sessionParameters>
-  <sessionParameters>SessionParameter.ИдентификаторСеансаЕГАИС</sessionParameters>
   <sessionParameters>SessionParameter.ИдентификаторыТаблицСОтдельнымиНастройкамиПрав</sessionParameters>
   <sessionParameters>SessionParameter.ИнтерактивнаяПроверкаЗаполненияКонтактнойИнформации</sessionParameters>
   <sessionParameters>SessionParameter.ИнтерактивнаяПроверкаЗаполненияСвойств</sessionParameters>
