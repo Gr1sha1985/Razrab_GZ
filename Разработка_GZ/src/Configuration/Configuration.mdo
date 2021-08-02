@@ -3785,12 +3785,10 @@
   <constants>Constant.ВерсияДатЗапретаИзменения</constants>
   <constants>Constant.ВерсияИзмененийКабинетСотрудника</constants>
   <constants>Constant.ВерсияКлассификатораБанков</constants>
-  <constants>Constant.ВестиСведенияДляДекларацийПоАлкогольнойПродукции</constants>
   <constants>Constant.ВестиУчетЗатратПоПодразделениям</constants>
   <constants>Constant.ВестиУчетИндивидуальногоПредпринимателя</constants>
   <constants>Constant.ВестиУчетМаркировкиПродукцииВГИСМ</constants>
   <constants>Constant.ВестиУчетМаркируемойПродукцииИСМП</constants>
-  <constants>Constant.ВестиУчетПодконтрольныхТоваровВЕТИС</constants>
   <constants>Constant.ВестиУчетПоДоговорам</constants>
   <constants>Constant.ВестиУчетПоОрганизациям</constants>
   <constants>Constant.ВестиУчетПоПодразделениям</constants>
