@@ -1560,7 +1560,6 @@
   <commonModules>CommonModule.ZipАрхивы</commonModules>
   <commonModules>CommonModule.АвансовыйОтчетФормы</commonModules>
   <commonModules>CommonModule.АвансовыйОтчетФормыКлиентСервер</commonModules>
-  <commonModules>CommonModule.АвтоматическоеЗаполнениеОтчетности</commonModules>
   <commonModules>CommonModule.АвтономнаяРабота</commonModules>
   <commonModules>CommonModule.АвтономнаяРаботаОбменДаннымиСобытия</commonModules>
   <commonModules>CommonModule.АвтономнаяРаботаСлужебный</commonModules>
@@ -1576,11 +1575,6 @@
   <commonModules>CommonModule.АдресныйКлассификаторПовтИсп</commonModules>
   <commonModules>CommonModule.АдресныйКлассификаторСлужебный</commonModules>
   <commonModules>CommonModule.АкцизныеМаркиВызовСервера</commonModules>
-  <commonModules>CommonModule.АкцизныеМаркиЕГАИС</commonModules>
-  <commonModules>CommonModule.АкцизныеМаркиЕГАИСКлиент</commonModules>
-  <commonModules>CommonModule.АкцизныеМаркиЕГАИСКлиентСерверПереопределяемый</commonModules>
-  <commonModules>CommonModule.АкцизныеМаркиЕГАИСПереопределяемый</commonModules>
-  <commonModules>CommonModule.АкцизныеМаркиКлиентСервер</commonModules>
   <commonModules>CommonModule.АнализЖурналаРегистрацииКлиент</commonModules>
   <commonModules>CommonModule.АнализЖурналаРегистрацииСлужебный</commonModules>
   <commonModules>CommonModule.АсинхронноеПолучениеДанных</commonModules>
@@ -1649,15 +1643,6 @@
   <commonModules>CommonModule.ВариантыПриложенийПереопределяемый</commonModules>
   <commonModules>CommonModule.ВводЦелейРасходаМатериаловВызовСервера</commonModules>
   <commonModules>CommonModule.ВводЦелейРасходаМатериаловКлиент</commonModules>
-  <commonModules>CommonModule.ВедомостьНаВыплатуЗарплаты</commonModules>
-  <commonModules>CommonModule.ВедомостьНаВыплатуЗарплатыБазовый</commonModules>
-  <commonModules>CommonModule.ВедомостьНаВыплатуЗарплатыВнутренний</commonModules>
-  <commonModules>CommonModule.ВедомостьНаВыплатуЗарплатыКлиент</commonModules>
-  <commonModules>CommonModule.ВедомостьНаВыплатуЗарплатыКлиентСервер</commonModules>
-  <commonModules>CommonModule.ВедомостьНаВыплатуЗарплатыФормы</commonModules>
-  <commonModules>CommonModule.ВедомостьНаВыплатуЗарплатыФормыБазовый</commonModules>
-  <commonModules>CommonModule.ВедомостьНаВыплатуЗарплатыФормыВнутренний</commonModules>
-  <commonModules>CommonModule.ВедомостьНаВыплатуЗарплатыФормыПереопределяемый</commonModules>
   <commonModules>CommonModule.ВерсионированиеОбъектов</commonModules>
   <commonModules>CommonModule.ВерсионированиеОбъектовКлиент</commonModules>
   <commonModules>CommonModule.ВерсионированиеОбъектовПереопределяемый</commonModules>
@@ -1793,7 +1778,6 @@
   <commonModules>CommonModule.ДополнительныеОтчетыИОбработкиПереопределяемый</commonModules>
   <commonModules>CommonModule.ДополнительныеОтчетыИОбработкиПовтИсп</commonModules>
   <commonModules>CommonModule.ДополнительныеОтчетыИОбработкиРегламентныеЗаданияВМоделиСервиса</commonModules>
-  <commonModules>CommonModule.ДопустимыеЦелиВЕТИС</commonModules>
   <commonModules>CommonModule.ЖурналРегистрации</commonModules>
   <commonModules>CommonModule.ЖурналРегистрацииВызовСервера</commonModules>
   <commonModules>CommonModule.ЖурналРегистрацииКлиент</commonModules>
@@ -1864,7 +1848,6 @@
   <commonModules>CommonModule.ЗаявлениеНаСертификатПереопределяемый</commonModules>
   <commonModules>CommonModule.ИдентификационныеНомераНалогоплательщиков</commonModules>
   <commonModules>CommonModule.ИдентификацияУчастниковБанковскихОпераций</commonModules>
-  <commonModules>CommonModule.ИкарВЕТИСВызовСервера</commonModules>
   <commonModules>CommonModule.ИнтеграцияCRM</commonModules>
   <commonModules>CommonModule.ИнтеграцияCRMПовтИсп</commonModules>
   <commonModules>CommonModule.ИнтеграцияEnterpriseData</commonModules>
@@ -2468,16 +2451,6 @@
   <commonModules>CommonModule.ПерсонализированныеПредложенияСервисов</commonModules>
   <commonModules>CommonModule.ПерсонализированныеПредложенияСервисовВызовСервера</commonModules>
   <commonModules>CommonModule.ПерсонализированныеПредложенияСервисовКлиент</commonModules>
-  <commonModules>CommonModule.ПерсонифицированныйУчет</commonModules>
-  <commonModules>CommonModule.ПерсонифицированныйУчетБазовый</commonModules>
-  <commonModules>CommonModule.ПерсонифицированныйУчетВнутренний</commonModules>
-  <commonModules>CommonModule.ПерсонифицированныйУчетВызовСервера</commonModules>
-  <commonModules>CommonModule.ПерсонифицированныйУчетКлиент</commonModules>
-  <commonModules>CommonModule.ПерсонифицированныйУчетКлиентБазовый</commonModules>
-  <commonModules>CommonModule.ПерсонифицированныйУчетКлиентВнутренний</commonModules>
-  <commonModules>CommonModule.ПерсонифицированныйУчетКлиентСервер</commonModules>
-  <commonModules>CommonModule.ПерсонифицированныйУчетСобытия</commonModules>
-  <commonModules>CommonModule.ПерсонифицированныйУчетФормы</commonModules>
   <commonModules>CommonModule.ПечатьДоговоров</commonModules>
   <commonModules>CommonModule.ПечатьДоговоровВызовСервера</commonModules>
   <commonModules>CommonModule.ПечатьДоговоровКлиент</commonModules>
@@ -2906,20 +2879,6 @@
   <commonModules>CommonModule.РезервноеКопированиеИБСервер</commonModules>
   <commonModules>CommonModule.РезервноеКопированиеОбластейДанных</commonModules>
   <commonModules>CommonModule.РезервноеКопированиеОбластейДанныхКлиент</commonModules>
-  <commonModules>CommonModule.РезервОтпусков</commonModules>
-  <commonModules>CommonModule.РезервОтпусковПереопределяемый</commonModules>
-  <commonModules>CommonModule.РезервыПоСомнительнымДолгам</commonModules>
-  <commonModules>CommonModule.СведенияПоОтправкам</commonModules>
-  <commonModules>CommonModule.СверкаДанныхУчетаНДС</commonModules>
-  <commonModules>CommonModule.СверкаКодовМаркировкиИСМП</commonModules>
-  <commonModules>CommonModule.СверкаКодовМаркировкиИСМПКлиент</commonModules>
-  <commonModules>CommonModule.СверкаКодовМаркировкиИСМПКлиентПереопределямый</commonModules>
-  <commonModules>CommonModule.СверкаКодовМаркировкиИСМПКлиентСервер</commonModules>
-  <commonModules>CommonModule.СверкаКодовМаркировкиИСМПКлиентСерверПереопределяемый</commonModules>
-  <commonModules>CommonModule.СверкаКодовМаркировкиИСМППереопределяемый</commonModules>
-  <commonModules>CommonModule.СверкаСФНС</commonModules>
-  <commonModules>CommonModule.СверкаСФНСВызовСервера</commonModules>
-  <commonModules>CommonModule.СверкаСФНСКлиент</commonModules>
   <commonModules>CommonModule.СверткаИнформационнойБазы</commonModules>
   <commonModules>CommonModule.СверткаИнформационнойБазыКлиент</commonModules>
   <commonModules>CommonModule.СводныеПриложения</commonModules>
