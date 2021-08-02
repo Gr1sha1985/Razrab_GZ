@@ -1849,36 +1849,6 @@
   <commonModules>CommonModule.ЗапретРедактированияРеквизитовОбъектовПереопределяемый</commonModules>
   <commonModules>CommonModule.ЗапретРедактированияРеквизитовОбъектовСлужебный</commonModules>
   <commonModules>CommonModule.ЗапретРедактированияРеквизитовОбъектовСлужебныйКлиент</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадры</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыБазовый</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыВнутренний</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыВызовСервера</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыДляНебольшихОрганизаций</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыДляНебольшихОрганизацийПереопределяемый</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыКлиент</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыКлиентБазовый</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыКлиентВнутренний</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыКлиентСервер</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыОбновлениеСПредыдущейРедакции</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыОбщиеНаборыДанных</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыОбщиеНаборыДанныхБазовый</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыОбщиеНаборыДанныхВнутренний</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыОбщиеНаборыДанныхПовтИсп</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыОтображениеОшибок</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыОтображениеОшибокКлиент</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыОтображениеОшибокКлиентСервер</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыОтчеты</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыОтчетыБазовый</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыОтчетыВнутренний</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыОтчетыПереопределяемый</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыПереопределяемый</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыПериодическиеРегистры</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыПериодическиеРегистрыБазовый</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыПериодическиеРегистрыВнутренний</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыПовтИсп</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыСобытия</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыСоставДокументов</commonModules>
-  <commonModules>CommonModule.ЗарплатаКадрыСоставДокументовСобытия</commonModules>
   <commonModules>CommonModule.ЗащитаПерсональныхДанных</commonModules>
   <commonModules>CommonModule.ЗащитаПерсональныхДанныхВызовСервера</commonModules>
   <commonModules>CommonModule.ЗащитаПерсональныхДанныхКлиент</commonModules>
@@ -1898,41 +1868,6 @@
   <commonModules>CommonModule.ИнтеграцияCRM</commonModules>
   <commonModules>CommonModule.ИнтеграцияCRMПовтИсп</commonModules>
   <commonModules>CommonModule.ИнтеграцияEnterpriseData</commonModules>
-  <commonModules>CommonModule.ИнтеграцияВЕТИС</commonModules>
-  <commonModules>CommonModule.ИнтеграцияВЕТИСБП</commonModules>
-  <commonModules>CommonModule.ИнтеграцияВЕТИСБПВызовСервера</commonModules>
-  <commonModules>CommonModule.ИнтеграцияВЕТИСВызовСервера</commonModules>
-  <commonModules>CommonModule.ИнтеграцияВЕТИСКлиент</commonModules>
-  <commonModules>CommonModule.ИнтеграцияВЕТИСКлиентПереопределяемый</commonModules>
-  <commonModules>CommonModule.ИнтеграцияВЕТИСКлиентСервер</commonModules>
-  <commonModules>CommonModule.ИнтеграцияВЕТИСКлиентСерверПереопределяемый</commonModules>
-  <commonModules>CommonModule.ИнтеграцияВЕТИСПереопределяемый</commonModules>
-  <commonModules>CommonModule.ИнтеграцияВЕТИСПовтИсп</commonModules>
-  <commonModules>CommonModule.ИнтеграцияВЕТИССлужебныйКлиент</commonModules>
-  <commonModules>CommonModule.ИнтеграцияГИСМ</commonModules>
-  <commonModules>CommonModule.ИнтеграцияГИСМБП</commonModules>
-  <commonModules>CommonModule.ИнтеграцияГИСМВызовСервера</commonModules>
-  <commonModules>CommonModule.ИнтеграцияГИСМВызовСервераБП</commonModules>
-  <commonModules>CommonModule.ИнтеграцияГИСМКлиент</commonModules>
-  <commonModules>CommonModule.ИнтеграцияГИСМКлиентБП</commonModules>
-  <commonModules>CommonModule.ИнтеграцияГИСМКлиентПереопределяемый</commonModules>
-  <commonModules>CommonModule.ИнтеграцияГИСМКлиентСервер</commonModules>
-  <commonModules>CommonModule.ИнтеграцияГИСМКлиентСерверБП</commonModules>
-  <commonModules>CommonModule.ИнтеграцияГИСМПереопределяемый</commonModules>
-  <commonModules>CommonModule.ИнтеграцияГосИС</commonModules>
-  <commonModules>CommonModule.ИнтеграцияЕГАИС</commonModules>
-  <commonModules>CommonModule.ИнтеграцияЕГАИСБП</commonModules>
-  <commonModules>CommonModule.ИнтеграцияЕГАИСБПВызовСервера</commonModules>
-  <commonModules>CommonModule.ИнтеграцияЕГАИСВебКлиент</commonModules>
-  <commonModules>CommonModule.ИнтеграцияЕГАИСВызовСервера</commonModules>
-  <commonModules>CommonModule.ИнтеграцияЕГАИСГлобальный</commonModules>
-  <commonModules>CommonModule.ИнтеграцияЕГАИСКлиент</commonModules>
-  <commonModules>CommonModule.ИнтеграцияЕГАИСКлиентПереопределяемый</commonModules>
-  <commonModules>CommonModule.ИнтеграцияЕГАИСКлиентПовтИсп</commonModules>
-  <commonModules>CommonModule.ИнтеграцияЕГАИСКлиентСервер</commonModules>
-  <commonModules>CommonModule.ИнтеграцияЕГАИСКлиентСерверПереопределяемый</commonModules>
-  <commonModules>CommonModule.ИнтеграцияЕГАИСПереопределяемый</commonModules>
-  <commonModules>CommonModule.ИнтеграцияЕГАИССлужебныйКлиент</commonModules>
   <commonModules>CommonModule.ИнтеграцияИС</commonModules>
   <commonModules>CommonModule.ИнтеграцияИСБПКлиентСервер</commonModules>
   <commonModules>CommonModule.ИнтеграцияИСВызовСервера</commonModules>
@@ -2162,9 +2097,6 @@
   <commonModules>CommonModule.МобильнаяБухгалтерияЗарплата</commonModules>
   <commonModules>CommonModule.МобильнаяБухгалтерияОтчеты</commonModules>
   <commonModules>CommonModule.МобильнаяБухгалтерияПовтИсп</commonModules>
-  <commonModules>CommonModule.МобильноеПриложениеПредприниматель</commonModules>
-  <commonModules>CommonModule.МобильноеПриложениеПредпринимательПереопределяемый</commonModules>
-  <commonModules>CommonModule.МобильноеПриложениеПредпринимательСобытия</commonModules>
   <commonModules>CommonModule.МоиЗадачи</commonModules>
   <commonModules>CommonModule.МоиЗадачиКлиент</commonModules>
   <commonModules>CommonModule.МониторИнтернетПоддержкиКлиент</commonModules>
@@ -2633,8 +2565,6 @@
   <commonModules>CommonModule.ПолучениеФайловИзИнтернетаСлужебныйВызовСервера</commonModules>
   <commonModules>CommonModule.Пользователи</commonModules>
   <commonModules>CommonModule.ПользователиБП</commonModules>
-  <commonModules>CommonModule.ПользователиВЕТИС</commonModules>
-  <commonModules>CommonModule.ПользователиВЕТИСКлиентСервер</commonModules>
   <commonModules>CommonModule.ПользователиКлиент</commonModules>
   <commonModules>CommonModule.ПользователиКлиентСервер</commonModules>
   <commonModules>CommonModule.ПользователиПереопределяемый</commonModules>
@@ -2651,13 +2581,6 @@
   <commonModules>CommonModule.ПомеченныеНаУдалениеГлобальный</commonModules>
   <commonModules>CommonModule.ПомеченныеНаУдалениеКлиент</commonModules>
   <commonModules>CommonModule.ПомеченныеНаУдалениеСервер</commonModules>
-  <commonModules>CommonModule.ПомощникЗаполнения3НДФЛ</commonModules>
-  <commonModules>CommonModule.ПомощникЗаполнения3НДФЛВызовСервера</commonModules>
-  <commonModules>CommonModule.ПомощникЗаполнения3НДФЛКлиент</commonModules>
-  <commonModules>CommonModule.ПомощникЗаполнения3НДФЛКлиентСервер</commonModules>
-  <commonModules>CommonModule.ПомощникиПоУплатеНалоговИВзносов</commonModules>
-  <commonModules>CommonModule.ПомощникиПоУплатеНалоговИВзносовКлиент</commonModules>
-  <commonModules>CommonModule.ПомощникРасчетаНДС</commonModules>
   <commonModules>CommonModule.ПоставляемыеДанные</commonModules>
   <commonModules>CommonModule.ПоставляемыеДанныеАбонентов</commonModules>
   <commonModules>CommonModule.ПоставляемыеДанныеАбонентовПереопределяемый</commonModules>
@@ -2670,9 +2593,6 @@
   <commonModules>CommonModule.ПоступлениеТоваровУслугФормы</commonModules>
   <commonModules>CommonModule.ПоступлениеТоваровУслугФормыКлиент</commonModules>
   <commonModules>CommonModule.ПоступлениеТоваровУслугФормыКлиентСервер</commonModules>
-  <commonModules>CommonModule.ПравилаРаспределенияРасходов</commonModules>
-  <commonModules>CommonModule.ПравилаРаспределенияРасходовМодификацияКонфигурации</commonModules>
-  <commonModules>CommonModule.ПредприятияХозяйствующиеСубъектыВЕТИС</commonModules>
   <commonModules>CommonModule.ПредставленияОбщихДанных</commonModules>
   <commonModules>CommonModule.ПредставленияОбщихДанныхВызовСервера</commonModules>
   <commonModules>CommonModule.ПредставленияОбщихДанныхКлиент</commonModules>
@@ -2693,8 +2613,6 @@
   <commonModules>CommonModule.ПроверкаЗаполненияДокументов</commonModules>
   <commonModules>CommonModule.ПроверкаИКорректировкаДанных</commonModules>
   <commonModules>CommonModule.ПроверкаИКорректировкаДанныхПереопределяемый</commonModules>
-  <commonModules>CommonModule.ПроверкаИПодборПродукцииЕГАИС</commonModules>
-  <commonModules>CommonModule.ПроверкаИПодборПродукцииЕГАИСВызовСервера</commonModules>
   <commonModules>CommonModule.ПроверкаИПодборПродукцииЕГАИСКлиент</commonModules>
   <commonModules>CommonModule.ПроверкаИПодборПродукцииЕГАИСКлиентПереопределяемый</commonModules>
   <commonModules>CommonModule.ПроверкаИПодборПродукцииЕГАИСКлиентСервер</commonModules>
@@ -2869,7 +2787,6 @@
   <commonModules>CommonModule.РаспознаваниеДокументовСлужебныйКлиент</commonModules>
   <commonModules>CommonModule.РаспознаваниеДокументовСлужебныйКлиентПовтИсп</commonModules>
   <commonModules>CommonModule.РаспознаваниеДокументовСлужебныйКлиентСервер</commonModules>
-  <commonModules>CommonModule.РаспределениеРасходов</commonModules>
   <commonModules>CommonModule.РаспределенноеВыполнениеКоманд</commonModules>
   <commonModules>CommonModule.РаспределенноеВыполнениеКомандПереопределяемый</commonModules>
   <commonModules>CommonModule.РассылкаОтчетов</commonModules>
@@ -3452,19 +3369,6 @@
   <commonModules>CommonModule.ХранилищеСертификатовСлужебныйВызовСервера</commonModules>
   <commonModules>CommonModule.ХранилищеСертификатовСлужебныйКлиент</commonModules>
   <commonModules>CommonModule.Ценообразование</commonModules>
-  <commonModules>CommonModule.ЦентрМониторинга</commonModules>
-  <commonModules>CommonModule.ЦентрМониторингаГлобальный</commonModules>
-  <commonModules>CommonModule.ЦентрМониторингаКлиент</commonModules>
-  <commonModules>CommonModule.ЦентрМониторингаКлиентСлужебный</commonModules>
-  <commonModules>CommonModule.ЦентрМониторингаПереопределяемый</commonModules>
-  <commonModules>CommonModule.ЦентрМониторингаПовтИсп</commonModules>
-  <commonModules>CommonModule.ЦентрМониторингаСлужебный</commonModules>
-  <commonModules>CommonModule.ЦерберВЕТИСВызовСервера</commonModules>
-  <commonModules>CommonModule.ЧекиЕГАИС</commonModules>
-  <commonModules>CommonModule.ЧекиНПД</commonModules>
-  <commonModules>CommonModule.ЧекиНПДВызовСервера</commonModules>
-  <commonModules>CommonModule.ЧекиНПДКлиент</commonModules>
-  <commonModules>CommonModule.ЧекиНПДКлиентСервер</commonModules>
   <commonModules>CommonModule.ШинаМобильныхПриложений</commonModules>
   <commonModules>CommonModule.ШтрихкодированиеЕГАИС</commonModules>
   <commonModules>CommonModule.ШтрихкодированиеЕГАИСКлиент</commonModules>
