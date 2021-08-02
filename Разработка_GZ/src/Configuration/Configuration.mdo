@@ -3087,12 +3087,6 @@
   <commonModules>CommonModule.ТорговыйСборКлиентСервер</commonModules>
   <commonModules>CommonModule.ТрансляцияXDTO</commonModules>
   <commonModules>CommonModule.ТрансляцияXDTOПереопределяемый</commonModules>
-  <commonModules>CommonModule.УведомлениеОбОсвобожденииОтУплатыНДСВызовСервера</commonModules>
-  <commonModules>CommonModule.УведомлениеОбОсвобожденииОтУплатыНДСКлиент</commonModules>
-  <commonModules>CommonModule.УведомлениеОСпецрежимахНалогообложения</commonModules>
-  <commonModules>CommonModule.УведомлениеОСпецрежимахНалогообложенияВызовСервера</commonModules>
-  <commonModules>CommonModule.УведомлениеОСпецрежимахНалогообложенияКлиент</commonModules>
-  <commonModules>CommonModule.УведомлениеОСпецрежимахНалогообложенияПовтИсп</commonModules>
   <commonModules>CommonModule.УдалениеПомеченныхОбъектов</commonModules>
   <commonModules>CommonModule.УдалениеПомеченныхОбъектовКлиент</commonModules>
   <commonModules>CommonModule.УдалениеПомеченныхОбъектовПереопределяемый</commonModules>
@@ -3401,13 +3395,6 @@
   <commonModules>CommonModule.ЭлектронноеВзаимодействиеСлужебныйКлиентПовтИсп</commonModules>
   <commonModules>CommonModule.ЭлектронноеВзаимодействиеСлужебныйКлиентСервер</commonModules>
   <commonModules>CommonModule.ЭлектронноеВзаимодействиеСлужебныйПовтИсп</commonModules>
-  <commonModules>CommonModule.ЭлектронныеТрудовыеКнижки</commonModules>
-  <commonModules>CommonModule.ЭлектронныеТрудовыеКнижкиБазовый</commonModules>
-  <commonModules>CommonModule.ЭлектронныеТрудовыеКнижкиВнутренний</commonModules>
-  <commonModules>CommonModule.ЭлектронныеТрудовыеКнижкиВызовСервера</commonModules>
-  <commonModules>CommonModule.ЭлектронныеТрудовыеКнижкиКлиент</commonModules>
-  <commonModules>CommonModule.ЭлектронныеТрудовыеКнижкиКлиентСервер</commonModules>
-  <commonModules>CommonModule.ЭлектронныеТрудовыеКнижкиПовтИсп</commonModules>
   <commonModules>CommonModule.ЭлектронныйДокументооборотСКонтролирующимиОрганами</commonModules>
   <commonModules>CommonModule.ЭлектронныйДокументооборотСКонтролирующимиОрганамиБП</commonModules>
   <commonModules>CommonModule.ЭлектронныйДокументооборотСКонтролирующимиОрганамиБПВызовСервера</commonModules>
